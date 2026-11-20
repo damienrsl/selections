@@ -1,6 +1,6 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Dump bonnets · mes cases</title>
+<title>Dump bonnets · mes cases</title><meta http-equiv="Cache-Control" content="no-store">
 <style>
 /* KIT ARTEFACT « AURA » — DA validée par Damien le 11/11/2026 (Tokn v3, commit 30cee5f).
    Fond blanc + 3 auras cœur noir → bleus qui dérivent, grain, verre blanc, PolySans. SEULE DA des artefacts.
@@ -142,8 +142,19 @@ main{max-width:1180px;margin:0 auto;position:relative;z-index:1;padding:0 12px 1
 section{margin:22px 0}
 section>.etiquette{display:block;margin:0 4px 10px}
 .aide{font-size:16px;color:var(--texte-2);margin:0 4px 10px;line-height:1.5;max-width:70ch}
+.plan{display:grid;gap:14px}
+@media(min-width:900px){.plan{grid-template-columns:360px 1fr;align-items:start}.pool{position:sticky;top:10px;max-height:calc(100vh - 20px);overflow:auto}}
 .rail{display:grid;gap:14px}
-@media(min-width:900px){.rail{grid-template-columns:repeat(2,1fr)}}
+.pool{padding:12px 12px 10px}
+.pool .tete{margin-bottom:6px}
+.pool h2{font-size:18px;margin:0;flex:1}
+.pool .aide{margin:0 0 8px;font-size:14px}
+.bande{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.bande .tuile{flex:none;width:104px}
+.pool.ouvert .bande{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible}
+.pool.ouvert .bande .tuile{width:auto}
+@media(max-width:899px){.pool{position:sticky;top:8px;z-index:3}body.choix .pool{top:58px}}
+@media(min-width:900px){.pool .bande{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible}.pool .bande .tuile{width:auto}#pool-ouvrir{display:none}}
 .slide{padding:14px 14px 12px;position:relative}
 .slide.cible{outline:3px solid var(--bleu-renard);outline-offset:-3px}
 .tete{display:flex;align-items:center;gap:10px}
@@ -196,18 +207,17 @@ section>.etiquette{display:block;margin:0 4px 10px}
 <div class="lis-progres" aria-hidden="true"></div><main>
 <header class="hero"><span class="orbe"></span><span class="etiquette">Dump bonnets · mes cases · 20/11/2026</span>
 <h1>Dump bonnets, mes cases</h1>
-<p>Tes bonnets ♡ des trois sélections sont en bas. Tape un bonnet (ou plusieurs), puis « Mettre ici » sur la case voulue. Titre et description par slide, ajoute ou retire des slides, puis partage au monteur.</p>
+<p>Tes bonnets ♡ des trois sélections sont juste en dessous. Tape un bonnet (ou plusieurs), puis « Mettre ici » sur la case voulue ; dans une case, Gauche/Droite pour l'ordre. Titre et description par slide, ajoute ou retire des slides, puis partage au monteur.</p>
 <div class="verre etat" id="etat"></div>
 </header>
 <div class="bandeau" id="bandeau"><b id="bandeau-t">1 bonnet choisi</b><button id="b-annuler">Désélectionner</button></div>
-<section id="sec-slides"><span class="etiquette">Les slides</span>
+<section id="sec-slides"><span class="etiquette">Mes bonnets et mes slides</span>
 <p class="aide" id="aide-slides"></p>
+<div class="plan">
+<div class="verre pool" id="pool"><div class="tete"><h2 id="pool-t">Mes bonnets ♡</h2><button class="pilule doux" id="pool-ouvrir">Tout voir</button></div><p class="aide">Tape un bonnet (ou plusieurs), puis « Mettre ici » sur une case. Placé = grisé.</p><div class="bande" id="reserve"></div></div>
 <div class="rail" id="rail"></div>
+</div>
 <div class="actions"><button class="pilule doux" id="plus-slide">Nouvelle slide de bonnets</button><button class="pilule doux" id="plus-photo">Nouvelle slide photo (hook, intro, fin)</button><button class="pilule" id="annuler">Annuler la dernière action</button></div>
-</section>
-<section id="sec-reserve"><span class="etiquette">Mes bonnets ♡</span>
-<p class="aide">Tape pour choisir, puis « Mettre ici » sur une case. Un bonnet déjà placé est grisé ; tape-le dans sa case puis « Enlever » pour le sortir.</p>
-<div class="grille6" id="reserve"></div>
 </section>
 <section id="sec-tous"><span class="etiquette">Tous les bonnets des 3 sélections</span>
 <p class="aide">Pour piocher hors de tes ♡. Cherche une marque, un mot ou un prix.</p>
@@ -244,7 +254,9 @@ function nid(){return 's'+Math.random().toString(36).slice(2,8)}
 function neuf(){return {v:2,slides:[{id:'hook',kind:'fixe',t:'Hook',d:'',photo:''},{id:'intro1',kind:'fixe',t:'Intro 1',d:'',photo:''},{id:'intro2',kind:'fixe',t:'Intro 2',d:'',photo:''}]
  .concat(CASES.map(function(t){return {id:nid(),kind:'prod',t:t,d:'',items:[]}}))
  .concat([{id:'comm',kind:'fixe',t:'Commente',d:'',photo:''},{id:'abo',kind:'fixe',t:'Abonne-toi',d:'',photo:''}]),t:Date.now()}}
-var ST=lire(KS)||neuf(),H=null,SEL={},C=coeurs();
+function migrer(o){if(!o||!o.slides)return null;var sl=o.slides.map(function(x){return x.kind==='prod'?{id:x.id||nid(),kind:'prod',t:x.t||'',d:x.d||'',items:(x.items||[]).slice()}:{id:x.id||nid(),kind:'fixe',t:x.t||'',d:x.texte||x.d||'',photo:x.photo||''}});
+ var prods=sl.filter(function(x){return x.kind==='prod'});if(!prods.length)return null;return {v:2,slides:sl,t:Date.now(),repris:true}}
+var ST=lire(KS)||migrer(lire('dump-bonnets-v1'))||neuf(),H=null,SEL={},C=coeurs();if(ST.repris){delete ST.repris;ecrire(KS,ST);setTimeout(function(){toast('Ton rangement précédent est repris')},400)}
 function sauver(){ST.t=Date.now();if(!ecrire(KS,ST))toast('Mémoire pleine : photos trop lourdes')}
 function places(){var P={};ST.slides.forEach(function(s){(s.items||[]).forEach(function(k){P[k]=s.id})});return P}
 var $=function(id){return document.getElementById(id)},esc=function(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
@@ -263,9 +275,12 @@ function rendre(){rendreEtat();var P=places(),nprod=0,nplace=Object.keys(P).leng
   h+='<textarea class="desc" data-id="'+s.id+'" rows="2" placeholder="Description de cette slide (pour toi et le monteur)">'+esc(s.d)+'</textarea>';
   if(fixe){h+='<div class="photo"><label class="cadre">'+(s.photo?'<img src="'+s.photo+'" alt="">':'Touche pour choisir ta photo')+'<input type="file" accept="image/*" data-id="'+s.id+'"></label><div class="actions" style="margin:0">'+(s.photo?'<button class="pilule" data-act="sansphoto" data-id="'+s.id+'">Retirer la photo</button>':'<span class="aide" style="margin:0">Hook, intro ou fin : ta photo + ton texte dans la description.</span>')+'</div></div>'}
   else{h+='<div class="grille3">'+(s.items.length?s.items.map(function(k){return tuile(k)}).join(''):'<div class="vide-msg">Case vide : choisis des bonnets en bas puis « Mettre ici »</div>')+'</div>'}
-  h+='<div class="actions">'+(cible?'<button class="pilule fort" data-act="mettre" data-id="'+s.id+'">Mettre ici · '+nsel()+'</button>':'')+(nsel()&&!fixe&&s.items.some(function(k){return SEL[k]})?'<button class="pilule fort" data-act="enlever" data-id="'+s.id+'">Enlever de cette case</button>':'')+'<button class="pilule" data-act="monter" data-id="'+s.id+'"'+(i===0?' disabled':'')+'>Monter</button><button class="pilule" data-act="descendre" data-id="'+s.id+'"'+(i===ST.slides.length-1?' disabled':'')+'>Descendre</button><button class="pilule" data-act="supprimer" data-id="'+s.id+'">Supprimer la slide</button></div></article>';return h}).join('');
- var res=Object.keys(C.set);
- $('reserve').innerHTML=res.length?res.map(function(k){return tuile(k,P[k]?' place':'')}).join(''):'<div class="vide-msg">Aucun ♡ lu ici.</div>';
+  h+='<div class="actions">'+(cible?'<button class="pilule fort" data-act="mettre" data-id="'+s.id+'">Mettre ici · '+nsel()+'</button>':'')+(nsel()&&!fixe&&s.items.some(function(k){return SEL[k]})?'<button class="pilule doux" data-act="gauche" data-id="'+s.id+'">Gauche</button><button class="pilule doux" data-act="droite" data-id="'+s.id+'">Droite</button><button class="pilule fort" data-act="enlever" data-id="'+s.id+'">Enlever de cette case</button>':'')+'<button class="pilule" data-act="monter" data-id="'+s.id+'"'+(i===0?' disabled':'')+'>Monter</button><button class="pilule" data-act="descendre" data-id="'+s.id+'"'+(i===ST.slides.length-1?' disabled':'')+'>Descendre</button><button class="pilule" data-act="supprimer" data-id="'+s.id+'">Supprimer la slide</button></div></article>';return h}).join('');
+ var res=Object.keys(C.set);ST.slides.forEach(function(s){(s.items||[]).forEach(function(k){if(res.indexOf(k)<0&&byK[k])res.push(k)})});
+ res.sort(function(a,b){return (P[a]?1:0)-(P[b]?1:0)});
+ $('pool-t').textContent='Mes bonnets ♡ · '+res.length+(nplace?' · '+(res.length-nplace)+' à placer':'');
+ $('reserve').innerHTML=res.length?res.map(function(k){return tuile(k,P[k]?' place':'')}).join(''):'<div class="vide-msg">Aucun ♡ lu ici : ouvre cette page à l\'adresse où tu as fait tes choix, ou cherche en bas.</div>';
+ document.body.classList.toggle('choix',nsel()>0);
  rendreTous();$('n').textContent=res.length+' ♡ · '+nplace+' placé'+(nplace>1?'s':'');
  $('bandeau').classList.toggle('on',nsel()>0);$('bandeau-t').textContent=nsel()+' bonnet'+(nsel()>1?'s':'')+' choisi'+(nsel()>1?'s':'')+' : « Mettre ici » sur une case';
  $('annuler').disabled=!H}
@@ -279,6 +294,8 @@ document.addEventListener('click',function(ev){var t=ev.target,tu=t.closest&&t.c
  if(tu){var k=tu.dataset.k;if(SEL[k])delete SEL[k];else SEL[k]=1;rendre();return}
  var b=t.closest&&t.closest('[data-act]');if(!b)return;var act=b.dataset.act,i=slide(b.dataset.id),s=ST.slides[i];
  if(act==='mettre'){snap();var keys=Object.keys(SEL);ST.slides.forEach(function(x){if(x.items)x.items=x.items.filter(function(k){return !SEL[k]})});s.items=s.items.concat(keys);SEL={};sauver();rendre();toast(keys.length+' mis dans « '+s.t+' »');return}
+ if(act==='gauche'||act==='droite'){snap();var it=s.items,dir=act==='gauche'?-1:1,idx=[];it.forEach(function(k,j){if(SEL[k])idx.push(j)});if(dir>0)idx.reverse();
+  idx.forEach(function(j){var nj=j+dir;if(nj<0||nj>=it.length||SEL[it[nj]])return;var tmp=it[j];it[j]=it[nj];it[nj]=tmp});sauver();rendre();return}
  if(act==='enlever'){snap();var n=s.items.length;s.items=s.items.filter(function(k){return !SEL[k]});n-=s.items.length;SEL={};sauver();rendre();toast(n+' enlevé'+(n>1?'s':'')+' de « '+s.t+' »');return}
  if(act==='monter'&&i>0){snap();ST.slides.splice(i-1,0,ST.slides.splice(i,1)[0]);sauver();rendre();return}
  if(act==='descendre'&&i<ST.slides.length-1){snap();ST.slides.splice(i+1,0,ST.slides.splice(i,1)[0]);sauver();rendre();return}
@@ -292,6 +309,7 @@ document.addEventListener('change',function(ev){var t=ev.target;if(t.type!=='fil
  r.onload=function(){var im=new Image();im.onload=function(){var M=900,w=im.width,h=im.height,k=Math.min(1,M/Math.max(w,h));var c=document.createElement('canvas');c.width=Math.round(w*k);c.height=Math.round(h*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);
   snap();ST.slides[i].photo=c.toDataURL('image/jpeg',.8);sauver();rendre()};im.src=r.result};r.readAsDataURL(f)});
 $('b-annuler').onclick=function(){SEL={};rendre()};
+$('pool-ouvrir').onclick=function(){var p=$('pool');p.classList.toggle('ouvert');this.textContent=p.classList.contains('ouvert')?'Réduire':'Tout voir'};
 $('annuler').onclick=function(){if(H){ST=H;H=null;sauver();rendre();toast('Annulé')}};
 function inserer(s){snap();var j=ST.slides.length;for(var i=ST.slides.length-1;i>=0;i--)if(ST.slides[i].kind==='prod'){j=i+1;break}ST.slides.splice(j,0,s);sauver();rendre();setTimeout(function(){var el=document.querySelector('.slide[data-id="'+s.id+'"]');if(el)el.scrollIntoView({behavior:'smooth',block:'center'})},50)}
 $('plus-slide').onclick=function(){inserer({id:nid(),kind:'prod',t:'',d:'',items:[]})};
