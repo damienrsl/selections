@@ -175,6 +175,8 @@ section>.etiquette{display:block;margin:0 4px 10px}
 .tuile .l i{font-style:normal;font-weight:600;color:var(--texte)}
 .tuile.sel{outline:3px solid var(--bleu-renard);outline-offset:-3px}
 .tuile.sel::after{content:"";position:absolute;right:8px;top:8px;width:20px;height:20px;border-radius:50%;background:var(--bleu-renard);box-shadow:0 0 0 3px #fff}
+.tuile.coeur .l b::before{content:"♡ ";color:var(--bleu-renard)}
+.tuile.coeur{border-color:rgba(40,95,255,.45)}
 .tuile.place{opacity:.45}
 .tuile.place::before{content:"placé";position:absolute;left:8px;top:8px;font:600 10px var(--police-mono);letter-spacing:.06em;text-transform:uppercase;background:#fff;color:var(--pan-3);padding:3px 7px;border-radius:999px;border:1px solid var(--filet)}
 .vide-msg{grid-column:1/-1;font-size:15px;color:var(--texte-3);padding:14px 4px;text-align:center}
@@ -213,7 +215,7 @@ section>.etiquette{display:block;margin:0 4px 10px}
 <p>Tes bonnets ♡ des trois sélections sont juste en dessous. Tape un bonnet (ou plusieurs), puis « Mettre ici » sur la case voulue ; dans une case, Gauche/Droite pour l'ordre. Titre et description par slide, ajoute ou retire des slides, puis partage au monteur.</p>
 <div class="verre etat" id="etat"></div>
 </header>
-<div class="bandeau" id="bandeau"><b id="bandeau-t">1 bonnet choisi</b><button id="b-garder">Garder en ♡</button><button id="b-annuler">Désélectionner</button></div>
+<div class="bandeau" id="bandeau"><b id="bandeau-t">1 bonnet choisi</b><button id="b-annuler">Désélectionner</button></div>
 <section id="sec-slides"><span class="etiquette">Mes bonnets et mes slides</span>
 <p class="aide" id="aide-slides"></p>
 <div class="plan">
@@ -223,7 +225,7 @@ section>.etiquette{display:block;margin:0 4px 10px}
 <div class="actions"><button class="pilule doux" id="plus-slide">Nouvelle slide de bonnets</button><button class="pilule doux" id="plus-photo">Nouvelle slide photo (hook, intro, fin)</button><button class="pilule" id="annuler">Annuler la dernière action</button></div>
 </section>
 <section id="sec-tous"><span class="etiquette">Piocher d'autres bonnets</span>
-<p class="aide">Toutes les références des sélections, pas seulement tes ♡. Tape un bonnet : « Mettre ici » sur une case, ou « Garder en ♡ » en haut pour l'ajouter à tes bonnets.</p>
+<p class="aide">Toutes les références des sélections. Tes ♡ sont en premier, marqués ♡. Tape un bonnet : il monte dans « Mes bonnets ♡ » pour plus tard (re-tape pour le redescendre).</p>
 <div class="filtres" id="f-sel"></div>
 <div class="filtres" id="f-th"></div>
 <div class="filtres" id="f-prix"><button class="puce on" data-prix="">Tous prix</button><button class="puce" data-prix="1">Moins de 30 €</button><button class="puce" data-prix="2">30 à 60 €</button><button class="puce" data-prix="3">Plus de 60 €</button><button class="puce" id="melanger">Mélanger</button></div>
@@ -268,7 +270,7 @@ var ST=lire(KS)||migrer(lire('dump-bonnets-v1'))||neuf(),H=null,SEL={};ST.extra=
 function sauver(){ST.t=Date.now();if(!ecrire(KS,ST))toast('Mémoire pleine : photos trop lourdes')}
 function places(){var P={};ST.slides.forEach(function(s){(s.items||[]).forEach(function(k){P[k]=s.id})});return P}
 var $=function(id){return document.getElementById(id)},esc=function(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
-function tuile(k,extra){var p=byK[k];if(!p)return '';return '<div class="tuile'+(SEL[k]?' sel':'')+(extra||'')+'" data-k="'+k+'"><img loading="lazy" decoding="async" src="'+esc(p.img)+'" alt=""><div class="l"><b>'+esc(p.m)+'</b><span>'+esc(p.t)+'</span><i>'+(p.p?p.p+' €':'prix sur le site')+'</i></div></div>'}
+function tuile(k,extra){var p=byK[k];if(!p)return '';return '<div class="tuile'+(SEL[k]?' sel':'')+(C.set[k]?' coeur':'')+(extra||'')+'" data-k="'+k+'"><img loading="lazy" decoding="async" src="'+esc(p.img)+'" alt=""><div class="l"><b>'+esc(p.m)+'</b><span>'+esc(p.t)+'</span><i>'+(p.p?p.p+' €':'prix sur le site')+'</i></div></div>'}
 function nsel(){return Object.keys(SEL).length}
 function rendreEtat(){var n=Object.keys(C.set).length,s=C.src,e=$('etat');
  if(!n){e.className='verre etat vide';e.innerHTML='<b>Aucun ♡ trouvé sur cet appareil à cette adresse.</b> Tes choix restent dans le navigateur où tu les as faits : ouvre cette même page depuis l\'app Marques sur l\'iPhone, ou depuis la page publique damienrsl.github.io. Sinon, colle ici le texte du bouton « Copier » des sélections :<textarea id="colle" placeholder="Ma sélection · Bonnets…"></textarea><div class="actions"><button class="pilule fort" id="ok-colle">Lire les liens</button></div>';
@@ -303,6 +305,7 @@ function rendreFiltres(){var P=places();
 function rendreTous(){var q=($('q').value||'').toLowerCase().trim(),P=places();rendreFiltres();
  var L=D.filter(function(p){return !p.dup&&(!FSEL||p.s===FSEL)&&(!FTH||p.th===FTH)&&(!FPRIX||prixT(p)===FPRIX)&&(!q||(p.m+' '+p.t+' '+p.th+' '+(p.p||'')).toLowerCase().indexOf(q)>=0)});
  if(ORDRE){var o=ORDRE;L.sort(function(a,b){return (o[a.k]||0)-(o[b.k]||0)})}
+ L.sort(function(a,b){return (C.set[b.k]?1:0)-(C.set[a.k]?1:0)});
  $('tous-n').textContent=L.length+' bonnet'+(L.length>1?'s':'')+(FSEL||FTH||FPRIX||q?' avec ces filtres':'');
  $('tous').innerHTML=L.slice(0,LIM).map(function(p){return tuile(p.k,P[p.k]?' place':'')}).join('')||'<div class="vide-msg">Rien ici avec ces filtres.</div>';
  $('plus-tous').style.display=L.length>LIM?'':'none';$('plus-tous').textContent='Voir plus · '+(L.length-LIM)+' autres'}
@@ -313,6 +316,10 @@ document.addEventListener('click',function(ev){var b=ev.target.closest&&ev.targe
 function snap(){H=JSON.parse(JSON.stringify(ST))}
 function slide(id){for(var i=0;i<ST.slides.length;i++)if(ST.slides[i].id===id)return i;return -1}
 document.addEventListener('click',function(ev){var t=ev.target,tu=t.closest&&t.closest('.tuile');
+ if(tu&&tu.closest('#tous')){var kk=tu.dataset.k;var ix=ST.extra.indexOf(kk);
+  if(ix>=0){snap();ST.extra.splice(ix,1);ST.slides.forEach(function(x){if(x.items)x.items=x.items.filter(function(k2){return k2!==kk})});sauver();C=coeurs();rendre();toast('Retiré de tes bonnets');return}
+  if(C.set[kk]){toast('Déjà dans tes bonnets ♡, en haut');return}
+  snap();ST.extra.push(kk);sauver();C=coeurs();rendre();toast('Monté dans tes bonnets ♡');return}
  if(tu){var k=tu.dataset.k;if(SEL[k])delete SEL[k];else SEL[k]=1;rendre();return}
  var b=t.closest&&t.closest('[data-act]');if(!b)return;var act=b.dataset.act,i=slide(b.dataset.id),s=ST.slides[i];
  if(act==='mettre'){snap();var keys=Object.keys(SEL);ST.slides.forEach(function(x){if(x.items)x.items=x.items.filter(function(k){return !SEL[k]})});s.items=s.items.concat(keys);SEL={};sauver();rendre();toast(keys.length+' mis dans « '+s.t+' »');return}
@@ -331,7 +338,6 @@ document.addEventListener('change',function(ev){var t=ev.target;if(t.type!=='fil
  r.onload=function(){var im=new Image();im.onload=function(){var M=900,w=im.width,h=im.height,k=Math.min(1,M/Math.max(w,h));var c=document.createElement('canvas');c.width=Math.round(w*k);c.height=Math.round(h*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);
   snap();ST.slides[i].photo=c.toDataURL('image/jpeg',.8);sauver();rendre()};im.src=r.result};r.readAsDataURL(f)});
 $('b-annuler').onclick=function(){SEL={};rendre()};
-$('b-garder').onclick=function(){snap();var n=0;Object.keys(SEL).forEach(function(k){if(ST.extra.indexOf(k)<0&&!C.set[k]){ST.extra.push(k);n++}});SEL={};sauver();C=coeurs();rendre();toast(n+' ajouté'+(n>1?'s':'')+' à tes ♡')};
 $('pool-ouvrir').onclick=function(){var p=$('pool');p.classList.toggle('ouvert');this.textContent=p.classList.contains('ouvert')?'Réduire':'Tout voir'};
 $('annuler').onclick=function(){if(H){ST=H;H=null;sauver();rendre();toast('Annulé')}};
 function inserer(s){snap();var j=ST.slides.length;for(var i=ST.slides.length-1;i>=0;i--)if(ST.slides[i].kind==='prod'){j=i+1;break}ST.slides.splice(j,0,s);sauver();rendre();setTimeout(function(){var el=document.querySelector('.slide[data-id="'+s.id+'"]');if(el)el.scrollIntoView({behavior:'smooth',block:'center'})},50)}
