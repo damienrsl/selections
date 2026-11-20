@@ -184,6 +184,9 @@ section>.etiquette{display:block;margin:0 4px 10px}
 .photo .cadre{aspect-ratio:4/5;border-radius:14px;background:#fff;border:1px dashed var(--filet);display:grid;place-items:center;overflow:hidden;color:var(--texte-3);font-size:14px;text-align:center;padding:8px;cursor:pointer}
 .photo .cadre img{width:100%;height:100%;object-fit:cover;display:block}
 .photo input{display:none}
+.filtres{display:flex;gap:6px;overflow-x:auto;padding:4px 2px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.puce{flex:none;background:#fff;border:1px solid var(--filet);color:var(--texte-2);font:500 15px var(--police);padding:8px 13px;border-radius:var(--r-pilule);cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.puce.on{color:#fff;border-color:transparent;background:var(--bleu-renard)}
 .recherche{width:100%;font:17px var(--police);padding:12px 14px;border-radius:var(--r-pilule);border:1px solid var(--filet);background:#fff;color:var(--texte);margin-top:4px}
 .recherche:focus{outline:2px solid var(--bleu-chat);border-color:transparent}
 .grille6{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
@@ -210,7 +213,7 @@ section>.etiquette{display:block;margin:0 4px 10px}
 <p>Tes bonnets ♡ des trois sélections sont juste en dessous. Tape un bonnet (ou plusieurs), puis « Mettre ici » sur la case voulue ; dans une case, Gauche/Droite pour l'ordre. Titre et description par slide, ajoute ou retire des slides, puis partage au monteur.</p>
 <div class="verre etat" id="etat"></div>
 </header>
-<div class="bandeau" id="bandeau"><b id="bandeau-t">1 bonnet choisi</b><button id="b-annuler">Désélectionner</button></div>
+<div class="bandeau" id="bandeau"><b id="bandeau-t">1 bonnet choisi</b><button id="b-garder">Garder en ♡</button><button id="b-annuler">Désélectionner</button></div>
 <section id="sec-slides"><span class="etiquette">Mes bonnets et mes slides</span>
 <p class="aide" id="aide-slides"></p>
 <div class="plan">
@@ -219,9 +222,13 @@ section>.etiquette{display:block;margin:0 4px 10px}
 </div>
 <div class="actions"><button class="pilule doux" id="plus-slide">Nouvelle slide de bonnets</button><button class="pilule doux" id="plus-photo">Nouvelle slide photo (hook, intro, fin)</button><button class="pilule" id="annuler">Annuler la dernière action</button></div>
 </section>
-<section id="sec-tous"><span class="etiquette">Tous les bonnets des 3 sélections</span>
-<p class="aide">Pour piocher hors de tes ♡. Cherche une marque, un mot ou un prix.</p>
-<input class="recherche" id="q" type="search" placeholder="Stüssy, mohair, oreillettes, 25…" autocomplete="off">
+<section id="sec-tous"><span class="etiquette">Piocher d'autres bonnets</span>
+<p class="aide">Toutes les références des sélections, pas seulement tes ♡. Tape un bonnet : « Mettre ici » sur une case, ou « Garder en ♡ » en haut pour l'ajouter à tes bonnets.</p>
+<div class="filtres" id="f-sel"></div>
+<div class="filtres" id="f-th"></div>
+<div class="filtres" id="f-prix"><button class="puce on" data-prix="">Tous prix</button><button class="puce" data-prix="1">Moins de 30 €</button><button class="puce" data-prix="2">30 à 60 €</button><button class="puce" data-prix="3">Plus de 60 €</button><button class="puce" id="melanger">Mélanger</button></div>
+<input class="recherche" id="q" type="search" placeholder="Chercher une marque, un mot, un prix…" autocomplete="off">
+<p class="aide" id="tous-n"></p>
 <div class="grille6" id="tous"></div>
 <div class="actions"><button class="pilule doux" id="plus-tous">Voir plus</button></div>
 </section>
@@ -247,6 +254,7 @@ function coeurs(){var S={},src={app:0,page:0,srv:0,colle:0};
  Object.keys(SLUGS).forEach(function(s){var a=lire('marques-choix-'+s)||{};Object.keys(a).forEach(function(u){if(a[u]==='g'&&byU[u]){S[byU[u]]=1;src.app++}});
   var b=lire('sel-'+s)||{};Object.keys(b).forEach(function(i){if(b[i]==='g'&&byK[s+'#'+i]){S[s+'#'+i]=1;src.page++}})});
  SRV.forEach(function(u){if(byU[u]){S[byU[u]]=1;src.srv++}});
+ (ST&&ST.extra||[]).forEach(function(k){if(byK[k]){S[k]=1;src.extra=(src.extra||0)+1}});
  var c=lire(KC)||'';(c.match(/https?:\/\/[^\s)>\]]+/g)||[]).forEach(function(u){u=u.replace(/[.,;]$/,'');if(byU[u]){S[byU[u]]=1;src.colle++}});
  return {set:S,src:src}}
 var CASES=["pour aller en date","pour faire le mec niche","pour qu'on t'arrête pour te demander la ref","pour avoir le meilleur rapport qualité prix","pour aller à un concert de La Fève"];
@@ -256,7 +264,7 @@ function neuf(){return {v:2,slides:[{id:'hook',kind:'fixe',t:'Hook',d:'',photo:'
  .concat([{id:'comm',kind:'fixe',t:'Commente',d:'',photo:''},{id:'abo',kind:'fixe',t:'Abonne-toi',d:'',photo:''}]),t:Date.now()}}
 function migrer(o){if(!o||!o.slides)return null;var sl=o.slides.map(function(x){return x.kind==='prod'?{id:x.id||nid(),kind:'prod',t:x.t||'',d:x.d||'',items:(x.items||[]).slice()}:{id:x.id||nid(),kind:'fixe',t:x.t||'',d:x.texte||x.d||'',photo:x.photo||''}});
  var prods=sl.filter(function(x){return x.kind==='prod'});if(!prods.length)return null;return {v:2,slides:sl,t:Date.now(),repris:true}}
-var ST=lire(KS)||migrer(lire('dump-bonnets-v1'))||neuf(),H=null,SEL={},C=coeurs();if(ST.repris){delete ST.repris;ecrire(KS,ST);setTimeout(function(){toast('Ton rangement précédent est repris')},400)}
+var ST=lire(KS)||migrer(lire('dump-bonnets-v1'))||neuf(),H=null,SEL={};ST.extra=ST.extra||[];var C=coeurs();if(ST.repris){delete ST.repris;ecrire(KS,ST);setTimeout(function(){toast('Ton rangement précédent est repris')},400)}
 function sauver(){ST.t=Date.now();if(!ecrire(KS,ST))toast('Mémoire pleine : photos trop lourdes')}
 function places(){var P={};ST.slides.forEach(function(s){(s.items||[]).forEach(function(k){P[k]=s.id})});return P}
 var $=function(id){return document.getElementById(id)},esc=function(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
@@ -284,10 +292,24 @@ function rendre(){rendreEtat();var P=places(),nprod=0,nplace=Object.keys(P).leng
  rendreTous();$('n').textContent=res.length+' ♡ · '+nplace+' placé'+(nplace>1?'s':'');
  $('bandeau').classList.toggle('on',nsel()>0);$('bandeau-t').textContent=nsel()+' bonnet'+(nsel()>1?'s':'')+' choisi'+(nsel()>1?'s':'')+' : « Mettre ici » sur une case';
  $('annuler').disabled=!H}
-var LIM=18;function rendreTous(){var q=($('q').value||'').toLowerCase().trim(),P=places();
- var L=D.filter(function(p){return !p.dup&&(!q||(p.m+' '+p.t+' '+p.th+' '+(p.p||'')).toLowerCase().indexOf(q)>=0)});
- $('tous').innerHTML=L.slice(0,LIM).map(function(p){return tuile(p.k,P[p.k]?' place':'')}).join('')||'<div class="vide-msg">Rien pour « '+esc(q)+' »</div>';
+var LIM=24,FSEL='',FTH='',FPRIX='',ORDRE=null;
+function prixT(p){if(!p.p)return '';return p.p<30?'1':p.p<=60?'2':'3'}
+function rendreFiltres(){var P=places();
+ var cnt={};D.forEach(function(p){if(!p.dup)cnt[p.s]=(cnt[p.s]||0)+1});
+ $('f-sel').innerHTML='<button class="puce'+(FSEL?'':' on')+'" data-sel="">Toutes · '+D.filter(function(p){return !p.dup}).length+'</button>'+Object.keys(SLUGS).filter(function(k){return cnt[k]}).map(function(k){return '<button class="puce'+(FSEL===k?' on':'')+'" data-sel="'+k+'">'+esc(SLUGS[k])+' · '+cnt[k]+'</button>'}).join('');
+ var th={};D.forEach(function(p){if(!p.dup&&(!FSEL||p.s===FSEL)&&p.th)th[p.th]=(th[p.th]||0)+1});
+ var ths=Object.keys(th).sort(function(a,b){return th[b]-th[a]});if(FTH&&!th[FTH])FTH='';
+ $('f-th').innerHTML='<button class="puce'+(FTH?'':' on')+'" data-th="">Tous types</button>'+ths.map(function(t){return '<button class="puce'+(FTH===t?' on':'')+'" data-th="'+esc(t)+'">'+esc(t)+' · '+th[t]+'</button>'}).join('')}
+function rendreTous(){var q=($('q').value||'').toLowerCase().trim(),P=places();rendreFiltres();
+ var L=D.filter(function(p){return !p.dup&&(!FSEL||p.s===FSEL)&&(!FTH||p.th===FTH)&&(!FPRIX||prixT(p)===FPRIX)&&(!q||(p.m+' '+p.t+' '+p.th+' '+(p.p||'')).toLowerCase().indexOf(q)>=0)});
+ if(ORDRE){var o=ORDRE;L.sort(function(a,b){return (o[a.k]||0)-(o[b.k]||0)})}
+ $('tous-n').textContent=L.length+' bonnet'+(L.length>1?'s':'')+(FSEL||FTH||FPRIX||q?' avec ces filtres':'');
+ $('tous').innerHTML=L.slice(0,LIM).map(function(p){return tuile(p.k,P[p.k]?' place':'')}).join('')||'<div class="vide-msg">Rien ici avec ces filtres.</div>';
  $('plus-tous').style.display=L.length>LIM?'':'none';$('plus-tous').textContent='Voir plus · '+(L.length-LIM)+' autres'}
+document.addEventListener('click',function(ev){var b=ev.target.closest&&ev.target.closest('.puce');if(!b)return;
+ if(b.id==='melanger'){ORDRE={};D.forEach(function(p){ORDRE[p.k]=Math.random()});LIM=24;rendreTous();toast('Mélangé');return}
+ if(b.dataset.sel!==undefined){FSEL=b.dataset.sel}else if(b.dataset.th!==undefined){FTH=b.dataset.th}else if(b.dataset.prix!==undefined){FPRIX=b.dataset.prix;b.parentNode.querySelectorAll('.puce[data-prix]').forEach(function(x){x.classList.toggle('on',x===b)})}else return;
+ LIM=24;rendreTous()});
 function snap(){H=JSON.parse(JSON.stringify(ST))}
 function slide(id){for(var i=0;i<ST.slides.length;i++)if(ST.slides[i].id===id)return i;return -1}
 document.addEventListener('click',function(ev){var t=ev.target,tu=t.closest&&t.closest('.tuile');
@@ -309,12 +331,13 @@ document.addEventListener('change',function(ev){var t=ev.target;if(t.type!=='fil
  r.onload=function(){var im=new Image();im.onload=function(){var M=900,w=im.width,h=im.height,k=Math.min(1,M/Math.max(w,h));var c=document.createElement('canvas');c.width=Math.round(w*k);c.height=Math.round(h*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);
   snap();ST.slides[i].photo=c.toDataURL('image/jpeg',.8);sauver();rendre()};im.src=r.result};r.readAsDataURL(f)});
 $('b-annuler').onclick=function(){SEL={};rendre()};
+$('b-garder').onclick=function(){snap();var n=0;Object.keys(SEL).forEach(function(k){if(ST.extra.indexOf(k)<0&&!C.set[k]){ST.extra.push(k);n++}});SEL={};sauver();C=coeurs();rendre();toast(n+' ajouté'+(n>1?'s':'')+' à tes ♡')};
 $('pool-ouvrir').onclick=function(){var p=$('pool');p.classList.toggle('ouvert');this.textContent=p.classList.contains('ouvert')?'Réduire':'Tout voir'};
 $('annuler').onclick=function(){if(H){ST=H;H=null;sauver();rendre();toast('Annulé')}};
 function inserer(s){snap();var j=ST.slides.length;for(var i=ST.slides.length-1;i>=0;i--)if(ST.slides[i].kind==='prod'){j=i+1;break}ST.slides.splice(j,0,s);sauver();rendre();setTimeout(function(){var el=document.querySelector('.slide[data-id="'+s.id+'"]');if(el)el.scrollIntoView({behavior:'smooth',block:'center'})},50)}
 $('plus-slide').onclick=function(){inserer({id:nid(),kind:'prod',t:'',d:'',items:[]})};
 $('plus-photo').onclick=function(){inserer({id:nid(),kind:'fixe',t:'',d:'',photo:''})};
-$('plus-tous').onclick=function(){LIM+=18;rendreTous()};
+$('plus-tous').onclick=function(){LIM+=24;rendreTous()};
 function plan(){var l=['Dump bonnets · '+new Date().toLocaleDateString('fr-FR')];ST.slides.forEach(function(s,i){
  l.push((i+1)+'. '+(s.t||'(sans titre)')+(s.kind!=='prod'?(s.photo?' · photo posée':' · photo à poser'):' ('+s.items.length+')'));if(s.d)l.push('   '+s.d.replace(/\s+/g,' '));
  (s.items||[]).forEach(function(k){var p=byK[k];l.push('- '+p.m+' · '+p.t+(p.p?' · '+p.p+' €':'')+' · '+p.u)})});return l.join('\n')}
