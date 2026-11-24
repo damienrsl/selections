@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T06:40:04",
+ "maj": "2026-11-25T07:40:04",
  "n_actifs": 1427,
  "n_total": 4306,
  "n_tout": 2500,
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 9,
   "nike": 269,
-  "nike_total_site": 4462,
+  "nike_total_site": 4458,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 543,
@@ -42,7 +42,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1984,
+   "n_promos": 1983,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -51,7 +51,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1541,
+   "n_promos": 1537,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -78,7 +78,7 @@
    "nom": "Tres Bien",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 227,
+   "n_promos": 226,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
