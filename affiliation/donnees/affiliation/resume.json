@@ -1,13 +1,17 @@
 {
- "maj": "2026-11-25T03:01:40",
+ "maj": "2026-11-25T03:13:56",
  "n_actifs": 402,
- "n_total": 648,
+ "n_total": 3148,
+ "n_tout": 2500,
+ "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 9,
   "nike": 270,
   "nike_total_site": 4466,
   "footshop": 123,
-  "scrap_revendeurs": 12
+  "scrap_revendeurs": 12,
+  "tout_scrap": 2500,
+  "tout_boutiques": 79
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request"
