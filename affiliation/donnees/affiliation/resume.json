@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T04:09:44",
- "n_actifs": 547,
- "n_total": 3691,
+ "maj": "2026-11-25T04:11:31",
+ "n_actifs": 747,
+ "n_total": 3348,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -13,7 +13,8 @@
   "nike": 270,
   "nike_total_site": 4465,
   "footshop": 123,
-  "4elementos.com": 543,
+  "4elementos.com": 200,
+  "4elementos.com_total": 543,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
   "tout_boutiques": 79
@@ -187,14 +188,6 @@
    "note": ""
   },
   {
-   "nom": "4 ELEMENTOS FR",
-   "reseau": "SMI",
-   "statut": "manuel",
-   "taux": "3%",
-   "code": null,
-   "note": " · favori SMI, site fermé aux robots"
-  },
-  {
    "nom": "Adidas FR",
    "reseau": "SMI",
    "statut": "manuel",
@@ -244,6 +237,7 @@
   }
  ],
  "revendeurs_actifs": [
+  "4 Elementos",
   "Footshop",
   "New Era Cap FR",
   "Nike",
