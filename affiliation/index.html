@@ -1,0 +1,23 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#0c0a1a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Affiliation · Damien.rsl</title>
+<script>/* les données partent AVANT les feuilles de style (la police pèse 108 Ko et bloque les scripts) */(function(){var q=new URLSearchParams(location.search),s=q.get('s');try{s=s||JSON.parse(localStorage.getItem('sel-courante')||'null')}catch(e){}var t=Date.now(),f=function(u){return fetch(u+'?'+t).then(function(r){return r.ok?r.json():null}).catch(function(){return null})};window.__pre={idx:f('donnees/index.json'),slug:s,d:s?{sel:f('donnees/'+s+'/selection.json'),ch:f('donnees/'+s+'/choix.json'),dd:f('donnees/'+s+'/details.json')}:null}})()</script>
+<link rel="stylesheet" href="polices.css"><link rel="stylesheet" href="app.css">
+</head><body>
+<!-- Sélection (24/11/2026) : l'outil de décision. Tri par pages (tap = garder, glisser ↑ = les autres passent), fiche complète à l'appui long,
+     limite stricte (duel quand on dépasse), « Ma sélection » classable avec toutes les infos. Même upload que l'app Marques (choix.py). -->
+<div class="lumiere"></div>
+<header class="haut" id="haut">
+  <div class="cpt"><div class="cpt-n"><b class="roule" id="ng"></b><span>/<i id="lim">12</i></span></div><div class="jauge" id="jauge"></div></div>
+  <div class="dr"><div class="mono" id="grp"></div><div class="reste"><b class="roule" id="reste"></b> à trier</div><div class="mono echeance" id="echeance"></div></div>
+</header>
+<div class="bandeau" id="bandeau"></div>
+<main class="scene" id="scene"></main>
+<div class="indice" id="indice"><span class="chev">↑</span><span id="indice-t"></span><span class="taille-q" id="taille-q">ta taille ?</span></div>
+<section class="ma" id="ma"></section>
+<section class="affil" id="affil"></section>
+<nav class="onglets" id="onglets"><button data-o="tri" class="on">Trier</button><button data-o="affil">Affiliation</button></nav>
+<div class="voile" id="voile"></div>
+<div class="feuille" id="feuille"></div>
+<div class="duel" id="duel"></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>
