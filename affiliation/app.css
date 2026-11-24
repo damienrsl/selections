@@ -231,3 +231,5 @@ img{display:block;-webkit-user-drag:none;-webkit-touch-callout:none}
 .seg button{flex:1;height:38px;border-radius:999px;background:var(--verre);border:1px solid var(--bord);font-size:15px;font-weight:600;color:var(--t2)}
 .seg button b{color:#fff}
 .seg button.on{background:var(--accent);color:#fff;border-color:transparent}
+
+/* code commun : déploiement auto vérifié le 25/11 */
