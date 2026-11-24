@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T05:40:04",
- "n_actifs": 732,
- "n_total": 3348,
+ "maj": "2026-11-25T05:57:50",
+ "n_actifs": 1428,
+ "n_total": 4307,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -15,6 +15,12 @@
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 543,
+  "nuit_carhartt.com": 110,
+  "nuit_citadium.com": 200,
+  "nuit_courir.com": 153,
+  "nuit_footlocker.fr": 96,
+  "nuit_footpatrol.fr": 200,
+  "nuit_sizeofficial.fr": 200,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
   "tout_boutiques": 78
@@ -196,30 +202,6 @@
    "note": " · favori SMI, site fermé aux robots"
   },
   {
-   "nom": "Citadium",
-   "reseau": "SMI",
-   "statut": "manuel",
-   "taux": "9%",
-   "code": null,
-   "note": " · favori SMI, site fermé aux robots"
-  },
-  {
-   "nom": "Footpatrol",
-   "reseau": "SMI",
-   "statut": "manuel",
-   "taux": "7%",
-   "code": null,
-   "note": " · favori SMI, site fermé aux robots"
-  },
-  {
-   "nom": "Size Official",
-   "reseau": "SMI",
-   "statut": "manuel",
-   "taux": "7%",
-   "code": null,
-   "note": " · favori SMI, site fermé aux robots"
-  },
-  {
    "nom": "Suitsupply FR",
    "reseau": "SMI",
    "statut": "manuel",
@@ -238,10 +220,14 @@
  ],
  "revendeurs_actifs": [
   "4 Elementos",
+  "Citadium",
+  "Foot Locker",
+  "Footpatrol",
   "Footshop",
   "New Era Cap FR",
   "Nike",
   "Reebok",
+  "Size Official",
   "Sneakersnstuff",
   "Sunspel",
   "Uniqlo"
