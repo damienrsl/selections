@@ -227,3 +227,7 @@ img{display:block;-webkit-user-drag:none;-webkit-touch-callout:none}
 .af-fiche{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px;font-size:14px;color:var(--t2)}
 .af-fiche .legende{flex-basis:100%}
 .af-src{list-style:none;padding:10px 4px 0;font-size:13px;color:var(--t3);line-height:1.4}
+.seg{display:flex;gap:6px;padding:10px 18px 0;position:relative}
+.seg button{flex:1;height:38px;border-radius:999px;background:var(--verre);border:1px solid var(--bord);font-size:15px;font-weight:600;color:var(--t2)}
+.seg button b{color:#fff}
+.seg button.on{background:var(--accent);color:#fff;border-color:transparent}
