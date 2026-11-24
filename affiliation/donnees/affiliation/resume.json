@@ -1,6 +1,6 @@
 {
- "maj": "2026-11-25T04:40:04",
- "n_actifs": 747,
+ "maj": "2026-11-25T05:40:04",
+ "n_actifs": 732,
  "n_total": 3348,
  "n_tout": 2500,
  "smi": {
@@ -11,13 +11,13 @@
  "sources": {
   "uniqlo": 9,
   "nike": 270,
-  "nike_total_site": 4465,
+  "nike_total_site": 4463,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 543,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
-  "tout_boutiques": 79
+  "tout_boutiques": 78
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request"
@@ -27,7 +27,7 @@
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2684,
+   "n_promos": 2683,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -36,7 +36,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1988,
+   "n_promos": 1985,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -45,7 +45,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1556,
+   "n_promos": 1547,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -72,7 +72,7 @@
    "nom": "Tres Bien",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 228,
+   "n_promos": 227,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
