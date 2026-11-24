@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T03:35:30",
+ "maj": "2026-11-25T03:36:55",
  "n_actifs": 547,
  "n_total": 3148,
  "n_tout": 2500,
@@ -13,7 +13,7 @@
   "nike": 270,
   "nike_total_site": 4466,
   "footshop": 123,
-  "scrap_revendeurs": 12,
+  "scrap_revendeurs": 10,
   "tout_scrap": 2500,
   "tout_boutiques": 79
  },
@@ -47,15 +47,6 @@
    "mid": null,
    "lien_rejoindre": null,
    "note": null
-  },
-  {
-   "nom": "Reebok",
-   "reseau": "SMI",
-   "statut": "manuel",
-   "n_promos": 1130,
-   "mid": null,
-   "lien_rejoindre": null,
-   "note": " · aussi via SMI"
   },
   {
    "nom": "Kappa",
@@ -92,15 +83,6 @@
    "mid": null,
    "lien_rejoindre": null,
    "note": null
-  },
-  {
-   "nom": "Sneakersnstuff",
-   "reseau": "SMI",
-   "statut": "manuel",
-   "n_promos": 29,
-   "mid": null,
-   "lien_rejoindre": null,
-   "note": " · aussi via SMI"
   },
   {
    "nom": "Studio Nicholson",
@@ -4742,11 +4724,11 @@
  ],
  "revendeurs_actifs": [
   "Footshop",
+  "New Era Cap FR",
   "Nike",
   "Reebok",
   "Sneakersnstuff",
-  "Uniqlo",
-  "neweracap.eu",
-  "sunspel.com"
+  "Sunspel",
+  "Uniqlo"
  ]
 }
