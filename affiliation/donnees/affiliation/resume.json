@@ -1,11 +1,11 @@
 {
- "maj": "2026-11-25T02:40:26",
+ "maj": "2026-11-25T03:01:40",
  "n_actifs": 402,
  "n_total": 648,
  "sources": {
   "uniqlo": 9,
   "nike": 270,
-  "nike_total_site": 4469,
+  "nike_total_site": 4466,
   "footshop": 123,
   "scrap_revendeurs": 12
  },
