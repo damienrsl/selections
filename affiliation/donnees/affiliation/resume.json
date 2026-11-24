@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T07:40:04",
+ "maj": "2026-11-25T08:40:04",
  "n_actifs": 1427,
  "n_total": 4306,
  "n_tout": 2500,
@@ -42,7 +42,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1983,
+   "n_promos": 1982,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -51,7 +51,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1537,
+   "n_promos": 1536,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
