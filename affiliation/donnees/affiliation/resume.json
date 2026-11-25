@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T09:40:05",
+ "maj": "2026-11-25T10:40:04",
  "n_actifs": 1427,
  "n_total": 4306,
  "n_tout": 2500,
@@ -23,7 +23,7 @@
   "nuit_sizeofficial.fr": 200,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
-  "tout_boutiques": 78
+  "tout_boutiques": 79
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request"
@@ -51,7 +51,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1534,
+   "n_promos": 1531,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
