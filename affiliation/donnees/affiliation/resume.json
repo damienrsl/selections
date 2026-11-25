@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T10:40:04",
+ "maj": "2026-11-25T11:40:04",
  "n_actifs": 1427,
- "n_total": 4306,
+ "n_total": 4307,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -42,7 +42,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1982,
+   "n_promos": 1981,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -51,7 +51,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1531,
+   "n_promos": 1530,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -105,7 +105,7 @@
    "nom": "END.",
    "reseau": "Impact",
    "statut": "a_rejoindre",
-   "n_promos": 11,
+   "n_promos": 12,
    "mid": null,
    "lien_rejoindre": null,
    "note": "compte Impact : programmes à vérifier"
