@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T17:04:04",
- "n_actifs": 1186,
- "n_total": 2441,
+ "maj": "2026-11-25T17:40:05",
+ "n_actifs": 1185,
+ "n_total": 2445,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 13,
   "nike": 270,
-  "nike_total_site": 4450,
+  "nike_total_site": 4444,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 543,
@@ -30,7 +30,7 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 4471 → 2441 (1252 hors marques, 778 femme/enfant)"
+  "Filtre marques du cœur + homme/unisexe : 4471 → 2445 (1250 hors marques, 776 femme/enfant)"
  ],
  "a_activer": [
   {
@@ -46,7 +46,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1979,
+   "n_promos": 1977,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -55,7 +55,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1526,
+   "n_promos": 1530,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -241,20 +241,20 @@
  ],
  "filtres": {
   "avant": 4471,
-  "hors_marques": 1252,
-  "femme_enfant": 778,
-  "apres": 2441,
+  "hors_marques": 1250,
+  "femme_enfant": 776,
+  "apres": 2445,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
-   "femme/enfant · CARHARTT WIP · Jean CARHARTT WIP BRANDON",
-   "femme/enfant · UGG · UGG Classic Ultra Mini Plains Boot Women's",
-   "hors marques · Owners Club · Represent Owners Club Sweatpant - Mid Purple",
-   "femme/enfant · Nike · Wmns T90",
-   "hors marques · Awake NY · Argyle Knit Cardigan Brown",
-   "femme/enfant · Brixton · The Chloe 5-Pocket Pant - Two Boot Stripe",
-   "hors marques · RAF SIMONS · RAF SIMONS MAN BLACK T-SHIRTS",
-   "femme/enfant · Picture Organic Clothing · Veste légère femme MARPLE KIMONO",
-   "femme/enfant · Nike · Nike WMNS Aqua Turf (LT Orewood BFN/Desert Khaki)"
+   "femme/enfant · AUTRY · Baskets AUTRY ",
+   "hors marques · Home Grown · Home Grown Hank Shirt",
+   "femme/enfant · Reebok · Women's Lux Strappy Dress",
+   "femme/enfant · Reebok · Women's Micro Pique Polo Shirt",
+   "hors marques · Deus Womens · Big Barbara Coach - Whisper White",
+   "femme/enfant · Brixton · Siesta Knit Pant - Adrenaline Rush/White Weave",
+   "hors marques · DAVRILSUPPLY · DESERT BLAST JACKET",
+   "hors marques · KnowledgeCotton Apparel - MEN · Back print t-shirt - Twill",
+   "femme/enfant · C-Life · Women's Union Barn Jacket"
   ]
  }
 }
