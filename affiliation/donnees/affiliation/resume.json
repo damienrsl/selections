@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T16:14:18",
+ "maj": "2026-11-25T16:40:05",
  "n_actifs": 860,
- "n_total": 2101,
+ "n_total": 2115,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -22,19 +22,19 @@
   "nuit_sizeofficial.fr": 200,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
-  "tout_boutiques": 79
+  "tout_boutiques": 78
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
-  "Filtre marques du cœur + homme/unisexe : 4111 → 2101 (1227 hors marques, 783 femme/enfant)"
+  "4 Elementos : ",
+  "Filtre marques du cœur + homme/unisexe : 4110 → 2115 (1220 hors marques, 775 femme/enfant)"
  ],
  "a_activer": [
   {
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2679,
+   "n_promos": 2678,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -52,7 +52,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1527,
+   "n_promos": 1526,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -97,7 +97,7 @@
    "nom": "Studio Nicholson",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 18,
+   "n_promos": 17,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -233,21 +233,21 @@
   "Uniqlo"
  ],
  "filtres": {
-  "avant": 4111,
-  "hors_marques": 1227,
-  "femme_enfant": 783,
-  "apres": 2101,
+  "avant": 4110,
+  "hors_marques": 1220,
+  "femme_enfant": 775,
+  "apres": 2115,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
-   "femme/enfant · Asics · Asics GEL-CUMULUS 16 - Femme Chaussures",
-   "femme/enfant · Reebok · Women's Leopard Print Baby T-Shirt",
-   "hors marques · Objects IV Life · Camiseta Objects IV Life Thought Bubble Spray Men's Print T-Shirt para hombre",
-   "hors marques · SC25 · Border Shirt",
-   "hors marques · Bricks and Wood · Coffe Heavy Knit Beanie",
-   "hors marques · ARMEDANGELS · VAESSAA",
-   "hors marques · Flea-T · Flea-T Sweatshirt Plain Pigment Dyed Pink",
-   "femme/enfant · KnowledgeCotton Apparel - WMN · T-shirt dress - Black Jet",
-   "hors marques · Human Made · Beach Shorts Green"
+   "femme/enfant · New Balance · New Balance 204L - Femme Chaussures",
+   "femme/enfant · Reebok · Women's Strappy Sports Bra",
+   "hors marques · Comme Des Garçons Shirt · Comme Des Garçons Shirt x ASICS Tarther",
+   "hors marques · 247 · 247 Arc-2 Trainer - Yellow",
+   "hors marques · CDG Play · CT70 Hi Big Heart Beige",
+   "hors marques · Stan Ray · Double Knee Pant (Khaki Duck)",
+   "femme/enfant · TOTEME · Sequin Skirt",
+   "femme/enfant · Picture Organic Clothing · T-shirt femme MAOGANY",
+   "femme/enfant · Nike · Nike WMNS Nike Air Rift (White/White-Black)"
   ]
  }
 }
