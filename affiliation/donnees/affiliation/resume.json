@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T22:40:05",
- "n_actifs": 1784,
- "n_total": 3004,
+ "maj": "2026-11-25T23:05:08",
+ "n_actifs": 2120,
+ "n_total": 3340,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -31,14 +31,17 @@
   "nuit_footlocker.fr": 96,
   "nuit_footpatrol.fr": 265,
   "nuit_sizeofficial.fr": 400,
+  "snipes.com": 400,
+  "snipes.com_total": 3882,
+  "solebox.com": 400,
+  "solebox.com_total": 2819,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
   "tout_boutiques": 78
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "smi-shopify : Command '['/Library/Developer/CommandLineTools/usr/bin/python3', '/Users/damienroussel/.local/share/",
-  "Filtre marques du cœur + homme/unisexe : 5166 → 3004 (1260 hors marques, 902 femme/enfant)"
+  "Filtre marques du cœur + homme/unisexe : 5966 → 3340 (1477 hors marques, 1149 femme/enfant)"
  ],
  "a_activer": [
   {
@@ -139,7 +142,7 @@
    "statut": "actif",
    "taux": "5 % (2 % via app)",
    "code": null,
-   "note": "ventes privées derrière connexion : pas de relevé automatique, lien à la main"
+   "note": "ventes privées derrière connexion : pas de relevé automatique, lien à la main ; flux produits Awin sans prix barré : exclu d'awin_flux.py"
   },
   {
    "nom": "Amazon",
@@ -249,27 +252,29 @@
   "Reebok FR",
   "Size Official",
   "Sneakersnstuff",
+  "Snipes",
   "Stadium Goods FR",
   "The DoubleF",
   "The Jacket Maker",
-  "Uniqlo"
+  "Uniqlo",
+  "solebox"
  ],
  "filtres": {
-  "avant": 5166,
-  "hors_marques": 1260,
-  "femme_enfant": 902,
-  "apres": 3004,
+  "avant": 5966,
+  "hors_marques": 1477,
+  "femme_enfant": 1149,
+  "apres": 3340,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
-   "femme/enfant · ADIDAS · Baskets ADIDAS STAN SMITH W",
-   "femme/enfant · adidas · adidas Originals Gazelle Lo Pro Women's",
-   "hors marques · OAMC Peacemaker · Men's Long Liner Ice Flow",
-   "hors marques · SS24 · Embroidered Initial Overshirt - Black",
-   "hors marques · Origin Knitwear · Origin Oxford Jumper",
-   "hors marques · PALLADIUM-US · 98578-116-M | REVOLT SANDAL MONO | STAR WHITE",
-   "hors marques · barbell object · Un Vest Black",
-   "femme/enfant · KnowledgeCotton Apparel - WMN · Cashmere skirt - Black Jet",
-   "hors marques · Unlikely · M-51 Shirts Jacket Green Plaids"
+   "hors marques · POLO RALPH LAUREN · Gilet POLO RALPH LAUREN ",
+   "femme/enfant · ASICS · ASICS GEL-CUMULUS 16 Women's",
+   "femme/enfant · Autry · Wmns Mule SUP Vint Sneaker",
+   "femme/enfant · Adidas · Adidas Predator Sala W",
+   "hors marques · Aries · Aries Aged Column Camo Sweatshort  - Pink",
+   "femme/enfant · Organic Basics · Solar Swim Tie Bikini Bottom",
+   "hors marques · ARMEDANGELS · ICONIC Å GEFÜTTERTE BAUMWOLL-JACKE | light sage",
+   "hors marques · J.M. Weston · J.M. Weston Calfskin Suede 180 Loafer: Brown",
+   "hors marques · Wax London · Didcot - Ecru Double-Weave Seersucker Short-Sleeve Shirt"
   ]
  }
 }
