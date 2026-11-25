@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T18:19:43",
- "n_actifs": 1359,
- "n_total": 2586,
+ "maj": "2026-11-25T18:52:39",
+ "n_actifs": 1827,
+ "n_total": 3054,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,10 +11,18 @@
  "sources": {
   "uniqlo": 13,
   "nike": 270,
-  "nike_total_site": 4444,
+  "nike_total_site": 4446,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 543,
+  "smi_shopify_bbcicecream.eu": 54,
+  "smi_shopify_grifo210.com": 7,
+  "smi_shopify_kappa.fr": 99,
+  "smi_shopify_michelefranzesemoda.com": 2,
+  "smi_shopify_mous.co": 6,
+  "smi_shopify_padelmarket.com": 80,
+  "smi_shopify_reebok.eu": 200,
+  "smi_shopify_stadiumgoods.com": 20,
   "nuit_carhartt.com": 107,
   "nuit_citadium.com": 356,
   "nuit_courir.com": 153,
@@ -27,9 +35,7 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "smi-shopify cache : Command '['/Library/Developer/CommandLineTools/usr/bin/python3', '/Users/damienroussel/.local/share/damienprime/affiliat",
-  "Filtre marques du cœur + homme/unisexe : 4732 → 2586 (1258 hors marques, 888 femme/enfant)",
-  "Liens SMI créés en fin de passage : 276/276"
+  "Filtre marques du cœur + homme/unisexe : 5200 → 3054 (1258 hors marques, 888 femme/enfant)"
  ],
  "a_activer": [
   {
@@ -223,23 +229,31 @@
  ],
  "revendeurs_actifs": [
   "4 Elementos",
+  "Billionaire Boys Club",
   "Citadium",
   "Dockers",
   "Foot Locker",
   "Footpatrol",
   "Footshop",
+  "Grifo210",
+  "Kappa",
+  "Michele Franzese Moda",
+  "Mous",
   "New Era Cap FR",
   "Nike",
+  "Padel Market",
   "Reebok",
+  "Reebok FR",
   "Size Official",
   "Sneakersnstuff",
+  "Stadium Goods FR",
   "Uniqlo"
  ],
  "filtres": {
-  "avant": 4732,
+  "avant": 5200,
   "hors_marques": 1258,
   "femme_enfant": 888,
-  "apres": 2586,
+  "apres": 3054,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
    "femme/enfant · CARHARTT WIP · Sweat CARHARTT WIP W HD SMALL",
