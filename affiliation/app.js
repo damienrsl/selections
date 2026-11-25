@@ -277,7 +277,10 @@ async function echeance(){let E={};try{E=await (await fetch('echeances.json?'+Da
     el.innerHTML=`<em>${esc(e.texte)}</em> · ${j?j+' j ':''}${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;el.classList.toggle('urgent',j===0&&h<6)};f();setInterval(f,1000)}
 
 
-/* ---------- Onglets Affiliés / Promos (25/11/2026) : deux fenêtres, même liste (A.mode). Affiliés = statut actif/code/manuel (lien qui rapporte) ; Promos = le reste (lien direct).
+/* ---------- Onglets Affiliés / Promos (25/11/2026) : deux fenêtres, même liste (A.mode).
+   Règle du 25/11 14 h 45 (Damien) : Affiliés = SEULEMENT les liens prêts, affil.lien (lien affilié déjà fait, Awin) ou affil.code (code ambassadeur, Footshop).
+   Promos = tout le reste (lien direct) ; les pièces SMI « manuel » y restent avec leur badge « SMI · lien via l'app SMI » (lien à créer à la main).
+   Avant : Affiliés = statut actif/code/manuel → app.js.avant-affil-prets-2511.
    Données : donnees/affiliation/selection.json (+ resume.json) écrites par ~/Documents/selection/affiliation/affiliation.py chaque heure. ---------- */
 const A={P:[],R:null,f:null,on:false,mode:'affil'};try{localStorage.removeItem('sel-affil-seg')}catch(e){}
 const affilLien=x=>(x.affil||{}).lien||null;
@@ -290,12 +293,12 @@ const rz=a=>a.statut==='non'||!a.statut?'':`<span class="rz ${esc(a.statut)}">${
 const revA=x=>x.revendeur||x.marque||'';
 function ligneA(x){const a=x.affil||{},b=x.barre&&x.prix&&x.barre>x.prix?Math.round(x.barre):null,nt=(x.tailles_dispo||[]).length;
   return `<li class="ln la" data-u="${esc(x.url)}"><img src="${esc(petite(x.image_petite||x.image))}" alt="" loading="lazy"><div class="c1"><span class="m">${esc(x.marque||'')}${x.revendeur&&x.revendeur!==x.marque?' · '+esc(x.revendeur):''}</span><b>${esc(x.titre||'')}</b><div class="mini">${rz(a)}${a.code?`<span>code ${esc(a.code.split(' ')[0])}</span>`:''}${nt?`<span>${nt} taille${nt>1?'s':''}</span>`:''}</div></div><div class="c2"><b>${x.prix?fmtE(eur(x)):'?'}</b>${b?`<s>${b} €</s>`:''}${x.remise?`<span class="pill annonce">−${x.remise} %</span>`:''}<button class="cp" data-cp="${esc(x.url)}" aria-label="Copier le lien">⧉</button></div></li>`}
-function peindreAffil(){const el=$('affil'),R=A.R||{};const estA=x=>x.affil&&/^(actif|code|manuel)$/.test(x.affil.statut);const actifs=A.P.filter(estA);
-  const pr=A.mode==='promos',base=pr?A.P.filter(x=>!estA(x)):actifs;const cnt={};base.forEach(x=>{const r=revA(x);cnt[r]=(cnt[r]||0)+1});const revs=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]);if(A.f&&!cnt[A.f])A.f=null;
+function peindreAffil(){const el=$('affil'),R=A.R||{};const estA=x=>!!(x.affil&&(String(x.affil.lien||'').trim()||String(x.affil.code||'').trim()));const actifs=A.P.filter(estA);
+  const pr=A.mode==='promos',base=pr?A.P.filter(x=>!estA(x)):actifs,nSmi=pr?base.filter(x=>x.affil&&x.affil.statut==='manuel').length:0;const cnt={};base.forEach(x=>{const r=revA(x);cnt[r]=(cnt[r]||0)+1});const revs=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]);if(A.f&&!cnt[A.f])A.f=null;
   const L=(A.f?base.filter(x=>revA(x)===A.f):base).slice().sort((p,q)=>(q.remise||0)-(p.remise||0));A.n=A.n||120;const V=L.slice(0,A.n);
   const aAct=R.a_activer||[],nA=aAct.reduce((s,m)=>s+(m.n_promos||0),0),sans=(R.sans_source||[]);
   const maj=R.maj?new Date(R.maj):null,hm=maj?maj.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}):'';
-  el.innerHTML=`<div class="ma-haut"><div class="ma-titre"><span class="mono">${pr?'Promos':'Affiliés'}</span><span class="mono" style="color:var(--t3)">${hm?'relevé '+esc(hm):''}</span></div><div class="ma-geant">${L.length}<small> offre${L.length>1?'s':''}</small></div><div class="ma-resume">${pr?`${revs.length} boutique${revs.length>1?'s':''} · promos relevées, lien direct`:`${revs.length} revendeur${revs.length>1?'s':''} où ton lien rapporte`} · tape une offre pour la fiche, <b style="color:#fff">⧉</b> copie le lien</div></div>
+  el.innerHTML=`<div class="ma-haut"><div class="ma-titre"><span class="mono">${pr?'Promos':'Affiliés'}</span><span class="mono" style="color:var(--t3)">${hm?'relevé '+esc(hm):''}</span></div><div class="ma-geant">${L.length}<small> offre${L.length>1?'s':''}</small></div><div class="ma-resume">${pr?`${revs.length} boutique${revs.length>1?'s':''} · promos relevées, lien direct${nSmi?` · <b style="color:#fff;white-space:nowrap">${nSmi}&nbsp;SMI · lien à créer</b>`:''}`:`${revs.length} revendeur${revs.length>1?'s':''} · lien affilié ou code prêt`} · tape une offre pour la fiche, <b style="color:#fff">⧉</b> copie le lien</div></div>
    <div class="reglages af-chips"><button class="rg${A.f?'':' on'}" data-f="">Toutes <b>${base.length}</b></button>${revs.map(r=>`<button class="rg${A.f===r?' on':''}" data-f="${esc(r)}">${esc(r)} <b>${cnt[r]}</b></button>`).join('')}</div>
    <ol class="liste af-liste" id="af-liste">${V.map(ligneA).join('')}
    ${L.length>V.length?`<li class="af-act"><button class="af-act-b" id="af-plus">Afficher ${Math.min(120,L.length-V.length)} de plus · ${L.length-V.length} restantes</button></li>`:''}
