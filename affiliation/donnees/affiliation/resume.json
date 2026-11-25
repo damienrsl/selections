@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-26T06:40:06",
- "n_actifs": 2081,
- "n_total": 3328,
+ "maj": "2026-11-26T07:40:05",
+ "n_actifs": 2037,
+ "n_total": 3285,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 12,
   "nike": 288,
-  "nike_total_site": 4433,
+  "nike_total_site": 4434,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 541,
@@ -26,10 +26,10 @@
   "smi_shopify_thedoublef.com": 8,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 108,
-  "nuit_citadium.com": 353,
+  "nuit_citadium.com": 304,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 96,
-  "nuit_footpatrol.fr": 264,
+  "nuit_footlocker.fr": 95,
+  "nuit_footpatrol.fr": 262,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 3808,
@@ -41,15 +41,16 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5911 → 3328 (1464 hors marques, 1119 femme/enfant)",
-  "Photos locales Citadium/Courir : 267 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 5859 → 3285 (1461 hors marques, 1113 femme/enfant)",
+  "Liens SMI créés en fin de passage : 2/2",
+  "Photos locales Citadium/Courir : 225 (manquantes 135)"
  ],
  "a_activer": [
   {
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2664,
+   "n_promos": 2663,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -58,7 +59,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1963,
+   "n_promos": 1962,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -67,7 +68,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1497,
+   "n_promos": 1493,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -112,7 +113,7 @@
    "nom": "END.",
    "reseau": "Impact",
    "statut": "a_rejoindre",
-   "n_promos": 70,
+   "n_promos": 69,
    "mid": null,
    "lien_rejoindre": null,
    "note": "compte Impact : programmes à vérifier"
@@ -260,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5911,
-  "hors_marques": 1464,
-  "femme_enfant": 1119,
-  "apres": 3328,
+  "avant": 5859,
+  "hors_marques": 1461,
+  "femme_enfant": 1113,
+  "apres": 3285,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
-   "femme/enfant · CARHARTT WIP · Sweatshirt CARHARTT WIP W' CASEY",
-   "femme/enfant · adidas · adidas Originals Samba OG Women's",
-   "femme/enfant · adidas Originals · x Bad Bunny Mercedes Wmns Adiracer GT Sneaker",
-   "hors marques · U.P.W.W. · Waxed Work Denim Pants",
-   "hors marques · Justoverthetop · Doudoune légère sans manches Rouge Mali",
-   "hors marques · Organic Basics · Core Sleep Poplin Shorts",
-   "femme/enfant · Nisolo · Lidia Whipstitch Loafer Pearl",
-   "hors marques · Aspesi · Aspesi Cotton Poplin Overshirt: Beige",
-   "femme/enfant · tentree · Tencel Instow Short"
+   "hors marques · Ugg · Ugg Tazz ll Cheetah",
+   "hors marques · Keen · Keen Jasper Split",
+   "femme/enfant · adidas Originals · Wmns Taekwondo Mei Elite Sneaker",
+   "femme/enfant · adidas · W Equipment Shorts",
+   "hors marques · Lems Shoes · Men's Drifter Grip",
+   "hors marques · Organic Basics · Soft Knit Sweater Vest",
+   "hors marques · ARMEDANGELS · FRANKAA MAARLEN STRIPE",
+   "hors marques · Trunk · Trunk Welbeck Flat Front Cotton Trousers: Moss Green",
+   "femme/enfant · KEEN · Women's Arvada Work Sneaker (Carbon Toe)  |  Sea Moss/Desert Sage"
   ]
  }
 }
