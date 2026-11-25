@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T08:40:04",
+ "maj": "2026-11-25T09:40:05",
  "n_actifs": 1427,
  "n_total": 4306,
  "n_tout": 2500,
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 9,
   "nike": 269,
-  "nike_total_site": 4458,
+  "nike_total_site": 4457,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 543,
@@ -33,7 +33,7 @@
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2683,
+   "n_promos": 2681,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -51,7 +51,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1536,
+   "n_promos": 1534,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
