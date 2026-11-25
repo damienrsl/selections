@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-26T07:40:05",
- "n_actifs": 2037,
- "n_total": 3285,
+ "maj": "2026-11-26T08:40:03",
+ "n_actifs": 2031,
+ "n_total": 3279,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 12,
   "nike": 288,
-  "nike_total_site": 4434,
+  "nike_total_site": 4437,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 541,
@@ -23,13 +23,13 @@
   "smi_shopify_padelmarket.com": 78,
   "smi_shopify_reebok.eu": 200,
   "smi_shopify_stadiumgoods.com": 14,
-  "smi_shopify_thedoublef.com": 8,
+  "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
-  "nuit_carhartt.com": 108,
-  "nuit_citadium.com": 304,
+  "nuit_carhartt.com": 107,
+  "nuit_citadium.com": 301,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 95,
-  "nuit_footpatrol.fr": 262,
+  "nuit_footlocker.fr": 96,
+  "nuit_footpatrol.fr": 257,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 3808,
@@ -41,16 +41,15 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5859 → 3285 (1461 hors marques, 1113 femme/enfant)",
-  "Liens SMI créés en fin de passage : 2/2",
-  "Photos locales Citadium/Courir : 225 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 5850 → 3279 (1460 hors marques, 1111 femme/enfant)",
+  "Photos locales Citadium/Courir : 222 (manquantes 135)"
  ],
  "a_activer": [
   {
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2663,
+   "n_promos": 2662,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -68,7 +67,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1493,
+   "n_promos": 1588,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -113,7 +112,7 @@
    "nom": "END.",
    "reseau": "Impact",
    "statut": "a_rejoindre",
-   "n_promos": 69,
+   "n_promos": 68,
    "mid": null,
    "lien_rejoindre": null,
    "note": "compte Impact : programmes à vérifier"
@@ -261,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5859,
-  "hors_marques": 1461,
-  "femme_enfant": 1113,
-  "apres": 3285,
+  "avant": 5850,
+  "hors_marques": 1460,
+  "femme_enfant": 1111,
+  "apres": 3279,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
    "hors marques · Ugg · Ugg Tazz ll Cheetah",
-   "hors marques · Keen · Keen Jasper Split",
-   "femme/enfant · adidas Originals · Wmns Taekwondo Mei Elite Sneaker",
-   "femme/enfant · adidas · W Equipment Shorts",
+   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
+   "femme/enfant · adidas Originals · Wmns Taekwondo Mei Ballet Sneaker Female Pink",
+   "hors marques · Han Kjobenhavn · Cropped Sweatpants",
    "hors marques · Lems Shoes · Men's Drifter Grip",
-   "hors marques · Organic Basics · Soft Knit Sweater Vest",
-   "hors marques · ARMEDANGELS · FRANKAA MAARLEN STRIPE",
-   "hors marques · Trunk · Trunk Welbeck Flat Front Cotton Trousers: Moss Green",
-   "femme/enfant · KEEN · Women's Arvada Work Sneaker (Carbon Toe)  |  Sea Moss/Desert Sage"
+   "hors marques · Deus Ex Machina · Hiro Padded Vest - Black",
+   "femme/enfant · Brixton · The Cabana Mesh Lounge Pant - Multi Color Zigzag",
+   "hors marques · Trunk · Trunk Walbrook Wool Fresco Suit Jacket: Navy",
+   "femme/enfant · tentree · Poplar Cardigan"
   ]
  }
 }
