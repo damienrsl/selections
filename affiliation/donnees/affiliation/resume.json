@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T11:40:04",
- "n_actifs": 1427,
- "n_total": 4307,
+ "maj": "2026-11-25T12:40:02",
+ "n_actifs": 1426,
+ "n_total": 4306,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,7 +10,7 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 9,
-  "nike": 269,
+  "nike": 268,
   "nike_total_site": 4457,
   "footshop": 123,
   "4elementos.com": 200,
@@ -42,7 +42,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1981,
+   "n_promos": 1980,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -51,7 +51,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1530,
+   "n_promos": 1529,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
