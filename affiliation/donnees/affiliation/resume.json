@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T17:40:05",
- "n_actifs": 1185,
- "n_total": 2445,
+ "maj": "2026-11-25T17:59:10",
+ "n_actifs": 1280,
+ "n_total": 2508,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,14 +11,17 @@
  "sources": {
   "uniqlo": 13,
   "nike": 270,
-  "nike_total_site": 4444,
+  "nike_total_site": 4446,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 543,
   "smi_shopify_bbcicecream.eu": 54,
   "smi_shopify_grifo210.com": 7,
   "smi_shopify_kappa.fr": 99,
-  "nuit_carhartt.com": 110,
+  "smi_shopify_michelefranzesemoda.com": 2,
+  "smi_shopify_mous.co": 6,
+  "smi_shopify_padelmarket.com": 79,
+  "nuit_carhartt.com": 107,
   "nuit_citadium.com": 200,
   "nuit_courir.com": 153,
   "nuit_footlocker.fr": 96,
@@ -30,7 +33,7 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 4471 → 2445 (1250 hors marques, 776 femme/enfant)"
+  "Filtre marques du cœur + homme/unisexe : 4555 → 2508 (1248 hors marques, 799 femme/enfant)"
  ],
  "a_activer": [
   {
@@ -232,29 +235,32 @@
   "Footshop",
   "Grifo210",
   "Kappa",
+  "Michele Franzese Moda",
+  "Mous",
   "New Era Cap FR",
   "Nike",
+  "Padel Market",
   "Reebok",
   "Size Official",
   "Sneakersnstuff",
   "Uniqlo"
  ],
  "filtres": {
-  "avant": 4471,
-  "hors_marques": 1250,
-  "femme_enfant": 776,
-  "apres": 2445,
+  "avant": 4555,
+  "hors_marques": 1248,
+  "femme_enfant": 799,
+  "apres": 2508,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
-   "femme/enfant · AUTRY · Baskets AUTRY ",
-   "hors marques · Home Grown · Home Grown Hank Shirt",
-   "femme/enfant · Reebok · Women's Lux Strappy Dress",
-   "femme/enfant · Reebok · Women's Micro Pique Polo Shirt",
-   "hors marques · Deus Womens · Big Barbara Coach - Whisper White",
-   "femme/enfant · Brixton · Siesta Knit Pant - Adrenaline Rush/White Weave",
-   "hors marques · DAVRILSUPPLY · DESERT BLAST JACKET",
-   "hors marques · KnowledgeCotton Apparel - MEN · Back print t-shirt - Twill",
-   "femme/enfant · C-Life · Women's Union Barn Jacket"
+   "femme/enfant · CARHARTT WIP · Sweat zippé CARHARTT WIP HOODED PAINTER",
+   "femme/enfant · adidas · adidas Originals Superstar II Women's",
+   "hors marques · CLMSHSNDEIAL0448S27-319 · Orange by ECOALF",
+   "femme/enfant · CLOT · Kids Chinese Shirt (Blue)",
+   "hors marques · Pyrenex · Sweat matelassé Frida Milk",
+   "hors marques · Polo Ralph Lauren · Logo Fleece Ball Cap Adirondack Berry",
+   "hors marques · Flea-T · Flea-T Sweatshirt Western Yellow",
+   "femme/enfant · KnowledgeCotton Apparel - WMN · T-shirt dress - Black Jet",
+   "hors marques · Asisc · Asics x Kiko Kostadinov 11-S Gel DS Trainer 14 (Coneflower/Black Coffee)"
   ]
  }
 }
