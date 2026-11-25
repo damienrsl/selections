@@ -1,6 +1,6 @@
 {
- "maj": "2026-11-25T15:40:02",
- "n_actifs": 820,
+ "maj": "2026-11-25T16:14:18",
+ "n_actifs": 860,
  "n_total": 2101,
  "n_tout": 2500,
  "smi": {
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 13,
   "nike": 269,
-  "nike_total_site": 4458,
+  "nike_total_site": 4453,
   "footshop": 123,
   "4elementos.com": 0,
   "nuit_carhartt.com": 110,
@@ -221,6 +221,7 @@
  ],
  "revendeurs_actifs": [
   "Citadium",
+  "Dockers",
   "Foot Locker",
   "Footpatrol",
   "Footshop",
