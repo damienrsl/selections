@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T20:40:04",
- "n_actifs": 1781,
- "n_total": 3006,
+ "maj": "2026-11-25T21:40:06",
+ "n_actifs": 1783,
+ "n_total": 3004,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 13,
   "nike": 256,
-  "nike_total_site": 4434,
+  "nike_total_site": 4433,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 543,
@@ -37,15 +37,15 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5136 → 3006 (1261 hors marques, 869 femme/enfant)",
-  "Liens SMI créés en fin de passage : 49/49"
+  "Filtre marques du cœur + homme/unisexe : 5135 → 3004 (1255 hors marques, 876 femme/enfant)",
+  "Liens SMI créés en fin de passage : 5/5"
  ],
  "a_activer": [
   {
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2671,
+   "n_promos": 2670,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -54,7 +54,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1974,
+   "n_promos": 1972,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -63,7 +63,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1534,
+   "n_promos": 1530,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -90,7 +90,7 @@
    "nom": "Tres Bien",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 220,
+   "n_promos": 218,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -117,7 +117,7 @@
    "nom": "END.",
    "reseau": "Impact",
    "statut": "a_rejoindre",
-   "n_promos": 10,
+   "n_promos": 9,
    "mid": null,
    "lien_rejoindre": null,
    "note": "compte Impact : programmes à vérifier"
@@ -255,21 +255,21 @@
   "Uniqlo"
  ],
  "filtres": {
-  "avant": 5136,
-  "hors_marques": 1261,
-  "femme_enfant": 869,
-  "apres": 3006,
+  "avant": 5135,
+  "hors_marques": 1255,
+  "femme_enfant": 876,
+  "apres": 3004,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
    "femme/enfant · NEW BALANCE · Baskets  NEW BALANCE 1890",
-   "femme/enfant · adidas · adidas Originals Gazelle Indoor - size? exclusive Women's",
-   "hors marques · PUMA · PUMA Mostro Fey Gorp Clyde Royal",
+   "femme/enfant · adidas · adidas Originals Samba LT Pony Hair Women's",
+   "hors marques · PUMA · PUMA Talon OG Lime Pow",
    "hors marques · MSFTSrep · Camicia Uomo/men`s Shirt",
-   "hors marques · DAVRILSUPPLY · ROCKSTAR CAP",
-   "hors marques · Wax London · Ivy - Washed Blue Cotton Knitted Shirt",
-   "hors marques · DAVRILSUPPLY · DESERT BLAST JACKET",
-   "hors marques · KnowledgeCotton Apparel - WMN · Vent ripstop 140 insulated jacket - Total Eclipse",
-   "hors marques · WTAPS · Webbing / Belt / Acrylic White"
+   "hors marques · DAVRILSUPPLY · WHITE STEALTH T-SHIRT",
+   "hors marques · Wax London · Didcot - Taupe And Ecru Diamond Lace Short-Sleeve Shirt",
+   "hors marques · DAVRILSUPPLY · GECKO HOODIE",
+   "hors marques · KnowledgeCotton Apparel - WMN · Dew relaxed shirt - Skyway",
+   "femme/enfant · Nisolo · Women's Huarache Lug Sandal Almond"
   ]
  }
 }
