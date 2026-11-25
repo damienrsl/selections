@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T18:52:39",
- "n_actifs": 1827,
- "n_total": 3054,
+ "maj": "2026-11-25T19:40:05",
+ "n_actifs": 1607,
+ "n_total": 2833,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,11 +10,10 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 13,
-  "nike": 270,
-  "nike_total_site": 4446,
+  "nike": 256,
+  "nike_total_site": 4440,
   "footshop": 123,
-  "4elementos.com": 200,
-  "4elementos.com_total": 543,
+  "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 54,
   "smi_shopify_grifo210.com": 7,
   "smi_shopify_kappa.fr": 99,
@@ -24,10 +23,10 @@
   "smi_shopify_reebok.eu": 200,
   "smi_shopify_stadiumgoods.com": 20,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 356,
+  "nuit_citadium.com": 300,
   "nuit_courir.com": 153,
   "nuit_footlocker.fr": 96,
-  "nuit_footpatrol.fr": 269,
+  "nuit_footpatrol.fr": 265,
   "nuit_sizeofficial.fr": 400,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
@@ -35,7 +34,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5200 → 3054 (1258 hors marques, 888 femme/enfant)"
+  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
+  "Filtre marques du cœur + homme/unisexe : 4925 → 2833 (1221 hors marques, 871 femme/enfant)",
+  "Liens SMI créés en fin de passage : 1/1"
  ],
  "a_activer": [
   {
@@ -51,7 +52,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1977,
+   "n_promos": 1976,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -60,7 +61,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1534,
+   "n_promos": 1535,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -78,7 +79,7 @@
    "nom": "Champion",
    "reseau": "Rakuten",
    "statut": "a_rejoindre",
-   "n_promos": 599,
+   "n_promos": 600,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -114,7 +115,7 @@
    "nom": "END.",
    "reseau": "Impact",
    "statut": "a_rejoindre",
-   "n_promos": 11,
+   "n_promos": 10,
    "mid": null,
    "lien_rejoindre": null,
    "note": "compte Impact : programmes à vérifier"
@@ -228,7 +229,6 @@
   }
  ],
  "revendeurs_actifs": [
-  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -250,21 +250,21 @@
   "Uniqlo"
  ],
  "filtres": {
-  "avant": 5200,
-  "hors_marques": 1258,
-  "femme_enfant": 888,
-  "apres": 3054,
+  "avant": 4925,
+  "hors_marques": 1221,
+  "femme_enfant": 871,
+  "apres": 2833,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
-   "femme/enfant · CARHARTT WIP · Sweat CARHARTT WIP W HD SMALL",
-   "femme/enfant · Nike · Nike LD-1000 - size? exclusive Women's",
-   "hors marques · Phipps · Treescape Blanket Multicolor",
-   "hors marques · 247 · 247 Arc-1 Runner - Yellow",
-   "hors marques · Pompeii · Pompeii Logo Crewneck Sweatshirt",
-   "hors marques · Wax London · Didcot - Ecru Doodle Embroidered Short-Sleeve Shirt",
-   "femme/enfant · tentree · Saturna Pant",
-   "hors marques · KnowledgeCotton Apparel - MEN · Loose fit hood kangaroo pocket sweat with embroidery at chest - Egret",
-   "femme/enfant · Nisolo · Women's Huarache Lug Sandal Almond"
+   "femme/enfant · CARHARTT WIP · Hoodie CARHARTT WIP W WIP",
+   "femme/enfant · adidas · adidas Originals Ghost Sprint Ballet Women's",
+   "hors marques · SS25 · Funnel Neck Jacket - Black",
+   "hors marques · Phingerin · Phingerin Checker Web Skipper Polo - Brown",
+   "femme/enfant · Organic Basics · Swim Crop Tee",
+   "femme/enfant · tentree · Sequoia Jumpsuit",
+   "hors marques · Flea-T · Flea-T Sweatshirt Plain Pigment Dyed Mint",
+   "femme/enfant · KnowledgeCotton Apparel - WMN · Cashmere skirt - Light feather gray",
+   "femme/enfant · Nike · Nike WMNS Air Max Muse SE  (College Grey/Metallic Silver)"
   ]
  }
 }
