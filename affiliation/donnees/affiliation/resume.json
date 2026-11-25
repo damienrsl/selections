@@ -1,6 +1,6 @@
 {
- "maj": "2026-11-25T21:40:06",
- "n_actifs": 1783,
+ "maj": "2026-11-25T22:40:05",
+ "n_actifs": 1784,
  "n_total": 3004,
  "n_tout": 2500,
  "smi": {
@@ -10,11 +10,11 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 13,
-  "nike": 256,
-  "nike_total_site": 4433,
+  "nike": 286,
+  "nike_total_site": 4432,
   "footshop": 123,
   "4elementos.com": 200,
-  "4elementos.com_total": 543,
+  "4elementos.com_total": 542,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 7,
   "smi_shopify_kappa.fr": 99,
@@ -22,7 +22,7 @@
   "smi_shopify_mous.co": 6,
   "smi_shopify_padelmarket.com": 80,
   "smi_shopify_reebok.eu": 200,
-  "smi_shopify_stadiumgoods.com": 15,
+  "smi_shopify_stadiumgoods.com": 16,
   "smi_shopify_thedoublef.com": 8,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
@@ -37,8 +37,8 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5135 → 3004 (1255 hors marques, 876 femme/enfant)",
-  "Liens SMI créés en fin de passage : 5/5"
+  "smi-shopify : Command '['/Library/Developer/CommandLineTools/usr/bin/python3', '/Users/damienroussel/.local/share/",
+  "Filtre marques du cœur + homme/unisexe : 5166 → 3004 (1260 hors marques, 902 femme/enfant)"
  ],
  "a_activer": [
   {
@@ -54,7 +54,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1972,
+   "n_promos": 1971,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -63,7 +63,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1530,
+   "n_promos": 1526,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -90,7 +90,7 @@
    "nom": "Tres Bien",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 218,
+   "n_promos": 219,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -255,21 +255,21 @@
   "Uniqlo"
  ],
  "filtres": {
-  "avant": 5135,
-  "hors_marques": 1255,
-  "femme_enfant": 876,
+  "avant": 5166,
+  "hors_marques": 1260,
+  "femme_enfant": 902,
   "apres": 3004,
   "exemples_retires": [
-   "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
-   "femme/enfant · NEW BALANCE · Baskets  NEW BALANCE 1890",
-   "femme/enfant · adidas · adidas Originals Samba LT Pony Hair Women's",
-   "hors marques · PUMA · PUMA Talon OG Lime Pow",
-   "hors marques · MSFTSrep · Camicia Uomo/men`s Shirt",
-   "hors marques · DAVRILSUPPLY · WHITE STEALTH T-SHIRT",
-   "hors marques · Wax London · Didcot - Taupe And Ecru Diamond Lace Short-Sleeve Shirt",
-   "hors marques · DAVRILSUPPLY · GECKO HOODIE",
-   "hors marques · KnowledgeCotton Apparel - WMN · Dew relaxed shirt - Skyway",
-   "femme/enfant · Nisolo · Women's Huarache Lug Sandal Almond"
+   "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
+   "femme/enfant · ADIDAS · Baskets ADIDAS STAN SMITH W",
+   "femme/enfant · adidas · adidas Originals Gazelle Lo Pro Women's",
+   "hors marques · OAMC Peacemaker · Men's Long Liner Ice Flow",
+   "hors marques · SS24 · Embroidered Initial Overshirt - Black",
+   "hors marques · Origin Knitwear · Origin Oxford Jumper",
+   "hors marques · PALLADIUM-US · 98578-116-M | REVOLT SANDAL MONO | STAR WHITE",
+   "hors marques · barbell object · Un Vest Black",
+   "femme/enfant · KnowledgeCotton Apparel - WMN · Cashmere skirt - Black Jet",
+   "hors marques · Unlikely · M-51 Shirts Jacket Green Plaids"
   ]
  }
 }
