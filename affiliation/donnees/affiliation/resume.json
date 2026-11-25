@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T14:19:20",
- "n_actifs": 771,
- "n_total": 1566,
+ "maj": "2026-11-25T14:20:33",
+ "n_actifs": 816,
+ "n_total": 2099,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -27,7 +27,7 @@
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
   "4 Elementos : Expecting value: line 1 column 1 (char 0)",
-  "Filtre marques du cœur + homme/unisexe : 4107 → 1566 (1763 hors marques, 778 femme/enfant)"
+  "Filtre marques du cœur + homme/unisexe : 4107 → 2099 (1230 hors marques, 778 femme/enfant)"
  ],
  "a_activer": [
   {
@@ -226,25 +226,27 @@
   "Footshop",
   "New Era Cap FR",
   "Nike",
+  "Reebok",
   "Size Official",
-  "Sneakersnstuff"
+  "Sneakersnstuff",
+  "Uniqlo"
  ],
  "filtres": {
   "avant": 4107,
-  "hors_marques": 1763,
+  "hors_marques": 1230,
   "femme_enfant": 778,
-  "apres": 1566,
+  "apres": 2099,
   "exemples_retires": [
-   "hors marques · Uniqlo · Parka PUFFERTECH",
-   "hors marques · PUMA · PUMA Deviate NITRO 4",
-   "hors marques · Brain Dead · Brooks Brothers California Pleated Corduroy Trousers Midnight Blue",
-   "femme/enfant · Second Female ApS (Oval Square) · Glory Leather Dress",
-   "hors marques · Stan Ray · Coverall Jacket, Unlined (Hickory Black/Natural)",
-   "hors marques · The Attico · The Attico Cheope Mule - Degrade Blue",
-   "hors marques · ARMEDANGELS · VAESSAA",
-   "hors marques · Flea-T · Flea-T Sweatshirt Stickball Legends Royal",
-   "hors marques · KnowledgeCotton Apparel - MEN · Organic Cotton Jacquard Knit - Regenerative Organic Certified™ - GOTS/Vegan - Egret",
-   "femme/enfant · Nike · Nike WMNS Air Max Muse SE  (College Grey/Metallic Silver)"
+   "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
+   "femme/enfant · Asics · Asics GEL-CUMULUS 16 - Femme Chaussures",
+   "femme/enfant · Reebok · Women's Lawn Club T-Shirt",
+   "hors marques · Lourdes New York · Pantalones vaqueros Lourdes New York Pockets Cargo Unisex Denim Pants Unisex",
+   "femme/enfant · adidas · Samba LT W",
+   "hors marques · Coperni · Coperni Zip Ankle Boot - Black",
+   "hors marques · Stan Ray · Double Knee Pant (Stonewashed Black Denim)",
+   "hors marques · Puma · Puma x Represent LS Hoodie",
+   "hors marques · KnowledgeCotton Apparel - WMN · Dew relaxed shirt - Skyway",
+   "hors marques · Unlikely · Time Travel Jean Wide 1977 Wash"
   ]
  }
 }
