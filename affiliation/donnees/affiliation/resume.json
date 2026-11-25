@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T12:40:02",
- "n_actifs": 1426,
- "n_total": 4306,
+ "maj": "2026-11-25T13:40:04",
+ "n_actifs": 1227,
+ "n_total": 4107,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,11 +10,10 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 9,
-  "nike": 268,
+  "nike": 269,
   "nike_total_site": 4457,
   "footshop": 123,
-  "4elementos.com": 200,
-  "4elementos.com_total": 543,
+  "4elementos.com": 0,
   "nuit_carhartt.com": 110,
   "nuit_citadium.com": 200,
   "nuit_courir.com": 153,
@@ -26,7 +25,8 @@
   "tout_boutiques": 79
  },
  "notes": [
-  "Nike : HTTP Error 400: Bad Request"
+  "Nike : HTTP Error 400: Bad Request",
+  "4 Elementos : Expecting value: line 1 column 1 (char 0)"
  ],
  "a_activer": [
   {
@@ -78,7 +78,7 @@
    "nom": "Tres Bien",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 226,
+   "n_promos": 225,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -219,7 +219,6 @@
   }
  ],
  "revendeurs_actifs": [
-  "4 Elementos",
   "Citadium",
   "Foot Locker",
   "Footpatrol",
