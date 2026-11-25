@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T14:21:55",
- "n_actifs": 816,
- "n_total": 2099,
+ "maj": "2026-11-25T14:40:05",
+ "n_actifs": 980,
+ "n_total": 2260,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,9 +11,10 @@
  "sources": {
   "uniqlo": 9,
   "nike": 269,
-  "nike_total_site": 4458,
+  "nike_total_site": 4457,
   "footshop": 123,
-  "4elementos.com": 0,
+  "4elementos.com": 200,
+  "4elementos.com_total": 543,
   "nuit_carhartt.com": 110,
   "nuit_citadium.com": 200,
   "nuit_courir.com": 153,
@@ -26,15 +27,14 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
-  "Filtre marques du cœur + homme/unisexe : 4107 → 2099 (1230 hors marques, 778 femme/enfant)"
+  "Filtre marques du cœur + homme/unisexe : 4307 → 2260 (1246 hors marques, 801 femme/enfant)"
  ],
  "a_activer": [
   {
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2681,
+   "n_promos": 2680,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -52,7 +52,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1529,
+   "n_promos": 1527,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -79,7 +79,7 @@
    "nom": "Tres Bien",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 225,
+   "n_promos": 224,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -220,6 +220,7 @@
   }
  ],
  "revendeurs_actifs": [
+  "4 Elementos",
   "Citadium",
   "Foot Locker",
   "Footpatrol",
@@ -232,21 +233,21 @@
   "Uniqlo"
  ],
  "filtres": {
-  "avant": 4107,
-  "hors_marques": 1230,
-  "femme_enfant": 778,
-  "apres": 2099,
+  "avant": 4307,
+  "hors_marques": 1246,
+  "femme_enfant": 801,
+  "apres": 2260,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
-   "femme/enfant · Asics · Asics GEL-CUMULUS 16 - Femme Chaussures",
-   "femme/enfant · Reebok · Women's Lawn Club T-Shirt",
-   "hors marques · Lourdes New York · Pantalones vaqueros Lourdes New York Pockets Cargo Unisex Denim Pants Unisex",
-   "femme/enfant · adidas · Samba LT W",
-   "hors marques · Coperni · Coperni Zip Ankle Boot - Black",
-   "hors marques · Stan Ray · Double Knee Pant (Stonewashed Black Denim)",
-   "hors marques · Puma · Puma x Represent LS Hoodie",
-   "hors marques · KnowledgeCotton Apparel - WMN · Dew relaxed shirt - Skyway",
-   "hors marques · Unlikely · Time Travel Jean Wide 1977 Wash"
+   "femme/enfant · AUTRY · Baskets  AUTRY ",
+   "femme/enfant · Keen · Keen Uneek Women's",
+   "femme/enfant · Girls Of Dust · Girls Of Dust Physical Tee - Coffee Brown",
+   "femme/enfant · adidas · Taekwondo Mei W",
+   "hors marques · Deus Womens · Memorial Day Run Jacket - Poinsettia Red",
+   "hors marques · Stan Ray · Utility Pant (Olive)",
+   "hors marques · Flea-T · Flea-T Sweatshirt Western Yellow",
+   "femme/enfant · KnowledgeCotton Apparel - WMN · Cashmere skirt - Black Jet",
+   "hors marques · barbell object · Hook Jacket Fade Black"
   ]
  }
 }
