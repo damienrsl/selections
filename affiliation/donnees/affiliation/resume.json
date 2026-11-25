@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-26T05:40:06",
- "n_actifs": 2003,
- "n_total": 3250,
+ "maj": "2026-11-26T06:40:06",
+ "n_actifs": 2081,
+ "n_total": 3328,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,8 +11,8 @@
  "sources": {
   "uniqlo": 12,
   "nike": 288,
-  "nike_total_site": 4434,
-  "footshop": 1,
+  "nike_total_site": 4433,
+  "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 541,
   "smi_shopify_bbcicecream.eu": 56,
@@ -20,16 +20,16 @@
   "smi_shopify_kappa.fr": 99,
   "smi_shopify_michelefranzesemoda.com": 2,
   "smi_shopify_mous.co": 6,
-  "smi_shopify_padelmarket.com": 79,
+  "smi_shopify_padelmarket.com": 78,
   "smi_shopify_reebok.eu": 200,
-  "smi_shopify_stadiumgoods.com": 13,
+  "smi_shopify_stadiumgoods.com": 14,
   "smi_shopify_thedoublef.com": 8,
   "smi_shopify_thejacketmaker.com": 6,
-  "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 248,
+  "nuit_carhartt.com": 108,
+  "nuit_citadium.com": 353,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 145,
-  "nuit_footpatrol.fr": 265,
+  "nuit_footlocker.fr": 96,
+  "nuit_footpatrol.fr": 264,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 3808,
@@ -41,16 +41,15 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5856 → 3250 (1459 hors marques, 1147 femme/enfant)",
-  "Liens SMI créés en fin de passage : 4/4",
-  "Photos locales Citadium/Courir : 187 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 5911 → 3328 (1464 hors marques, 1119 femme/enfant)",
+  "Photos locales Citadium/Courir : 267 (manquantes 135)"
  ],
  "a_activer": [
   {
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2665,
+   "n_promos": 2664,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -59,7 +58,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1966,
+   "n_promos": 1963,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -68,7 +67,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1503,
+   "n_promos": 1497,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -261,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5856,
-  "hors_marques": 1459,
-  "femme_enfant": 1147,
-  "apres": 3250,
+  "avant": 5911,
+  "hors_marques": 1464,
+  "femme_enfant": 1119,
+  "apres": 3328,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
-   "femme/enfant · Puma · Puma Speedcat Ballet Nova - Femme Chaussures",
-   "femme/enfant · Nike · Nike Air Force 1 Low Women's",
-   "hors marques · Billionaire Boys Club · Astro Denim Short Apparel",
-   "hors marques · Puma · Puma V-S1 Metallic",
-   "hors marques · 247 · 247 Mission Pant - Black",
-   "femme/enfant · Organic Basics · Swim Crop Tee",
-   "femme/enfant · Brixton · Post Playa E-Waist Short - Off White/Blue Tile",
-   "hors marques · Trunk · Trunk Welbeck Flat Front Cotton Trousers: Olive",
-   "hors marques · KEEN · Men's Reno Waterproof Mid (Soft Toe)  |  Black/Black"
+   "femme/enfant · CARHARTT WIP · Sweatshirt CARHARTT WIP W' CASEY",
+   "femme/enfant · adidas · adidas Originals Samba OG Women's",
+   "femme/enfant · adidas Originals · x Bad Bunny Mercedes Wmns Adiracer GT Sneaker",
+   "hors marques · U.P.W.W. · Waxed Work Denim Pants",
+   "hors marques · Justoverthetop · Doudoune légère sans manches Rouge Mali",
+   "hors marques · Organic Basics · Core Sleep Poplin Shorts",
+   "femme/enfant · Nisolo · Lidia Whipstitch Loafer Pearl",
+   "hors marques · Aspesi · Aspesi Cotton Poplin Overshirt: Beige",
+   "femme/enfant · tentree · Tencel Instow Short"
   ]
  }
 }
