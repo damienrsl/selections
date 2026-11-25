@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T16:40:05",
- "n_actifs": 860,
- "n_total": 2115,
+ "maj": "2026-11-25T17:04:04",
+ "n_actifs": 1186,
+ "n_total": 2441,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,10 +10,14 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 13,
-  "nike": 269,
-  "nike_total_site": 4453,
+  "nike": 270,
+  "nike_total_site": 4450,
   "footshop": 123,
-  "4elementos.com": 0,
+  "4elementos.com": 200,
+  "4elementos.com_total": 543,
+  "smi_shopify_bbcicecream.eu": 54,
+  "smi_shopify_grifo210.com": 7,
+  "smi_shopify_kappa.fr": 99,
   "nuit_carhartt.com": 110,
   "nuit_citadium.com": 200,
   "nuit_courir.com": 153,
@@ -26,8 +30,7 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "4 Elementos : ",
-  "Filtre marques du cœur + homme/unisexe : 4110 → 2115 (1220 hors marques, 775 femme/enfant)"
+  "Filtre marques du cœur + homme/unisexe : 4471 → 2441 (1252 hors marques, 778 femme/enfant)"
  ],
  "a_activer": [
   {
@@ -220,11 +223,15 @@
   }
  ],
  "revendeurs_actifs": [
+  "4 Elementos",
+  "Billionaire Boys Club",
   "Citadium",
   "Dockers",
   "Foot Locker",
   "Footpatrol",
   "Footshop",
+  "Grifo210",
+  "Kappa",
   "New Era Cap FR",
   "Nike",
   "Reebok",
@@ -233,21 +240,21 @@
   "Uniqlo"
  ],
  "filtres": {
-  "avant": 4110,
-  "hors_marques": 1220,
-  "femme_enfant": 775,
-  "apres": 2115,
+  "avant": 4471,
+  "hors_marques": 1252,
+  "femme_enfant": 778,
+  "apres": 2441,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
-   "femme/enfant · New Balance · New Balance 204L - Femme Chaussures",
-   "femme/enfant · Reebok · Women's Strappy Sports Bra",
-   "hors marques · Comme Des Garçons Shirt · Comme Des Garçons Shirt x ASICS Tarther",
-   "hors marques · 247 · 247 Arc-2 Trainer - Yellow",
-   "hors marques · CDG Play · CT70 Hi Big Heart Beige",
-   "hors marques · Stan Ray · Double Knee Pant (Khaki Duck)",
-   "femme/enfant · TOTEME · Sequin Skirt",
-   "femme/enfant · Picture Organic Clothing · T-shirt femme MAOGANY",
-   "femme/enfant · Nike · Nike WMNS Nike Air Rift (White/White-Black)"
+   "femme/enfant · CARHARTT WIP · Jean CARHARTT WIP BRANDON",
+   "femme/enfant · UGG · UGG Classic Ultra Mini Plains Boot Women's",
+   "hors marques · Owners Club · Represent Owners Club Sweatpant - Mid Purple",
+   "femme/enfant · Nike · Wmns T90",
+   "hors marques · Awake NY · Argyle Knit Cardigan Brown",
+   "femme/enfant · Brixton · The Chloe 5-Pocket Pant - Two Boot Stripe",
+   "hors marques · RAF SIMONS · RAF SIMONS MAN BLACK T-SHIRTS",
+   "femme/enfant · Picture Organic Clothing · Veste légère femme MARPLE KIMONO",
+   "femme/enfant · Nike · Nike WMNS Aqua Turf (LT Orewood BFN/Desert Khaki)"
   ]
  }
 }
