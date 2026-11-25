@@ -277,9 +277,9 @@ async function echeance(){let E={};try{E=await (await fetch('echeances.json?'+Da
     el.innerHTML=`<em>${esc(e.texte)}</em> · ${j?j+' j ':''}${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;el.classList.toggle('urgent',j===0&&h<6)};f();setInterval(f,1000)}
 
 
-/* ---------- Onglet Affiliation (25/11/2026) : uniquement les promos des revendeurs où ton lien rapporte, lien prêt à envoyer.
+/* ---------- Onglets Affiliés / Promos (25/11/2026) : deux fenêtres, même liste (A.mode). Affiliés = statut actif/code/manuel (lien qui rapporte) ; Promos = le reste (lien direct).
    Données : donnees/affiliation/selection.json (+ resume.json) écrites par ~/Documents/selection/affiliation/affiliation.py chaque heure. ---------- */
-const A={P:[],R:null,f:null,on:false};
+const A={P:[],R:null,f:null,on:false,mode:'affil'};try{localStorage.removeItem('sel-affil-seg')}catch(e){}
 const affilLien=x=>(x.affil||{}).lien||null;
 const affilTexte=x=>{const a=x.affil||{},l=a.lien||x.url,b=x.barre&&x.barre>x.prix?` (au lieu de ${Math.round(x.barre)} €)`:'';
   return `${x.marque} · ${x.titre}\n${x.prix?fmtE(eur(x)):'?'}${b}${x.remise?` · −${x.remise} %`:''}${x.revendeur&&x.revendeur!==x.marque?` · chez ${x.revendeur}`:''}\n${l}${a.code?`\nCode ${a.code}`:''}${a.mode==='smi'?'\n(lien à créer dans Shop My Influence)':''}`};
@@ -291,37 +291,34 @@ const revA=x=>x.revendeur||x.marque||'';
 function ligneA(x){const a=x.affil||{},b=x.barre&&x.prix&&x.barre>x.prix?Math.round(x.barre):null,nt=(x.tailles_dispo||[]).length;
   return `<li class="ln la" data-u="${esc(x.url)}"><img src="${esc(petite(x.image_petite||x.image))}" alt="" loading="lazy"><div class="c1"><span class="m">${esc(x.marque||'')}${x.revendeur&&x.revendeur!==x.marque?' · '+esc(x.revendeur):''}</span><b>${esc(x.titre||'')}</b><div class="mini">${rz(a)}${a.code?`<span>code ${esc(a.code.split(' ')[0])}</span>`:''}${nt?`<span>${nt} taille${nt>1?'s':''}</span>`:''}</div></div><div class="c2"><b>${x.prix?fmtE(eur(x)):'?'}</b>${b?`<s>${b} €</s>`:''}${x.remise?`<span class="pill annonce">−${x.remise} %</span>`:''}<button class="cp" data-cp="${esc(x.url)}" aria-label="Copier le lien">⧉</button></div></li>`}
 function peindreAffil(){const el=$('affil'),R=A.R||{};const estA=x=>x.affil&&/^(actif|code|manuel)$/.test(x.affil.statut);const actifs=A.P.filter(estA);
-  if(!A.seg)A.seg=LS('sel-affil-seg')||(/github\.io$/.test(location.hostname)?'tout':'affil');
-  const base=A.seg==='tout'?A.P:actifs;const cnt={};base.forEach(x=>{const r=revA(x);cnt[r]=(cnt[r]||0)+1});const revs=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]);if(A.f&&!cnt[A.f])A.f=null;
+  const pr=A.mode==='promos',base=pr?A.P.filter(x=>!estA(x)):actifs;const cnt={};base.forEach(x=>{const r=revA(x);cnt[r]=(cnt[r]||0)+1});const revs=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]);if(A.f&&!cnt[A.f])A.f=null;
   const L=(A.f?base.filter(x=>revA(x)===A.f):base).slice().sort((p,q)=>(q.remise||0)-(p.remise||0));A.n=A.n||120;const V=L.slice(0,A.n);
   const aAct=R.a_activer||[],nA=aAct.reduce((s,m)=>s+(m.n_promos||0),0),sans=(R.sans_source||[]);
   const maj=R.maj?new Date(R.maj):null,hm=maj?maj.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}):'';
-  el.innerHTML=`<div class="ma-haut"><div class="ma-titre"><span class="mono">Affiliation</span><span class="mono" style="color:var(--t3)">${hm?'relevé '+esc(hm):''}</span></div><div class="ma-geant">${L.length}<small> offre${L.length>1?'s':''}</small></div><div class="ma-resume">${A.seg==='tout'?`${revs.length} boutiques, affiliées ou non · les plus belles promos relevées`:`${revs.length} revendeur${revs.length>1?'s':''} où ton lien rapporte`} · tape une offre pour la fiche, <b style="color:#fff">⧉</b> copie le lien</div></div>
-   <div class="seg"><button class="${A.seg==='affil'?'on':''}" data-seg="affil">Affiliés <b>${actifs.length}</b></button><button class="${A.seg==='tout'?'on':''}" data-seg="tout">Tout <b>${A.P.length}</b></button></div>
+  el.innerHTML=`<div class="ma-haut"><div class="ma-titre"><span class="mono">${pr?'Promos':'Affiliés'}</span><span class="mono" style="color:var(--t3)">${hm?'relevé '+esc(hm):''}</span></div><div class="ma-geant">${L.length}<small> offre${L.length>1?'s':''}</small></div><div class="ma-resume">${pr?`${revs.length} boutique${revs.length>1?'s':''} · promos relevées, lien direct`:`${revs.length} revendeur${revs.length>1?'s':''} où ton lien rapporte`} · tape une offre pour la fiche, <b style="color:#fff">⧉</b> copie le lien</div></div>
    <div class="reglages af-chips"><button class="rg${A.f?'':' on'}" data-f="">Toutes <b>${base.length}</b></button>${revs.map(r=>`<button class="rg${A.f===r?' on':''}" data-f="${esc(r)}">${esc(r)} <b>${cnt[r]}</b></button>`).join('')}</div>
    <ol class="liste af-liste" id="af-liste">${V.map(ligneA).join('')}
    ${L.length>V.length?`<li class="af-act"><button class="af-act-b" id="af-plus">Afficher ${Math.min(120,L.length-V.length)} de plus · ${L.length-V.length} restantes</button></li>`:''}
-   ${sans.length?`<li class="af-act"><button class="af-act-b" id="af-sans-b">${sans.length} autres partenaires sans relevé automatique (${sans.map(s=>s.nom).slice(0,4).join(', ')}…)</button><div class="af-act-l" id="af-sans-l">${sans.map(m=>`<div class="af-m"><div><b>${esc(m.nom)}</b><small>${esc(m.reseau)}${m.taux?' · '+esc(m.taux):''}${m.code?' · code '+esc(m.code):''}${m.note?' · '+esc(m.note):''}</small></div></div>`).join('')}</div></li>`:''}
-   ${aAct.length?`<li class="af-act"><button class="af-act-b" id="af-act-b">${nA} promos chez ${aAct.length} revendeurs où tu n'es pas encore affilié · voir</button><div class="af-act-l" id="af-act-l">${aAct.map(m=>`<div class="af-m"><div><b>${esc(m.nom)}</b><small>${esc(m.reseau)} · ${m.n_promos} promos${m.statut==='a_activer'?' · 1 clic dans Awin':' · réseau à ouvrir'}</small></div>${m.lien_rejoindre?`<button class="af-go" data-go="${esc(m.lien_rejoindre)}">Activer ↗</button>`:''}</div>`).join('')}</div></li>`:''}
-   <li class="af-src">Sources : ${Object.entries(R.sources||{}).filter(([k])=>!/total/.test(k)).map(([k,v])=>`${k.replace(/_/g,' ')} ${v}`).join(' · ')}.${R.seuils_tout?` « Tout » = ${esc(R.seuils_tout)}.`:''} Prix affichés par les boutiques, à revérifier avant d'envoyer.</li></ol>
+   ${pr&&sans.length?`<li class="af-act"><button class="af-act-b" id="af-sans-b">${sans.length} autres partenaires sans relevé automatique (${sans.map(s=>s.nom).slice(0,4).join(', ')}…)</button><div class="af-act-l" id="af-sans-l">${sans.map(m=>`<div class="af-m"><div><b>${esc(m.nom)}</b><small>${esc(m.reseau)}${m.taux?' · '+esc(m.taux):''}${m.code?' · code '+esc(m.code):''}${m.note?' · '+esc(m.note):''}</small></div></div>`).join('')}</div></li>`:''}
+   ${pr&&aAct.length?`<li class="af-act"><button class="af-act-b" id="af-act-b">${nA} promos chez ${aAct.length} revendeurs où tu n'es pas encore affilié · voir</button><div class="af-act-l" id="af-act-l">${aAct.map(m=>`<div class="af-m"><div><b>${esc(m.nom)}</b><small>${esc(m.reseau)} · ${m.n_promos} promos${m.statut==='a_activer'?' · 1 clic dans Awin':' · réseau à ouvrir'}</small></div>${m.lien_rejoindre?`<button class="af-go" data-go="${esc(m.lien_rejoindre)}">Activer ↗</button>`:''}</div>`).join('')}</div></li>`:''}
+   <li class="af-src">Sources : ${Object.entries(R.sources||{}).filter(([k])=>!/total/.test(k)).map(([k,v])=>`${k.replace(/_/g,' ')} ${v}`).join(' · ')}.${pr&&R.seuils_tout?` Promos = ${esc(R.seuils_tout)}.`:''} Prix affichés par les boutiques, à revérifier avant d'envoyer.</li></ol>
    <div class="ma-bas"><button class="btn prim" id="af-tout" ${L.length?'':'disabled'}>Copier ${Math.min(L.length,200)} lien${L.length>1?'s':''} pour Alexi</button></div>`;
-  el.querySelectorAll('[data-seg]').forEach(b=>b.onclick=()=>{A.seg=b.dataset.seg;SV('sel-affil-seg',A.seg);A.n=120;peindreAffil();hap('light')});
   el.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{A.f=b.dataset.f||null;A.n=120;peindreAffil();hap('light')});
   const plus=$('af-plus');if(plus)plus.onclick=()=>{const st=$('af-liste').scrollTop;A.n+=120;peindreAffil();$('af-liste').scrollTop=st};
   el.querySelectorAll('.la').forEach(r=>r.onclick=e=>{if(e.target.closest('.cp'))return;const x=A.P.find(y=>y.url===r.dataset.u);if(x)fiche(x)});
   el.querySelectorAll('.cp').forEach(b=>b.onclick=()=>{const x=A.P.find(y=>y.url===b.dataset.cp);if(!x)return;copierTexte(affilTexte(x),affilLien(x)?'Lien affilié copié':(x.affil||{}).mode==='smi'?'Copié · crée le lien dans SMI':'Lien copié');b.classList.add('ok');b.textContent='✓'});
   [['af-act-b','af-act-l'],['af-sans-b','af-sans-l']].forEach(([b,l])=>{const bb=$(b);if(bb)bb.onclick=()=>$(l).classList.toggle('on')});
   el.querySelectorAll('.af-go').forEach(b=>b.onclick=()=>ouvrirLien(b.dataset.go));
-  $('af-tout').onclick=()=>{const C=L.slice(0,200);copierTexte(`${A.seg==='tout'?'Promos':'Affiliation'}${A.f?' · '+A.f:''} · ${C.length} offre${C.length>1?'s':''} · ${new Date().toLocaleDateString('fr-FR')}\n\n`+C.map((x,i)=>`${i+1}. `+affilTexte(x)).join('\n\n'),C.length<L.length?`${C.length} premières copiées (sur ${L.length})`:'Liste copiée, liens compris')}}
+  $('af-tout').onclick=()=>{const C=L.slice(0,200);copierTexte(`${pr?'Promos':'Affiliés'}${A.f?' · '+A.f:''} · ${C.length} offre${C.length>1?'s':''} · ${new Date().toLocaleDateString('fr-FR')}\n\n`+C.map((x,i)=>`${i+1}. `+affilTexte(x)).join('\n\n'),C.length<L.length?`${C.length} premières copiées (sur ${L.length})`:'Liste copiée, liens compris')}}
 async function onglet(o){SV('sel-onglet',o);document.querySelectorAll('#onglets button').forEach(b=>b.classList.toggle('on',b.dataset.o===o));const af=$('affil');
-  if(o==='affil'){af.classList.add('on');A.on=true;if(!A.P.length){af.innerHTML='<div class="ma-vide">Je charge les offres…</div>';await chargerAffil()}
+  if(o==='affil'||o==='promos'){if(A.mode!==o){A.mode=o;A.f=null;A.n=120}af.classList.add('on');A.on=true;if(!A.P.length){af.innerHTML='<div class="ma-vide">Je charge les offres…</div>';await chargerAffil()}
     if(!A.P.length){af.innerHTML='<div class="ma-vide">Pas encore d\'offres : le relevé tourne chaque heure.</div>';return}peindreAffil()}
   else{af.classList.remove('on');A.on=false}}
 function onglets(){document.querySelectorAll('#onglets button').forEach(b=>b.onclick=()=>{onglet(b.dataset.o);hap('light')});
-  const o0=new URLSearchParams(location.search).get('o')||LS('sel-onglet');if(o0==='affil')onglet('affil')}
+  const o0=new URLSearchParams(location.search).get('o')||LS('sel-onglet')||(/github\.io$/.test(location.hostname)?'affil':null);if(o0==='affil'||o0==='promos')onglet(o0)}
 
 /* ---------- Démarrage ---------- */
-(async()=>{try{await charger()}catch(e){$('scene').innerHTML=`<p class="vide-p">Rien à trier ici : ouvre l'onglet Affiliation en bas.</p>`;onglets();return}
+(async()=>{try{await charger()}catch(e){$('scene').innerHTML=`<p class="vide-p">Rien à trier ici : ouvre l'onglet Affiliés ou Promos en bas.</p>`;onglets();return}
   mesurer();paginer();
   let ip=S.pages.findIndex(p=>p.items.some(x=>!S.CH[x.url]));const vu=()=>{SV('sel-vu-'+S.slug,Math.max(maxVu(),S.ip))};
   S.ip=ip<0?S.pages.length-1:ip;peindre();gestes();
