@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T14:40:05",
- "n_actifs": 980,
- "n_total": 2260,
+ "maj": "2026-11-25T15:40:02",
+ "n_actifs": 820,
+ "n_total": 2101,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -9,12 +9,11 @@
  },
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
-  "uniqlo": 9,
+  "uniqlo": 13,
   "nike": 269,
-  "nike_total_site": 4457,
+  "nike_total_site": 4458,
   "footshop": 123,
-  "4elementos.com": 200,
-  "4elementos.com_total": 543,
+  "4elementos.com": 0,
   "nuit_carhartt.com": 110,
   "nuit_citadium.com": 200,
   "nuit_courir.com": 153,
@@ -27,14 +26,15 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 4307 → 2260 (1246 hors marques, 801 femme/enfant)"
+  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
+  "Filtre marques du cœur + homme/unisexe : 4111 → 2101 (1227 hors marques, 783 femme/enfant)"
  ],
  "a_activer": [
   {
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2680,
+   "n_promos": 2679,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -43,7 +43,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1980,
+   "n_promos": 1979,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -79,7 +79,7 @@
    "nom": "Tres Bien",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 224,
+   "n_promos": 223,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -220,7 +220,6 @@
   }
  ],
  "revendeurs_actifs": [
-  "4 Elementos",
   "Citadium",
   "Foot Locker",
   "Footpatrol",
@@ -233,21 +232,21 @@
   "Uniqlo"
  ],
  "filtres": {
-  "avant": 4307,
-  "hors_marques": 1246,
-  "femme_enfant": 801,
-  "apres": 2260,
+  "avant": 4111,
+  "hors_marques": 1227,
+  "femme_enfant": 783,
+  "apres": 2101,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Zoom Vomero 5 · Chaussure pour femme",
-   "femme/enfant · AUTRY · Baskets  AUTRY ",
-   "femme/enfant · Keen · Keen Uneek Women's",
-   "femme/enfant · Girls Of Dust · Girls Of Dust Physical Tee - Coffee Brown",
-   "femme/enfant · adidas · Taekwondo Mei W",
-   "hors marques · Deus Womens · Memorial Day Run Jacket - Poinsettia Red",
-   "hors marques · Stan Ray · Utility Pant (Olive)",
-   "hors marques · Flea-T · Flea-T Sweatshirt Western Yellow",
-   "femme/enfant · KnowledgeCotton Apparel - WMN · Cashmere skirt - Black Jet",
-   "hors marques · barbell object · Hook Jacket Fade Black"
+   "femme/enfant · Asics · Asics GEL-CUMULUS 16 - Femme Chaussures",
+   "femme/enfant · Reebok · Women's Leopard Print Baby T-Shirt",
+   "hors marques · Objects IV Life · Camiseta Objects IV Life Thought Bubble Spray Men's Print T-Shirt para hombre",
+   "hors marques · SC25 · Border Shirt",
+   "hors marques · Bricks and Wood · Coffe Heavy Knit Beanie",
+   "hors marques · ARMEDANGELS · VAESSAA",
+   "hors marques · Flea-T · Flea-T Sweatshirt Plain Pigment Dyed Pink",
+   "femme/enfant · KnowledgeCotton Apparel - WMN · T-shirt dress - Black Jet",
+   "hors marques · Human Made · Beach Shorts Green"
   ]
  }
 }
