@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T23:05:08",
+ "maj": "2026-11-25T23:40:06",
  "n_actifs": 2120,
  "n_total": 3340,
  "n_tout": 2500,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 13,
-  "nike": 286,
-  "nike_total_site": 4432,
+  "nike": 258,
+  "nike_total_site": 4428,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 542,
@@ -20,7 +20,7 @@
   "smi_shopify_kappa.fr": 99,
   "smi_shopify_michelefranzesemoda.com": 2,
   "smi_shopify_mous.co": 6,
-  "smi_shopify_padelmarket.com": 80,
+  "smi_shopify_padelmarket.com": 79,
   "smi_shopify_reebok.eu": 200,
   "smi_shopify_stadiumgoods.com": 16,
   "smi_shopify_thedoublef.com": 8,
@@ -28,7 +28,7 @@
   "nuit_carhartt.com": 107,
   "nuit_citadium.com": 300,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 96,
+  "nuit_footlocker.fr": 48,
   "nuit_footpatrol.fr": 265,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
@@ -41,7 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5966 → 3340 (1477 hors marques, 1149 femme/enfant)"
+  "Filtre marques du cœur + homme/unisexe : 5889 → 3340 (1476 hors marques, 1073 femme/enfant)",
+  "Liens SMI créés en fin de passage : 10/10",
+  "Photos locales Citadium/Courir : 221 (manquantes 135)"
  ],
  "a_activer": [
   {
@@ -260,21 +262,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5966,
-  "hors_marques": 1477,
-  "femme_enfant": 1149,
+  "avant": 5889,
+  "hors_marques": 1476,
+  "femme_enfant": 1073,
   "apres": 3340,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
-   "hors marques · POLO RALPH LAUREN · Gilet POLO RALPH LAUREN ",
-   "femme/enfant · ASICS · ASICS GEL-CUMULUS 16 Women's",
-   "femme/enfant · Autry · Wmns Mule SUP Vint Sneaker",
-   "femme/enfant · Adidas · Adidas Predator Sala W",
-   "hors marques · Aries · Aries Aged Column Camo Sweatshort  - Pink",
-   "femme/enfant · Organic Basics · Solar Swim Tie Bikini Bottom",
-   "hors marques · ARMEDANGELS · ICONIC Å GEFÜTTERTE BAUMWOLL-JACKE | light sage",
-   "hors marques · J.M. Weston · J.M. Weston Calfskin Suede 180 Loafer: Brown",
-   "hors marques · Wax London · Didcot - Ecru Double-Weave Seersucker Short-Sleeve Shirt"
+   "femme/enfant · SALOMON · Sac à bandoulière SALOMON ",
+   "femme/enfant · New Balance · Interlock Full Zip",
+   "femme/enfant · Autry · Wmns Reelwind Low Sneaker Female Pink",
+   "femme/enfant · Studio Nicholson · Attis Drawstring Linen Pant in Spearmint",
+   "femme/enfant · Undercover · Women's Silk Japanese Paper Camisole Dress Black Stripe",
+   "hors marques · Deus Womens · Memorial Day Run Jacket - Poinsettia Red",
+   "femme/enfant · NUDE PROJECT · Type Shit Tee Grey",
+   "hors marques · Trunk · Trunk Eldon Cotton Flannel Shirt: Navy",
+   "hors marques · Wax London · Park - Navy Tonal Applique Jacket"
   ]
  }
 }
