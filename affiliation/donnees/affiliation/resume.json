@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-26T00:40:05",
- "n_actifs": 2172,
- "n_total": 3421,
+ "maj": "2026-11-26T01:40:05",
+ "n_actifs": 2213,
+ "n_total": 3463,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,25 +10,25 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 13,
-  "nike": 258,
-  "nike_total_site": 4427,
+  "nike": 260,
+  "nike_total_site": 4425,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 542,
   "smi_shopify_bbcicecream.eu": 56,
-  "smi_shopify_grifo210.com": 8,
+  "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
   "smi_shopify_michelefranzesemoda.com": 2,
   "smi_shopify_mous.co": 6,
   "smi_shopify_padelmarket.com": 79,
   "smi_shopify_reebok.eu": 200,
-  "smi_shopify_stadiumgoods.com": 16,
-  "smi_shopify_thedoublef.com": 8,
+  "smi_shopify_stadiumgoods.com": 13,
+  "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 355,
+  "nuit_citadium.com": 350,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 96,
+  "nuit_footlocker.fr": 150,
   "nuit_footpatrol.fr": 266,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
@@ -41,16 +41,16 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 6010 → 3421 (1461 hors marques, 1128 femme/enfant)",
-  "Liens SMI créés en fin de passage : 21/21",
-  "Photos locales Citadium/Courir : 271 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 6058 → 3463 (1464 hors marques, 1131 femme/enfant)",
+  "Liens SMI créés en fin de passage : 44/44",
+  "Photos locales Citadium/Courir : 266 (manquantes 135)"
  ],
  "a_activer": [
   {
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2670,
+   "n_promos": 2668,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -68,7 +68,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1524,
+   "n_promos": 1519,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -113,7 +113,7 @@
    "nom": "END.",
    "reseau": "Impact",
    "statut": "a_rejoindre",
-   "n_promos": 82,
+   "n_promos": 77,
    "mid": null,
    "lien_rejoindre": null,
    "note": "compte Impact : programmes à vérifier"
@@ -262,21 +262,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 6010,
-  "hors_marques": 1461,
-  "femme_enfant": 1128,
-  "apres": 3421,
+  "avant": 6058,
+  "hors_marques": 1464,
+  "femme_enfant": 1131,
+  "apres": 3463,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
-   "femme/enfant · SALOMON · Sac à bandoulière SALOMON ",
-   "hors marques · Rockport · Rockport Umbwe Hiker Boot",
-   "femme/enfant · Autry · Wmns CLC Low Sneaker",
-   "femme/enfant · Adidas · Adidas Taekwondo Mei W",
-   "hors marques · Damson Madder · Damson Madder Kat Kilt - Tan",
+   "hors marques · POLO RALPH LAUREN · T-shirt  POLO RALPH LAUREN ",
+   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
+   "femme/enfant · ASICS SportStyle · Wmns Gel-Kenetic Fluent Sneaker",
+   "hors marques · CHITO International · CHITO International Reflective Guard Sweatpants",
+   "hors marques · SC25 · Front Pocket Cargo Pant - Tobacco",
    "femme/enfant · Organic Basics · Swim Bikini Shorts",
-   "hors marques · ARMEDANGELS · ICONIC Å GEFÜTTERTE BAUMWOLL-JACKE | light sage",
-   "hors marques · 2100 GAZEX · Merci x Caramel - Drap-Housse En Gaze De Coton - Vert 77 Rue De Varenne",
-   "femme/enfant · tentree · Gabriola Dress"
+   "hors marques · ARMEDANGELS · ICONIC Å GEFÜTTERTE BAUMWOLL-JACKE | dark steel",
+   "hors marques · Trunk · Trunk William Merino Roll Neck Sweater: Navy",
+   "femme/enfant · Twojeys · Summer Kids Ring"
   ]
  }
 }
