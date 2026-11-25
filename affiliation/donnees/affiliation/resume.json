@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-25T23:40:06",
- "n_actifs": 2120,
- "n_total": 3340,
+ "maj": "2026-11-26T00:40:05",
+ "n_actifs": 2172,
+ "n_total": 3421,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,12 +11,12 @@
  "sources": {
   "uniqlo": 13,
   "nike": 258,
-  "nike_total_site": 4428,
+  "nike_total_site": 4427,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 542,
   "smi_shopify_bbcicecream.eu": 56,
-  "smi_shopify_grifo210.com": 7,
+  "smi_shopify_grifo210.com": 8,
   "smi_shopify_kappa.fr": 99,
   "smi_shopify_michelefranzesemoda.com": 2,
   "smi_shopify_mous.co": 6,
@@ -26,10 +26,10 @@
   "smi_shopify_thedoublef.com": 8,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 300,
+  "nuit_citadium.com": 355,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 48,
-  "nuit_footpatrol.fr": 265,
+  "nuit_footlocker.fr": 96,
+  "nuit_footpatrol.fr": 266,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 3882,
@@ -37,13 +37,13 @@
   "solebox.com_total": 2819,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
-  "tout_boutiques": 78
+  "tout_boutiques": 79
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5889 → 3340 (1476 hors marques, 1073 femme/enfant)",
-  "Liens SMI créés en fin de passage : 10/10",
-  "Photos locales Citadium/Courir : 221 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 6010 → 3421 (1461 hors marques, 1128 femme/enfant)",
+  "Liens SMI créés en fin de passage : 21/21",
+  "Photos locales Citadium/Courir : 271 (manquantes 135)"
  ],
  "a_activer": [
   {
@@ -59,7 +59,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1971,
+   "n_promos": 1970,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -68,7 +68,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1526,
+   "n_promos": 1524,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -104,10 +104,19 @@
    "nom": "Patta",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 188,
+   "n_promos": 187,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
+  },
+  {
+   "nom": "END.",
+   "reseau": "Impact",
+   "statut": "a_rejoindre",
+   "n_promos": 82,
+   "mid": null,
+   "lien_rejoindre": null,
+   "note": "compte Impact : programmes à vérifier"
   },
   {
    "nom": "Studio Nicholson",
@@ -119,19 +128,10 @@
    "note": null
   },
   {
-   "nom": "END.",
-   "reseau": "Impact",
-   "statut": "a_rejoindre",
-   "n_promos": 9,
-   "mid": null,
-   "lien_rejoindre": null,
-   "note": "compte Impact : programmes à vérifier"
-  },
-  {
    "nom": "Rains",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 1,
+   "n_promos": 2,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -262,21 +262,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5889,
-  "hors_marques": 1476,
-  "femme_enfant": 1073,
-  "apres": 3340,
+  "avant": 6010,
+  "hors_marques": 1461,
+  "femme_enfant": 1128,
+  "apres": 3421,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
    "femme/enfant · SALOMON · Sac à bandoulière SALOMON ",
-   "femme/enfant · New Balance · Interlock Full Zip",
-   "femme/enfant · Autry · Wmns Reelwind Low Sneaker Female Pink",
-   "femme/enfant · Studio Nicholson · Attis Drawstring Linen Pant in Spearmint",
-   "femme/enfant · Undercover · Women's Silk Japanese Paper Camisole Dress Black Stripe",
-   "hors marques · Deus Womens · Memorial Day Run Jacket - Poinsettia Red",
-   "femme/enfant · NUDE PROJECT · Type Shit Tee Grey",
-   "hors marques · Trunk · Trunk Eldon Cotton Flannel Shirt: Navy",
-   "hors marques · Wax London · Park - Navy Tonal Applique Jacket"
+   "hors marques · Rockport · Rockport Umbwe Hiker Boot",
+   "femme/enfant · Autry · Wmns CLC Low Sneaker",
+   "femme/enfant · Adidas · Adidas Taekwondo Mei W",
+   "hors marques · Damson Madder · Damson Madder Kat Kilt - Tan",
+   "femme/enfant · Organic Basics · Swim Bikini Shorts",
+   "hors marques · ARMEDANGELS · ICONIC Å GEFÜTTERTE BAUMWOLL-JACKE | light sage",
+   "hors marques · 2100 GAZEX · Merci x Caramel - Drap-Housse En Gaze De Coton - Vert 77 Rue De Varenne",
+   "femme/enfant · tentree · Gabriola Dress"
   ]
  }
 }
