@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-26T03:40:07",
- "n_actifs": 2215,
- "n_total": 3454,
+ "maj": "2026-11-26T04:40:04",
+ "n_actifs": 2191,
+ "n_total": 3436,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 12,
-  "nike": 260,
-  "nike_total_site": 4423,
+  "nike": 288,
+  "nike_total_site": 4436,
   "footshop": 123,
   "4elementos.com": 200,
   "4elementos.com_total": 541,
@@ -26,10 +26,10 @@
   "smi_shopify_thedoublef.com": 8,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 353,
+  "nuit_citadium.com": 299,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 192,
-  "nuit_footpatrol.fr": 265,
+  "nuit_footlocker.fr": 144,
+  "nuit_footpatrol.fr": 264,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 3882,
@@ -41,9 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 6102 → 3454 (1491 hors marques, 1157 femme/enfant)",
-  "Liens SMI créés en fin de passage : 4/4",
-  "Photos locales Citadium/Courir : 267 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 6027 → 3436 (1482 hors marques, 1109 femme/enfant)",
+  "Liens SMI créés en fin de passage : 6/6",
+  "Photos locales Citadium/Courir : 220 (manquantes 135)"
  ],
  "a_activer": [
   {
@@ -59,7 +59,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1969,
+   "n_promos": 1967,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -68,7 +68,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1511,
+   "n_promos": 1507,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -262,21 +262,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 6102,
-  "hors_marques": 1491,
-  "femme_enfant": 1157,
-  "apres": 3454,
+  "avant": 6027,
+  "hors_marques": 1482,
+  "femme_enfant": 1109,
+  "apres": 3436,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
-   "femme/enfant · CARHARTT WIP · Salopette CARHARTT WIP W' Bib Overall Straight",
-   "femme/enfant · ASICS · ASICS GEL-CUMULUS 16 Women's",
-   "femme/enfant · Nike · P-6000",
-   "femme/enfant · Reebok · Women's Small Logo Cycle Shorts",
-   "femme/enfant · Chaco · Chaco Women's Lowdown Sandals - Faded Blue Fog",
-   "hors marques · DAVRILSUPPLY · NIGHT STEALTH T-SHIRT",
-   "hors marques · Alpha Industries · Seamless LS T-Shirt",
-   "hors marques · Rovi Lucca · Rovi Lucca Cotton Drill Garden Pants: Beige",
-   "hors marques · PALLADIUM-US · 94447-053-M | PALLA ACE CVS ORG | BLACK / WHITE CAP GRAY"
+   "femme/enfant · LEVI'S · Jean LEVI'S CINCH BAGGY",
+   "hors marques · Crocs · Crocs Tembo II RO",
+   "femme/enfant · Converse · Wmns Chuck Taylor All Star Canvas LTD Sneaker",
+   "hors marques · Han Kjobenhavn · Artwork Tee",
+   "hors marques · FW25 · Smart Bomber - Nero",
+   "femme/enfant · Organic Basics · Smooth Off-Shoulder Bodysuit",
+   "femme/enfant · Nisolo · Lidia Whipstitch Loafer Pearl",
+   "hors marques · Trunk · Trunk Walbrook Wool Fresco Suit Jacket: Navy",
+   "hors marques · tentree · Amazon Patch Elevation Hat"
   ]
  }
 }
