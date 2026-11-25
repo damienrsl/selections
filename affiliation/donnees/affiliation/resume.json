@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-26T01:40:05",
- "n_actifs": 2213,
- "n_total": 3463,
+ "maj": "2026-11-26T02:40:03",
+ "n_actifs": 2167,
+ "n_total": 3411,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -9,12 +9,12 @@
  },
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
-  "uniqlo": 13,
+  "uniqlo": 12,
   "nike": 260,
   "nike_total_site": 4425,
   "footshop": 123,
   "4elementos.com": 200,
-  "4elementos.com_total": 542,
+  "4elementos.com_total": 541,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -26,9 +26,9 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 350,
+  "nuit_citadium.com": 353,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 150,
+  "nuit_footlocker.fr": 103,
   "nuit_footpatrol.fr": 266,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
@@ -41,16 +41,16 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 6058 → 3463 (1464 hors marques, 1131 femme/enfant)",
-  "Liens SMI créés en fin de passage : 44/44",
-  "Photos locales Citadium/Courir : 266 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 6013 → 3411 (1475 hors marques, 1127 femme/enfant)",
+  "Liens SMI créés en fin de passage : 10/10",
+  "Photos locales Citadium/Courir : 267 (manquantes 135)"
  ],
  "a_activer": [
   {
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2668,
+   "n_promos": 2669,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -59,7 +59,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1970,
+   "n_promos": 1969,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -68,7 +68,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1519,
+   "n_promos": 1516,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -113,7 +113,7 @@
    "nom": "END.",
    "reseau": "Impact",
    "statut": "a_rejoindre",
-   "n_promos": 77,
+   "n_promos": 71,
    "mid": null,
    "lien_rejoindre": null,
    "note": "compte Impact : programmes à vérifier"
@@ -262,21 +262,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 6058,
-  "hors_marques": 1464,
-  "femme_enfant": 1131,
-  "apres": 3463,
+  "avant": 6013,
+  "hors_marques": 1475,
+  "femme_enfant": 1127,
+  "apres": 3411,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
-   "hors marques · POLO RALPH LAUREN · T-shirt  POLO RALPH LAUREN ",
-   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
-   "femme/enfant · ASICS SportStyle · Wmns Gel-Kenetic Fluent Sneaker",
-   "hors marques · CHITO International · CHITO International Reflective Guard Sweatpants",
-   "hors marques · SC25 · Front Pocket Cargo Pant - Tobacco",
-   "femme/enfant · Organic Basics · Swim Bikini Shorts",
-   "hors marques · ARMEDANGELS · ICONIC Å GEFÜTTERTE BAUMWOLL-JACKE | dark steel",
-   "hors marques · Trunk · Trunk William Merino Roll Neck Sweater: Navy",
-   "femme/enfant · Twojeys · Summer Kids Ring"
+   "femme/enfant · SALOMON · Sac à bandoulière SALOMON ",
+   "femme/enfant · New Balance · New Balance 1906L Loafer Women's",
+   "femme/enfant · Autry · Wmns Medalist Low Sneaker",
+   "femme/enfant · Adidas · Adidas Taekwondo Mei W",
+   "hors marques · SC24 · Permanent Vacation Pocket T-Shirt - Royal Blue",
+   "femme/enfant · Organic Basics · Smooth Padded Bra",
+   "femme/enfant · Brixton · Odessa Cowboy Hat - Italian Clay",
+   "hors marques · Incotex · Incotex Regular Cotton Needlecord Trousers: Mushroom",
+   "femme/enfant · KEEN · Women's PNW Hoodie  |  Burnt Ochre"
   ]
  }
 }
