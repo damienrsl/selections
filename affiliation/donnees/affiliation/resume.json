@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-26T09:40:04",
- "n_actifs": 2079,
- "n_total": 3326,
+ "maj": "2026-11-26T10:40:04",
+ "n_actifs": 2068,
+ "n_total": 3307,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -26,9 +26,9 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 355,
+  "nuit_citadium.com": 336,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 99,
+  "nuit_footlocker.fr": 144,
   "nuit_footpatrol.fr": 259,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
@@ -37,13 +37,13 @@
   "solebox.com_total": 2881,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
-  "tout_boutiques": 79
+  "tout_boutiques": 76
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5908 → 3326 (1470 hors marques, 1112 femme/enfant)",
-  "Liens SMI créés en fin de passage : 1/1",
-  "Photos locales Citadium/Courir : 269 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 5934 → 3307 (1480 hors marques, 1147 femme/enfant)",
+  "Liens SMI créés en fin de passage : 5/5",
+  "Photos locales Citadium/Courir : 258 (manquantes 135)"
  ],
  "a_activer": [
   {
@@ -261,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5908,
-  "hors_marques": 1470,
-  "femme_enfant": 1112,
-  "apres": 3326,
+  "avant": 5934,
+  "hors_marques": 1480,
+  "femme_enfant": 1147,
+  "apres": 3307,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
-   "femme/enfant · CARHARTT WIP · Sweatshirt CARHARTT WIP W' CASEY",
-   "femme/enfant · adidas · adidas Originals Samba OG Women's",
-   "femme/enfant · adidas Originals · x Bad Bunny Mercedes Wmns Adiracer GT Sneaker",
-   "hors marques · U.P.W.W. · Waxed Work Denim Pants",
-   "hors marques · 247 · 247 Panelled Insulated Jacket - Steel",
-   "hors marques · Pyrenex · Sweat matelassé Frida Milk",
-   "femme/enfant · Nisolo · Lidia Whipstitch Loafer Lilac",
-   "hors marques · Trunk · Trunk Moxon Short Sleeve Polo Shirt: Green Tea",
-   "hors marques · PALLADIUM-US · 94664-217-M | ACE CHUKKA FLOWER | TROPISAND"
+   "hors marques · Under Armour · Under Armour Tee Shirt Side Logo",
+   "femme/enfant · adidas · adidas Originals Handball Spezial Loafer Women's",
+   "femme/enfant · adidas Consortium · x Slam Jam Wmns F50.7 Sala Sneaker",
+   "hors marques · Puma · Puma Talon WTR",
+   "femme/enfant · Girls Of Dust · Girls Of Dust Johnny Top - Aztek Brown",
+   "femme/enfant · Organic Basics · Bare Bandeau Bralette",
+   "femme/enfant · Brixton · Post Playa E-Waist Short - Navy/White Collage",
+   "femme/enfant · Our Legacy · Our Legacy Robe Overcoat Onyx Black Tech Sateen",
+   "hors marques · NULL · NEW YORK YANKEES UNDER BAR '47 FOUNDATION TEE"
   ]
  }
 }
