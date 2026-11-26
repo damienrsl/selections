@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T07:40:04",
- "n_actifs": 2050,
- "n_total": 3288,
+ "maj": "2026-11-27T08:40:05",
+ "n_actifs": 2043,
+ "n_total": 3281,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 49,
   "nike": 233,
-  "nike_total_site": 4533,
+  "nike_total_site": 4532,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -26,24 +26,24 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 329,
+  "nuit_citadium.com": 341,
   "nuit_courir.com": 153,
   "nuit_footlocker.fr": 96,
   "nuit_footpatrol.fr": 265,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
-  "snipes.com_total": 3886,
+  "snipes.com_total": 4389,
   "solebox.com": 400,
-  "solebox.com_total": 2844,
+  "solebox.com_total": 2838,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
   "tout_boutiques": 76
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5867 → 3288 (1482 hors marques, 1097 femme/enfant)",
-  "Liens SMI créés en fin de passage : 3/3",
-  "Photos locales Citadium/Courir : 260 (manquantes 134)"
+  "Filtre marques du cœur + homme/unisexe : 5879 → 3281 (1483 hors marques, 1115 femme/enfant)",
+  "Liens SMI créés en fin de passage : 10/10",
+  "Photos locales Citadium/Courir : 264 (manquantes 134)"
  ],
  "a_activer": [
   {
@@ -261,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5867,
-  "hors_marques": 1482,
-  "femme_enfant": 1097,
-  "apres": 3288,
+  "avant": 5879,
+  "hors_marques": 1483,
+  "femme_enfant": 1115,
+  "apres": 3281,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · Dragon Ball Z · Dragon Ball Z Tee Shirt Goku Super Saiyan",
-   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
-   "femme/enfant · adidas Originals · Wmns Taekwondo Mei Ballet Sneaker Female Pink",
-   "femme/enfant · adidas · Cut Out Bra Medium Support",
-   "hors marques · Justoverthetop · Doudoune à capuche Grand Froid Bleu délavé Dakhla",
-   "hors marques · Deus Ex Machina · Stringer Walk Pant - Anthracite",
-   "femme/enfant · Nisolo · Lidia Whipstitch Loafer Lilac",
-   "hors marques · RIER · Rier Losange Mini Plombe",
-   "hors marques · NULL · PHILADELPHIA PHILLIES UNDER BAR '47 FOUNDATION TEE"
+   "femme/enfant · THE NORTH FACE · Veste THE NORTH FACE ",
+   "hors marques · Home Grown · Home Grown Marker Jacket",
+   "femme/enfant · Converse · Wmns Chuck Taylor All Star Canvas LTD Sneaker",
+   "femme/enfant · adidas · W Equipment Shorts",
+   "hors marques · SC25 · Front Pocket Cargo Short - Tobacco",
+   "hors marques · Pyrenex · Doudoune d'intérieur Alva Milk",
+   "femme/enfant · Brixton · Odessa Cowboy Hat - Italian Clay",
+   "hors marques · RIER · Rier Polar Jersey Roundneck Plombe",
+   "hors marques · NULL · PHILADELPHIA PHILLIES HEATER '47 FOUNDATION TEE"
   ]
  }
 }
