@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T06:40:05",
- "n_actifs": 2064,
- "n_total": 3302,
+ "maj": "2026-11-27T07:40:04",
+ "n_actifs": 2050,
+ "n_total": 3288,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 49,
-  "nike": 247,
-  "nike_total_site": 4537,
+  "nike": 233,
+  "nike_total_site": 4533,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -26,9 +26,9 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 299,
+  "nuit_citadium.com": 329,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 144,
+  "nuit_footlocker.fr": 96,
   "nuit_footpatrol.fr": 265,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
@@ -41,9 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5899 → 3302 (1481 hors marques, 1116 femme/enfant)",
+  "Filtre marques du cœur + homme/unisexe : 5867 → 3288 (1482 hors marques, 1097 femme/enfant)",
   "Liens SMI créés en fin de passage : 3/3",
-  "Photos locales Citadium/Courir : 226 (manquantes 134)"
+  "Photos locales Citadium/Courir : 260 (manquantes 134)"
  ],
  "a_activer": [
   {
@@ -261,20 +261,20 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5899,
-  "hors_marques": 1481,
-  "femme_enfant": 1116,
-  "apres": 3302,
+  "avant": 5867,
+  "hors_marques": 1482,
+  "femme_enfant": 1097,
+  "apres": 3288,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · LEVI'S · Jean LEVI'S RIBCAGE WIDE LEG H223",
-   "hors marques · Alte Systems · Alte Systems Augment 1/4 Zip Sweatshirt",
-   "femme/enfant · Converse · Wmns Chuck Taylor All Star Canvas LTD Sneaker",
-   "hors marques · Han Kjobenhavn · Track Top",
-   "hors marques · SC25 · Front Pocket Cargo Short - Champagne",
-   "hors marques · Pyrenex · Doudoune d'intérieur Alva Crepuscule",
-   "femme/enfant · Brixton · Dolly Slim L/S Knit T-Shirt - Gold Metallic",
-   "femme/enfant · RIER · Rier Fleece Wrap Skirt Camoscio",
+   "hors marques · Dragon Ball Z · Dragon Ball Z Tee Shirt Goku Super Saiyan",
+   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
+   "femme/enfant · adidas Originals · Wmns Taekwondo Mei Ballet Sneaker Female Pink",
+   "femme/enfant · adidas · Cut Out Bra Medium Support",
+   "hors marques · Justoverthetop · Doudoune à capuche Grand Froid Bleu délavé Dakhla",
+   "hors marques · Deus Ex Machina · Stringer Walk Pant - Anthracite",
+   "femme/enfant · Nisolo · Lidia Whipstitch Loafer Lilac",
+   "hors marques · RIER · Rier Losange Mini Plombe",
    "hors marques · NULL · PHILADELPHIA PHILLIES UNDER BAR '47 FOUNDATION TEE"
   ]
  }
