@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-26T13:40:45",
- "n_actifs": 2031,
- "n_total": 3270,
+ "maj": "2026-11-27T01:40:05",
+ "n_actifs": 2061,
+ "n_total": 3300,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -9,12 +9,12 @@
  },
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
-  "uniqlo": 12,
-  "nike": 288,
-  "nike_total_site": 4438,
+  "uniqlo": 49,
+  "nike": 253,
+  "nike_total_site": 4437,
   "footshop": 0,
   "4elementos.com": 200,
-  "4elementos.com_total": 541,
+  "4elementos.com_total": 496,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -26,23 +26,24 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 298,
+  "nuit_citadium.com": 349,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 144,
+  "nuit_footlocker.fr": 96,
   "nuit_footpatrol.fr": 261,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
-  "snipes.com_total": 3781,
+  "snipes.com_total": 3886,
   "solebox.com": 400,
-  "solebox.com_total": 2881,
+  "solebox.com_total": 2844,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
   "tout_boutiques": 76
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5898 → 3270 (1479 hors marques, 1149 femme/enfant)",
-  "Photos locales Citadium/Courir : 219 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 5903 → 3300 (1482 hors marques, 1121 femme/enfant)",
+  "Liens SMI créés en fin de passage : 53/53",
+  "Photos locales Citadium/Courir : 264 (manquantes 135)"
  ],
  "a_activer": [
   {
@@ -260,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5898,
-  "hors_marques": 1479,
-  "femme_enfant": 1149,
-  "apres": 3270,
+  "avant": 5903,
+  "hors_marques": 1482,
+  "femme_enfant": 1121,
+  "apres": 3300,
   "exemples_retires": [
-   "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
-   "hors marques · Under Armour · Under Armour Tee Shirt Side Logo",
-   "hors marques · Home Grown · Home Grown International T-Shirt",
-   "femme/enfant · adidas Originals · Wmns EQT Leggings Apparel",
-   "femme/enfant · Reebok · Women's High-Rise Leggings",
-   "femme/enfant · Girls Of Dust · Girls Of Dust Bermuda Short - Nomad",
-   "femme/enfant · Organic Basics · Solar Swim Cheeky Bikini Bottom",
-   "hors marques · ARMEDANGELS · GEFÜTTERTE BAUMWOLLJACKE",
-   "hors marques · JW Anderson · JW Anderson Teacup Charm Off White",
-   "hors marques · NULL · LOS ANGELES DODGERS UNDER BAR '47 FOUNDATION TEE"
+   "femme/enfant · Uniqlo · Legging en polaire",
+   "femme/enfant · ADIDAS · Baskets ADIDAS HANDBALL SPEZIAL W",
+   "hors marques · Crocs · Crocs Classic Boat Clog",
+   "femme/enfant · Autry · Wmns Windspin Low Sneaker",
+   "hors marques · Han Kjobenhavn · Artwork Tee",
+   "hors marques · SC25 · Front Pocket Cargo Short - Tobacco",
+   "hors marques · Pyrenex · Doudoune d'intérieur Alva Crepuscule",
+   "hors marques · Houston · Houston Mesh Cotton (U.S. Army Air Force) Print T-Shirt Navy",
+   "hors marques · RIER · Rier Losange Mini Plombe",
+   "hors marques · NULL · PHILADELPHIA PHILLIES CARTOON '47 FOUNDATION HOOD"
   ]
  }
 }
