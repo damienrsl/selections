@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T02:40:05",
- "n_actifs": 2076,
- "n_total": 3315,
+ "maj": "2026-11-27T03:40:05",
+ "n_actifs": 2023,
+ "n_total": 3262,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 49,
-  "nike": 259,
-  "nike_total_site": 4441,
+  "nike": 252,
+  "nike_total_site": 4455,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -26,10 +26,10 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 108,
-  "nuit_citadium.com": 350,
+  "nuit_citadium.com": 300,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 140,
-  "nuit_footpatrol.fr": 265,
+  "nuit_footlocker.fr": 144,
+  "nuit_footpatrol.fr": 266,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 3886,
@@ -41,9 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5959 → 3315 (1478 hors marques, 1166 femme/enfant)",
-  "Liens SMI créés en fin de passage : 27/27",
-  "Photos locales Citadium/Courir : 269 (manquantes 134)"
+  "Filtre marques du cœur + homme/unisexe : 5907 → 3262 (1477 hors marques, 1168 femme/enfant)",
+  "Liens SMI créés en fin de passage : 1/1",
+  "Photos locales Citadium/Courir : 222 (manquantes 134)"
  ],
  "a_activer": [
   {
@@ -261,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5959,
-  "hors_marques": 1478,
-  "femme_enfant": 1166,
-  "apres": 3315,
+  "avant": 5907,
+  "hors_marques": 1477,
+  "femme_enfant": 1168,
+  "apres": 3262,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
    "femme/enfant · LEVI'S · Veste LEVI'S ",
-   "hors marques · Fred Perry · Fred Perry Oxford Shirt",
+   "femme/enfant · Keen · Keen Uneek Women's",
    "femme/enfant · adidas Originals · Handball Spezial",
-   "femme/enfant · Reebok · Women's Basketball Mesh T-Shirt",
-   "femme/enfant · Chaco · Chaco Women's Lowdown Sandals - Faded Sparrow",
-   "hors marques · Organic Basics · Swim Longline Shorts",
-   "hors marques · ARMEDANGELS · ICONIC Å GEFÜTTERTE BAUMWOLL-JACKE | light sage",
-   "hors marques · JW Anderson · JW Anderson Teacup Charm Off White",
-   "hors marques · NULL · NEW YORK YANKEES UNDER BAR '47 FOUNDATION TEE"
+   "femme/enfant · Reebok · Women's Oversized T-Shirt Dress",
+   "femme/enfant · Chaco · Chaco Women's Lowdown Sandals - Faded Blue Fog",
+   "femme/enfant · Organic Basics · Swim Bikini Shorts",
+   "hors marques · ARMEDANGELS · GEFÜTTERTE ICONIC Å CORDJACKE",
+   "hors marques · JW Anderson · JW Anderson Crockery Jacquard Jumper Black / White",
+   "hors marques · NULL · NEW YORK YANKEES HEATER '47 FOUNDATION TEE"
   ]
  }
 }
