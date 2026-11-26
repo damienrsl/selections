@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T04:40:07",
- "n_actifs": 2063,
- "n_total": 3302,
+ "maj": "2026-11-27T05:40:03",
+ "n_actifs": 2067,
+ "n_total": 3306,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -28,7 +28,7 @@
   "nuit_carhartt.com": 108,
   "nuit_citadium.com": 350,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 96,
+  "nuit_footlocker.fr": 99,
   "nuit_footpatrol.fr": 267,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
@@ -41,7 +41,7 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5906 → 3302 (1480 hors marques, 1124 femme/enfant)",
+  "Filtre marques du cœur + homme/unisexe : 5909 → 3306 (1480 hors marques, 1123 femme/enfant)",
   "Liens SMI créés en fin de passage : 3/3",
   "Photos locales Citadium/Courir : 269 (manquantes 134)"
  ],
@@ -261,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5906,
+  "avant": 5909,
   "hors_marques": 1480,
-  "femme_enfant": 1124,
-  "apres": 3302,
+  "femme_enfant": 1123,
+  "apres": 3306,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
    "hors marques · POLO RALPH LAUREN · Pull POLO RALPH LAUREN Cotton Crewneck Sweater",
-   "femme/enfant · adidas · adidas Originals London '90's City Series' - size? exclusive Womens",
-   "femme/enfant · Autry · Wmns Windspin Low Sneaker Female Pink",
-   "hors marques · Sefr · Sefr Ignacio Shirt",
-   "hors marques · SS25 Other · Realtree® Camo Cargo Pant - Camo",
-   "hors marques · Pyrenex · Doudoune d'intérieur Alva Milk",
-   "femme/enfant · Brixton · Dolly Slim L/S Knit T-Shirt - Gold Metallic",
-   "hors marques · RIER · Rier Denim Trousers Anthracite",
-   "hors marques · NULL · ATLANTA BRAVES CAP SHADOW '47 FOUNDATION TEE"
+   "femme/enfant · adidas · adidas Originals Ghost Sprint Ballet Women's",
+   "femme/enfant · Autry · Wmns Windspin Low Sneaker",
+   "hors marques · Han Kjobenhavn · Artwork Tee",
+   "hors marques · SC25 · Front Pocket Cargo Short - Tobacco",
+   "hors marques · Pyrenex · Doudoune d'intérieur Alva Crepuscule",
+   "hors marques · Houston · Houston Mesh Cotton (U.S. Army Air Force) Print T-Shirt Navy",
+   "hors marques · RIER · Rier Losange Mini Plombe",
+   "hors marques · NULL · PHILADELPHIA PHILLIES CARTOON '47 FOUNDATION HOOD"
   ]
  }
 }
