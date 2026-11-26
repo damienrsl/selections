@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-26T10:40:04",
- "n_actifs": 2068,
- "n_total": 3307,
+ "maj": "2026-11-26T13:40:45",
+ "n_actifs": 2031,
+ "n_total": 3270,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -26,13 +26,13 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 336,
+  "nuit_citadium.com": 298,
   "nuit_courir.com": 153,
   "nuit_footlocker.fr": 144,
-  "nuit_footpatrol.fr": 259,
+  "nuit_footpatrol.fr": 261,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
-  "snipes.com_total": 3808,
+  "snipes.com_total": 3781,
   "solebox.com": 400,
   "solebox.com_total": 2881,
   "scrap_revendeurs": 10,
@@ -41,9 +41,8 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5934 → 3307 (1480 hors marques, 1147 femme/enfant)",
-  "Liens SMI créés en fin de passage : 5/5",
-  "Photos locales Citadium/Courir : 258 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 5898 → 3270 (1479 hors marques, 1149 femme/enfant)",
+  "Photos locales Citadium/Courir : 219 (manquantes 135)"
  ],
  "a_activer": [
   {
@@ -261,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5934,
-  "hors_marques": 1480,
-  "femme_enfant": 1147,
-  "apres": 3307,
+  "avant": 5898,
+  "hors_marques": 1479,
+  "femme_enfant": 1149,
+  "apres": 3270,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
    "hors marques · Under Armour · Under Armour Tee Shirt Side Logo",
-   "femme/enfant · adidas · adidas Originals Handball Spezial Loafer Women's",
-   "femme/enfant · adidas Consortium · x Slam Jam Wmns F50.7 Sala Sneaker",
-   "hors marques · Puma · Puma Talon WTR",
-   "femme/enfant · Girls Of Dust · Girls Of Dust Johnny Top - Aztek Brown",
-   "femme/enfant · Organic Basics · Bare Bandeau Bralette",
-   "femme/enfant · Brixton · Post Playa E-Waist Short - Navy/White Collage",
-   "femme/enfant · Our Legacy · Our Legacy Robe Overcoat Onyx Black Tech Sateen",
-   "hors marques · NULL · NEW YORK YANKEES UNDER BAR '47 FOUNDATION TEE"
+   "hors marques · Home Grown · Home Grown International T-Shirt",
+   "femme/enfant · adidas Originals · Wmns EQT Leggings Apparel",
+   "femme/enfant · Reebok · Women's High-Rise Leggings",
+   "femme/enfant · Girls Of Dust · Girls Of Dust Bermuda Short - Nomad",
+   "femme/enfant · Organic Basics · Solar Swim Cheeky Bikini Bottom",
+   "hors marques · ARMEDANGELS · GEFÜTTERTE BAUMWOLLJACKE",
+   "hors marques · JW Anderson · JW Anderson Teacup Charm Off White",
+   "hors marques · NULL · LOS ANGELES DODGERS UNDER BAR '47 FOUNDATION TEE"
   ]
  }
 }
