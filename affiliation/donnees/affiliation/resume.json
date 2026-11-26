@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T05:40:03",
- "n_actifs": 2067,
- "n_total": 3306,
+ "maj": "2026-11-27T06:40:05",
+ "n_actifs": 2064,
+ "n_total": 3302,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 49,
-  "nike": 248,
-  "nike_total_site": 4542,
+  "nike": 247,
+  "nike_total_site": 4537,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -25,11 +25,11 @@
   "smi_shopify_stadiumgoods.com": 14,
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
-  "nuit_carhartt.com": 108,
-  "nuit_citadium.com": 350,
+  "nuit_carhartt.com": 107,
+  "nuit_citadium.com": 299,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 99,
-  "nuit_footpatrol.fr": 267,
+  "nuit_footlocker.fr": 144,
+  "nuit_footpatrol.fr": 265,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 3886,
@@ -41,9 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5909 → 3306 (1480 hors marques, 1123 femme/enfant)",
+  "Filtre marques du cœur + homme/unisexe : 5899 → 3302 (1481 hors marques, 1116 femme/enfant)",
   "Liens SMI créés en fin de passage : 3/3",
-  "Photos locales Citadium/Courir : 269 (manquantes 134)"
+  "Photos locales Citadium/Courir : 226 (manquantes 134)"
  ],
  "a_activer": [
   {
@@ -261,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5909,
-  "hors_marques": 1480,
-  "femme_enfant": 1123,
-  "apres": 3306,
+  "avant": 5899,
+  "hors_marques": 1481,
+  "femme_enfant": 1116,
+  "apres": 3302,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · POLO RALPH LAUREN · Pull POLO RALPH LAUREN Cotton Crewneck Sweater",
-   "femme/enfant · adidas · adidas Originals Ghost Sprint Ballet Women's",
-   "femme/enfant · Autry · Wmns Windspin Low Sneaker",
-   "hors marques · Han Kjobenhavn · Artwork Tee",
-   "hors marques · SC25 · Front Pocket Cargo Short - Tobacco",
+   "femme/enfant · LEVI'S · Jean LEVI'S RIBCAGE WIDE LEG H223",
+   "hors marques · Alte Systems · Alte Systems Augment 1/4 Zip Sweatshirt",
+   "femme/enfant · Converse · Wmns Chuck Taylor All Star Canvas LTD Sneaker",
+   "hors marques · Han Kjobenhavn · Track Top",
+   "hors marques · SC25 · Front Pocket Cargo Short - Champagne",
    "hors marques · Pyrenex · Doudoune d'intérieur Alva Crepuscule",
-   "hors marques · Houston · Houston Mesh Cotton (U.S. Army Air Force) Print T-Shirt Navy",
-   "hors marques · RIER · Rier Losange Mini Plombe",
-   "hors marques · NULL · PHILADELPHIA PHILLIES CARTOON '47 FOUNDATION HOOD"
+   "femme/enfant · Brixton · Dolly Slim L/S Knit T-Shirt - Gold Metallic",
+   "femme/enfant · RIER · Rier Fleece Wrap Skirt Camoscio",
+   "hors marques · NULL · PHILADELPHIA PHILLIES UNDER BAR '47 FOUNDATION TEE"
   ]
  }
 }
