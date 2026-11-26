@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-26T08:40:03",
- "n_actifs": 2031,
- "n_total": 3279,
+ "maj": "2026-11-26T09:40:04",
+ "n_actifs": 2079,
+ "n_total": 3326,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,14 +11,14 @@
  "sources": {
   "uniqlo": 12,
   "nike": 288,
-  "nike_total_site": 4437,
+  "nike_total_site": 4438,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 541,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
-  "smi_shopify_michelefranzesemoda.com": 2,
+  "smi_shopify_michelefranzesemoda.com": 1,
   "smi_shopify_mous.co": 6,
   "smi_shopify_padelmarket.com": 78,
   "smi_shopify_reebok.eu": 200,
@@ -26,10 +26,10 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 107,
-  "nuit_citadium.com": 301,
+  "nuit_citadium.com": 355,
   "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 96,
-  "nuit_footpatrol.fr": 257,
+  "nuit_footlocker.fr": 99,
+  "nuit_footpatrol.fr": 259,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 3808,
@@ -41,15 +41,16 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5850 → 3279 (1460 hors marques, 1111 femme/enfant)",
-  "Photos locales Citadium/Courir : 222 (manquantes 135)"
+  "Filtre marques du cœur + homme/unisexe : 5908 → 3326 (1470 hors marques, 1112 femme/enfant)",
+  "Liens SMI créés en fin de passage : 1/1",
+  "Photos locales Citadium/Courir : 269 (manquantes 135)"
  ],
  "a_activer": [
   {
    "nom": "Slam Jam",
    "reseau": "CJ",
    "statut": "a_rejoindre",
-   "n_promos": 2662,
+   "n_promos": 2661,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -58,7 +59,7 @@
    "nom": "Overkill",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1962,
+   "n_promos": 1961,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -67,7 +68,7 @@
    "nom": "Asphaltgold",
    "reseau": "Webgains",
    "statut": "a_rejoindre",
-   "n_promos": 1588,
+   "n_promos": 1585,
    "mid": null,
    "lien_rejoindre": null,
    "note": null
@@ -260,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5850,
-  "hors_marques": 1460,
-  "femme_enfant": 1111,
-  "apres": 3279,
+  "avant": 5908,
+  "hors_marques": 1470,
+  "femme_enfant": 1112,
+  "apres": 3326,
   "exemples_retires": [
    "femme/enfant · Nike · Nike Dunk Low · Chaussure pour femme",
-   "hors marques · Ugg · Ugg Tazz ll Cheetah",
-   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
-   "femme/enfant · adidas Originals · Wmns Taekwondo Mei Ballet Sneaker Female Pink",
-   "hors marques · Han Kjobenhavn · Cropped Sweatpants",
-   "hors marques · Lems Shoes · Men's Drifter Grip",
-   "hors marques · Deus Ex Machina · Hiro Padded Vest - Black",
-   "femme/enfant · Brixton · The Cabana Mesh Lounge Pant - Multi Color Zigzag",
-   "hors marques · Trunk · Trunk Walbrook Wool Fresco Suit Jacket: Navy",
-   "femme/enfant · tentree · Poplar Cardigan"
+   "femme/enfant · CARHARTT WIP · Sweatshirt CARHARTT WIP W' CASEY",
+   "femme/enfant · adidas · adidas Originals Samba OG Women's",
+   "femme/enfant · adidas Originals · x Bad Bunny Mercedes Wmns Adiracer GT Sneaker",
+   "hors marques · U.P.W.W. · Waxed Work Denim Pants",
+   "hors marques · 247 · 247 Panelled Insulated Jacket - Steel",
+   "hors marques · Pyrenex · Sweat matelassé Frida Milk",
+   "femme/enfant · Nisolo · Lidia Whipstitch Loafer Lilac",
+   "hors marques · Trunk · Trunk Moxon Short Sleeve Polo Shirt: Green Tea",
+   "hors marques · PALLADIUM-US · 94664-217-M | ACE CHUKKA FLOWER | TROPISAND"
   ]
  }
 }
