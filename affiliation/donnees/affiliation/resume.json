@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T23:40:03",
- "n_actifs": 2010,
- "n_total": 3292,
+ "maj": "2026-11-28T00:40:07",
+ "n_actifs": 2017,
+ "n_total": 3299,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 48,
-  "nike": 225,
-  "nike_total_site": 4492,
+  "nike": 231,
+  "nike_total_site": 4497,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -26,10 +26,10 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 115,
-  "nuit_citadium.com": 249,
+  "nuit_citadium.com": 247,
   "nuit_courir.com": 200,
   "nuit_footlocker.fr": 96,
-  "nuit_footpatrol.fr": 313,
+  "nuit_footpatrol.fr": 310,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 4219,
@@ -41,8 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5881 → 3292 (1517 hors marques, 1072 femme/enfant)",
-  "Photos locales Citadium/Courir : 188 (manquantes 170)"
+  "Filtre marques du cœur + homme/unisexe : 5882 → 3299 (1521 hors marques, 1062 femme/enfant)",
+  "Liens SMI créés en fin de passage : 1/1",
+  "Photos locales Citadium/Courir : 191 (manquantes 170)"
  ],
  "a_activer": [
   {
@@ -260,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5881,
-  "hors_marques": 1517,
-  "femme_enfant": 1072,
-  "apres": 3292,
+  "avant": 5882,
+  "hors_marques": 1521,
+  "femme_enfant": 1062,
+  "apres": 3299,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · Ugg · Ugg Tazz ll",
-   "hors marques · Henri Lloyd · Henri Lloyd Voyager Rugby Polo",
-   "femme/enfant · Autry · Wmns Windspin Low Sneaker Female Pink",
-   "femme/enfant · adidas · Bralette",
-   "hors marques · 247 · 247 Panelled Insulated Jacket - Steel",
-   "hors marques · Pyrenex · Sweat matelassé Frida Crepuscule",
-   "hors marques · Houston · Houston Mesh Cotton (U.S. Army Air Force) Print T-Shirt Navy",
-   "femme/enfant · RIER · Rier Fleece Wrap Skirt Camoscio",
-   "hors marques · NULL · PHILADELPHIA PHILLIES HEATER '47 FOUNDATION TEE"
+   "hors marques · Ugg · Ugg Heritage Lace Up Slipper",
+   "hors marques · Home Grown · Home Grown Sway Fade Stripe Sweatshirt",
+   "femme/enfant · adidas performance · Wmns Adizero Goukana Sneaker",
+   "femme/enfant · adidas · Cut Out Bra Medium Support",
+   "hors marques · Justoverthetop · Doudoune légère sans manches Rouge Mali",
+   "hors marques · Deus Ex Machina · Stringer Walk Pant - Dirty White",
+   "hors marques · Pop Trading Company · Pop Hewitt Suit Jacket Coastal Fjord",
+   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Marine",
+   "femme/enfant · KEEN · Women's Sparta 2 ESD (Aluminum Toe)  |  Drizzle/Papaya"
   ]
  }
 }
