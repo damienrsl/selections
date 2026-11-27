@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T21:40:04",
- "n_actifs": 1902,
- "n_total": 3180,
+ "maj": "2026-11-27T22:40:05",
+ "n_actifs": 1896,
+ "n_total": 3176,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 48,
   "nike": 262,
-  "nike_total_site": 4507,
+  "nike_total_site": 4503,
   "footshop": 0,
   "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
@@ -24,11 +24,11 @@
   "smi_shopify_stadiumgoods.com": 14,
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
-  "nuit_carhartt.com": 111,
-  "nuit_citadium.com": 304,
+  "nuit_carhartt.com": 113,
+  "nuit_citadium.com": 305,
   "nuit_courir.com": 200,
   "nuit_footlocker.fr": 96,
-  "nuit_footpatrol.fr": 314,
+  "nuit_footpatrol.fr": 313,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 4219,
@@ -41,9 +41,9 @@
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
   "4 Elementos : Expecting value: line 1 column 1 (char 0)",
-  "Filtre marques du cœur + homme/unisexe : 5770 → 3180 (1492 hors marques, 1098 femme/enfant)",
+  "Filtre marques du cœur + homme/unisexe : 5772 → 3176 (1489 hors marques, 1107 femme/enfant)",
   "Liens SMI créés en fin de passage : 3/3",
-  "Photos locales Citadium/Courir : 235 (manquantes 170)"
+  "Photos locales Citadium/Courir : 231 (manquantes 170)"
  ],
  "a_activer": [
   {
@@ -260,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5770,
-  "hors_marques": 1492,
-  "femme_enfant": 1098,
-  "apres": 3180,
+  "avant": 5772,
+  "hors_marques": 1489,
+  "femme_enfant": 1107,
+  "apres": 3176,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · Ugg · Ugg Tazz ll",
-   "hors marques · Henri Lloyd · Henri Lloyd Golant Quarter Zip Knit",
-   "femme/enfant · Autry · Wmns Windspin Low Sneaker",
-   "femme/enfant · adidas · W Equipment Shorts",
-   "hors marques · 247 · 247 Arc-1 Runner - Yellow",
-   "hors marques · Deus Ex Machina · La Magie Short - Dirty Denim",
-   "hors marques · Pop Trading Company · Pop Hewitt Suit Jacket Coastal Fjord",
-   "hors marques · SOCQUE · Socque - Mocassin Totem - Crème",
-   "hors marques · KEEN · Men's PNW Hoodie  |  Olivine"
+   "hors marques · Dragon Ball Z · Dragon Ball Z Tee Shirt Goku Super Saiyan",
+   "hors marques · Home Grown · Home Grown x Sergio Tacchini Adams Graphic Shirt",
+   "femme/enfant · Autry · Wmns Medalist Low Sneaker",
+   "femme/enfant · Nike · W Air Max Craze",
+   "hors marques · Exclusives · All Over Print Towel Shirt - Black",
+   "hors marques · Pyrenex · Sweat matelassé Frida Milk",
+   "hors marques · Houston · Houston Mesh Cotton (U.S. Army Air Force) Print T-Shirt Navy",
+   "hors marques · RIER · Rier Denim Trousers Anthracite",
+   "hors marques · NULL · SAN DIEGO PADRES UNDER BAR '47 FOUNDATION TEE"
   ]
  }
 }
