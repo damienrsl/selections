@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-28T02:40:04",
- "n_actifs": 2092,
- "n_total": 3371,
+ "maj": "2026-11-28T03:40:06",
+ "n_actifs": 1887,
+ "n_total": 3166,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,11 +10,10 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 48,
-  "nike": 231,
-  "nike_total_site": 4492,
+  "nike": 232,
+  "nike_total_site": 4501,
   "footshop": 0,
-  "4elementos.com": 200,
-  "4elementos.com_total": 496,
+  "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -26,10 +25,10 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 112,
-  "nuit_citadium.com": 358,
+  "nuit_citadium.com": 306,
   "nuit_courir.com": 200,
-  "nuit_footlocker.fr": 96,
-  "nuit_footpatrol.fr": 309,
+  "nuit_footlocker.fr": 108,
+  "nuit_footpatrol.fr": 308,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 4069,
@@ -41,9 +40,10 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5989 → 3371 (1527 hors marques, 1091 femme/enfant)",
-  "Liens SMI créés en fin de passage : 2/2",
-  "Photos locales Citadium/Courir : 274 (manquantes 170)"
+  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
+  "Filtre marques du cœur + homme/unisexe : 5749 → 3166 (1491 hors marques, 1092 femme/enfant)",
+  "Liens SMI créés en fin de passage : 1/1",
+  "Photos locales Citadium/Courir : 229 (manquantes 170)"
  ],
  "a_activer": [
   {
@@ -236,7 +236,6 @@
   }
  ],
  "revendeurs_actifs": [
-  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -261,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5989,
-  "hors_marques": 1527,
-  "femme_enfant": 1091,
-  "apres": 3371,
+  "avant": 5749,
+  "hors_marques": 1491,
+  "femme_enfant": 1092,
+  "apres": 3166,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · POLO RALPH LAUREN · Jogging POLO RALPH LAUREN ",
-   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
-   "femme/enfant · adidas Consortium · x Slam Jam Wmns F50.7 Sala Sneaker",
-   "hors marques · Farah Japan · Farah Japan Wide Straight Work Pants",
-   "hors marques · Soulland · Soulland Kit Denim - Black",
-   "hors marques · Organic Basics · Weekend Shorts",
-   "femme/enfant · Brixton · Sherpa Surplus Bomber Jacket - Olive Surplus",
-   "femme/enfant · Our Legacy · Our Legacy Robe Overcoat Onyx Black Tech Sateen",
-   "hors marques · NULL · NEW YORK YANKEES HEATER '47 FOUNDATION TEE"
+   "hors marques · Ugg · Ugg Lo Lowmel",
+   "hors marques · Henri Lloyd · Henri Lloyd Consort RWR Jacket",
+   "femme/enfant · adidas Originals · x Sporty & Rich Wmns Adistar Control 5 Sneaker",
+   "femme/enfant · adidas · Cut Out Bra Medium Support",
+   "hors marques · Justoverthetop · Doudoune légère sans manches Rouge Mali",
+   "hors marques · Deus Ex Machina · Stringer Walk Pant - Dirty White",
+   "hors marques · Pop Trading Company · Pop Hewitt Suit Jacket Coastal Fjord",
+   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Marine",
+   "femme/enfant · KEEN · Women's Sparta 2 ESD (Aluminum Toe)  |  Drizzle/Papaya"
   ]
  }
 }
