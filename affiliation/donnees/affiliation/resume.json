@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T18:40:06",
- "n_actifs": 2058,
- "n_total": 3338,
+ "maj": "2026-11-27T19:40:04",
+ "n_actifs": 2092,
+ "n_total": 3371,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -25,11 +25,11 @@
   "smi_shopify_stadiumgoods.com": 14,
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
-  "nuit_carhartt.com": 113,
-  "nuit_citadium.com": 303,
+  "nuit_carhartt.com": 112,
+  "nuit_citadium.com": 352,
   "nuit_courir.com": 200,
   "nuit_footlocker.fr": 96,
-  "nuit_footpatrol.fr": 318,
+  "nuit_footpatrol.fr": 315,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 4222,
@@ -41,9 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5976 → 3338 (1534 hors marques, 1104 femme/enfant)",
-  "Liens SMI créés en fin de passage : 2/2",
-  "Photos locales Citadium/Courir : 230 (manquantes 170)"
+  "Filtre marques du cœur + homme/unisexe : 6021 → 3371 (1537 hors marques, 1113 femme/enfant)",
+  "Liens SMI créés en fin de passage : 6/6",
+  "Photos locales Citadium/Courir : 269 (manquantes 170)"
  ],
  "a_activer": [
   {
@@ -261,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5976,
-  "hors_marques": 1534,
-  "femme_enfant": 1104,
-  "apres": 3338,
+  "avant": 6021,
+  "hors_marques": 1537,
+  "femme_enfant": 1113,
+  "apres": 3371,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
    "femme/enfant · ADIDAS · Veste ADIDAS ",
-   "hors marques · Henri Lloyd · Henri Lloyd Breeze Jacket",
-   "femme/enfant · Nike · Sprint Sister",
-   "femme/enfant · Reebok · Women's Lux Strappy Sports Bra",
-   "hors marques · Wild Things · Wild Things Men's Polar Alpha Jacket - Turquiose",
+   "hors marques · Fred Perry · Fred Perry Twin Tipped Polo",
+   "femme/enfant · adidas Originals · Adistar Control 5 (GS)",
+   "femme/enfant · Reebok · Women's Leopard Print Baby T-Shirt",
+   "femme/enfant · Chaco · Chaco Women's Lowdown Sandals - Faded Blue Fog",
    "hors marques · Organic Basics · Swim Longline Shorts",
-   "hors marques · ARMEDANGELS · GEFÜTTERTE ICONIC Å CORDJACKE",
-   "hors marques · Taiga Takahashi · Taiga Takahashi Work Trousers Charcoal",
-   "hors marques · NULL · LOS ANGELES DODGERS HEATER '47 FOUNDATION TEE"
+   "hors marques · ARMEDANGELS · ICONIC Å GEFÜTTERTE BAUMWOLL-JACKE | dark steel",
+   "femme/enfant · Our Legacy · Our Legacy Robe Overcoat Onyx Black Tech Sateen",
+   "hors marques · NULL · SAN DIEGO PADRES UNDER BAR '47 FOUNDATION TEE"
   ]
  }
 }
