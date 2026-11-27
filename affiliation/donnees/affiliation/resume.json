@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T19:40:04",
- "n_actifs": 2092,
- "n_total": 3371,
+ "maj": "2026-11-27T20:40:05",
+ "n_actifs": 2073,
+ "n_total": 3352,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,7 +10,7 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 48,
-  "nike": 263,
+  "nike": 262,
   "nike_total_site": 4511,
   "footshop": 0,
   "4elementos.com": 200,
@@ -26,24 +26,24 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 112,
-  "nuit_citadium.com": 352,
+  "nuit_citadium.com": 310,
   "nuit_courir.com": 200,
   "nuit_footlocker.fr": 96,
   "nuit_footpatrol.fr": 315,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
-  "snipes.com_total": 4222,
+  "snipes.com_total": 4219,
   "solebox.com": 400,
-  "solebox.com_total": 2838,
+  "solebox.com_total": 2859,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
   "tout_boutiques": 76
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 6021 → 3371 (1537 hors marques, 1113 femme/enfant)",
-  "Liens SMI créés en fin de passage : 6/6",
-  "Photos locales Citadium/Courir : 269 (manquantes 170)"
+  "Filtre marques du cœur + homme/unisexe : 5978 → 3352 (1523 hors marques, 1103 femme/enfant)",
+  "Liens SMI créés en fin de passage : 5/5",
+  "Photos locales Citadium/Courir : 241 (manquantes 170)"
  ],
  "a_activer": [
   {
@@ -261,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 6021,
-  "hors_marques": 1537,
-  "femme_enfant": 1113,
-  "apres": 3371,
+  "avant": 5978,
+  "hors_marques": 1523,
+  "femme_enfant": 1103,
+  "apres": 3352,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · ADIDAS · Veste ADIDAS ",
-   "hors marques · Fred Perry · Fred Perry Twin Tipped Polo",
-   "femme/enfant · adidas Originals · Adistar Control 5 (GS)",
-   "femme/enfant · Reebok · Women's Leopard Print Baby T-Shirt",
-   "femme/enfant · Chaco · Chaco Women's Lowdown Sandals - Faded Blue Fog",
-   "hors marques · Organic Basics · Swim Longline Shorts",
-   "hors marques · ARMEDANGELS · ICONIC Å GEFÜTTERTE BAUMWOLL-JACKE | dark steel",
+   "femme/enfant · SALOMON · Baskets SALOMON XT-4 OG",
+   "hors marques · Home Grown · Home Grown x Sergio Tacchini Wright Shell Jacket",
+   "hors marques · Karl Kani · 89 Tailor",
+   "hors marques · Courreges · Courreges Football Jersey Tank Top",
+   "hors marques · Aries · Aries Aged Column Camo Sweatshort  - Pink",
+   "femme/enfant · Organic Basics · Active Leggings",
+   "femme/enfant · Brixton · Post Playa E-Waist Short - Off White/Blue Tile",
    "femme/enfant · Our Legacy · Our Legacy Robe Overcoat Onyx Black Tech Sateen",
-   "hors marques · NULL · SAN DIEGO PADRES UNDER BAR '47 FOUNDATION TEE"
+   "hors marques · NULL · NEW YORK YANKEES UNDER BAR '47 FOUNDATION TEE"
   ]
  }
 }
