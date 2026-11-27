@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T13:40:05",
- "n_actifs": 2095,
- "n_total": 3341,
+ "maj": "2026-11-27T14:40:05",
+ "n_actifs": 2017,
+ "n_total": 3262,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -25,14 +25,14 @@
   "smi_shopify_stadiumgoods.com": 14,
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
-  "nuit_carhartt.com": 115,
-  "nuit_citadium.com": 349,
+  "nuit_carhartt.com": 114,
+  "nuit_citadium.com": 297,
   "nuit_courir.com": 154,
-  "nuit_footlocker.fr": 192,
+  "nuit_footlocker.fr": 96,
   "nuit_footpatrol.fr": 266,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
-  "snipes.com_total": 4389,
+  "snipes.com_total": 4222,
   "solebox.com": 400,
   "solebox.com_total": 2838,
   "scrap_revendeurs": 10,
@@ -41,9 +41,8 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5993 → 3341 (1484 hors marques, 1168 femme/enfant)",
-  "Liens SMI créés en fin de passage : 1/1",
-  "Photos locales Citadium/Courir : 267 (manquantes 134)"
+  "Filtre marques du cœur + homme/unisexe : 5844 → 3262 (1478 hors marques, 1104 femme/enfant)",
+  "Photos locales Citadium/Courir : 222 (manquantes 134)"
  ],
  "a_activer": [
   {
@@ -261,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5993,
-  "hors_marques": 1484,
-  "femme_enfant": 1168,
-  "apres": 3341,
+  "avant": 5844,
+  "hors_marques": 1478,
+  "femme_enfant": 1104,
+  "apres": 3262,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
    "femme/enfant · THE NORTH FACE · Polaire THE NORTH FACE ",
-   "femme/enfant · adidas · adidas Originals Dublin '90's City Series' - size? exclusive Womens",
-   "femme/enfant · Jordan · Air Jordan 1 Low (GS)",
-   "femme/enfant · Reebok · Women's Small Logo Cycle Shorts",
-   "femme/enfant · Chaco · Chaco Women's Lowdown Sandals - Teal Rose",
-   "hors marques · Organic Basics · Soft Knit Rib Raglan Sweater",
-   "hors marques · ARMEDANGELS · GEFÜTTERTE ICONIC Å CORDJACKE",
-   "hors marques · JW Anderson · JW Anderson Teacup Charm Off White",
-   "hors marques · NULL · PHILADELPHIA PHILLIES HEATER '47 FOUNDATION TEE"
+   "femme/enfant · Nike · Nike Air Force 1 Low Women's",
+   "hors marques · Crocs · Trailbreak 2 Tech Boot",
+   "hors marques · Alpha Industries · Seamless T-Shirt",
+   "hors marques · Lems Shoes · Men's Drifter Grip",
+   "hors marques · Deus Ex Machina · MX Pant - Blue",
+   "femme/enfant · Brixton · The Jett Lightweight Cargo Wide Leg Pant - Olive Stone",
+   "hors marques · SOCQUE · Socque - Mocassin Totem - Crème",
+   "femme/enfant · KEEN · Women's San Jose 6\" Boot (Soft Toe)  |  Gingerbread/Off White"
   ]
  }
 }
