@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T08:40:05",
+ "maj": "2026-11-27T09:40:05",
  "n_actifs": 2043,
  "n_total": 3281,
  "n_tout": 2500,
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 49,
   "nike": 233,
-  "nike_total_site": 4532,
+  "nike_total_site": 4530,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -42,7 +42,6 @@
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
   "Filtre marques du cœur + homme/unisexe : 5879 → 3281 (1483 hors marques, 1115 femme/enfant)",
-  "Liens SMI créés en fin de passage : 10/10",
   "Photos locales Citadium/Courir : 264 (manquantes 134)"
  ],
  "a_activer": [
