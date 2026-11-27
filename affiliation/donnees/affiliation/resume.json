@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T16:40:04",
- "n_actifs": 2002,
- "n_total": 3282,
+ "maj": "2026-11-27T17:40:03",
+ "n_actifs": 2040,
+ "n_total": 3320,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 48,
-  "nike": 238,
-  "nike_total_site": 4522,
+  "nike": 256,
+  "nike_total_site": 4517,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -26,10 +26,10 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 113,
-  "nuit_citadium.com": 298,
+  "nuit_citadium.com": 288,
   "nuit_courir.com": 200,
   "nuit_footlocker.fr": 96,
-  "nuit_footpatrol.fr": 266,
+  "nuit_footpatrol.fr": 318,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 4222,
@@ -41,8 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5894 → 3282 (1488 hors marques, 1124 femme/enfant)",
-  "Photos locales Citadium/Courir : 224 (manquantes 170)"
+  "Filtre marques du cœur + homme/unisexe : 5954 → 3320 (1534 hors marques, 1100 femme/enfant)",
+  "Liens SMI créés en fin de passage : 211/211",
+  "Photos locales Citadium/Courir : 212 (manquantes 170)"
  ],
  "a_activer": [
   {
@@ -260,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5894,
-  "hors_marques": 1488,
-  "femme_enfant": 1124,
-  "apres": 3282,
+  "avant": 5954,
+  "hors_marques": 1534,
+  "femme_enfant": 1100,
+  "apres": 3320,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · ADIDAS · Baskets ADIDAS GAZELLE ADV",
-   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
-   "femme/enfant · Converse · Wmns Run Star Trainer Ruffle Sneaker",
-   "hors marques · Marni · Marni Flower Swim Shorts",
-   "hors marques · SC25 · Front Pocket Cargo Pant - Tobacco",
-   "hors marques · Organic Basics · Soft Knit Crewneck Sweater",
-   "femme/enfant · Brixton · Odessa Cowboy Hat - Italian Clay",
-   "hors marques · RIER · Rier Denim Trousers Anthracite",
-   "hors marques · NULL · PHILADELPHIA PHILLIES CARTOON '47 FOUNDATION HOOD"
+   "femme/enfant · ADIDAS · Jogging ADIDAS ",
+   "hors marques · Berghaus · Berghaus Obsion Softshell Smock Jacket",
+   "femme/enfant · Converse · x Sky High Farm Wmns Chuck 70 \"Egret\" Sneaker",
+   "femme/enfant · Reebok · Women's High-Rise Leggings",
+   "femme/enfant · Girls Of Dust · Girls Of Dust Cork Vest - Ecru",
+   "femme/enfant · Organic Basics · Solar Swim Cheeky Bikini Bottom",
+   "femme/enfant · Brixton · Post Playa E-Waist Short - Navy/White Collage",
+   "femme/enfant · Our Legacy · Our Legacy Robe Overcoat Onyx Black Tech Sateen",
+   "hors marques · NULL · PHILADELPHIA PHILLIES HEATER '47 FOUNDATION TEE"
   ]
  }
 }
