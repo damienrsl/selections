@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T17:40:03",
- "n_actifs": 2040,
- "n_total": 3320,
+ "maj": "2026-11-27T18:40:06",
+ "n_actifs": 2058,
+ "n_total": 3338,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 48,
-  "nike": 256,
-  "nike_total_site": 4517,
+  "nike": 263,
+  "nike_total_site": 4511,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -26,7 +26,7 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 113,
-  "nuit_citadium.com": 288,
+  "nuit_citadium.com": 303,
   "nuit_courir.com": 200,
   "nuit_footlocker.fr": 96,
   "nuit_footpatrol.fr": 318,
@@ -41,9 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5954 → 3320 (1534 hors marques, 1100 femme/enfant)",
-  "Liens SMI créés en fin de passage : 211/211",
-  "Photos locales Citadium/Courir : 212 (manquantes 170)"
+  "Filtre marques du cœur + homme/unisexe : 5976 → 3338 (1534 hors marques, 1104 femme/enfant)",
+  "Liens SMI créés en fin de passage : 2/2",
+  "Photos locales Citadium/Courir : 230 (manquantes 170)"
  ],
  "a_activer": [
   {
@@ -261,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5954,
+  "avant": 5976,
   "hors_marques": 1534,
-  "femme_enfant": 1100,
-  "apres": 3320,
+  "femme_enfant": 1104,
+  "apres": 3338,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · ADIDAS · Jogging ADIDAS ",
-   "hors marques · Berghaus · Berghaus Obsion Softshell Smock Jacket",
-   "femme/enfant · Converse · x Sky High Farm Wmns Chuck 70 \"Egret\" Sneaker",
-   "femme/enfant · Reebok · Women's High-Rise Leggings",
-   "femme/enfant · Girls Of Dust · Girls Of Dust Cork Vest - Ecru",
-   "femme/enfant · Organic Basics · Solar Swim Cheeky Bikini Bottom",
-   "femme/enfant · Brixton · Post Playa E-Waist Short - Navy/White Collage",
-   "femme/enfant · Our Legacy · Our Legacy Robe Overcoat Onyx Black Tech Sateen",
-   "hors marques · NULL · PHILADELPHIA PHILLIES HEATER '47 FOUNDATION TEE"
+   "femme/enfant · ADIDAS · Veste ADIDAS ",
+   "hors marques · Henri Lloyd · Henri Lloyd Breeze Jacket",
+   "femme/enfant · Nike · Sprint Sister",
+   "femme/enfant · Reebok · Women's Lux Strappy Sports Bra",
+   "hors marques · Wild Things · Wild Things Men's Polar Alpha Jacket - Turquiose",
+   "hors marques · Organic Basics · Swim Longline Shorts",
+   "hors marques · ARMEDANGELS · GEFÜTTERTE ICONIC Å CORDJACKE",
+   "hors marques · Taiga Takahashi · Taiga Takahashi Work Trousers Charcoal",
+   "hors marques · NULL · LOS ANGELES DODGERS HEATER '47 FOUNDATION TEE"
   ]
  }
 }
