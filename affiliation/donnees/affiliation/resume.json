@@ -1,20 +1,19 @@
 {
- "maj": "2026-11-28T04:40:05",
- "n_actifs": 2141,
- "n_total": 3420,
+ "maj": "2026-11-28T05:51:43",
+ "n_actifs": 1789,
+ "n_total": 3068,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
-  "publiques": 578
+  "publiques": 576
  },
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 48,
   "nike": 232,
-  "nike_total_site": 4497,
+  "nike_total_site": 4492,
   "footshop": 0,
-  "4elementos.com": 200,
-  "4elementos.com_total": 496,
+  "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -31,8 +30,7 @@
   "nuit_footlocker.fr": 144,
   "nuit_footpatrol.fr": 308,
   "nuit_sizeofficial.fr": 400,
-  "snipes.com": 400,
-  "snipes.com_total": 4069,
+  "snipes.com": 0,
   "solebox.com": 400,
   "solebox.com_total": 2782,
   "scrap_revendeurs": 10,
@@ -41,8 +39,10 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 6037 → 3420 (1526 hors marques, 1091 femme/enfant)",
-  "Liens SMI créés en fin de passage : 1/1",
+  "Footshop/Diggeur : The read operation timed out",
+  "4 Elementos : Connection timed out during banner exchange\nConnection to UNKNOWN port 65535 timed out",
+  "Snipes (flux Awin) : [Errno 54] Connection reset by peer",
+  "Filtre marques du cœur + homme/unisexe : 5437 → 3068 (1416 hors marques, 953 femme/enfant)",
   "Photos locales Citadium/Courir : 274 (manquantes 170)"
  ],
  "a_activer": [
@@ -236,7 +236,6 @@
   }
  ],
  "revendeurs_actifs": [
-  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -253,7 +252,6 @@
   "Reebok FR",
   "Size Official",
   "Sneakersnstuff",
-  "Snipes",
   "Stadium Goods FR",
   "The DoubleF",
   "The Jacket Maker",
@@ -261,21 +259,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 6037,
-  "hors_marques": 1526,
-  "femme_enfant": 1091,
-  "apres": 3420,
+  "avant": 5437,
+  "hors_marques": 1416,
+  "femme_enfant": 953,
+  "apres": 3068,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · POLO RALPH LAUREN · Jogging POLO RALPH LAUREN ",
-   "femme/enfant · adidas · adidas Originals Samba OG Rhinestone Women's",
-   "hors marques · Billionaire Boys Club · Diamonds & Dollars Selvedge Denim Pant Apparel",
-   "femme/enfant · Adidas · Adidas Taekwondo F50 W",
-   "hors marques · Gimaguas · Gimaguas Jason Shorts - Olive",
-   "femme/enfant · Organic Basics · Smooth Padded Bra",
-   "hors marques · Coperni · Coperni Zip Stiletto - Ice Clear White",
-   "hors marques · RIER · Rier Cardigan Oversized Plombe",
-   "hors marques · NULL · NEW YORK YANKEES UNDER BAR '47 FOUNDATION TEE"
+   "hors marques · POLO RALPH LAUREN · T-shirt  POLO RALPH LAUREN ",
+   "hors marques · Henri Lloyd · Henri Lloyd Breeze Jacket",
+   "hors marques · Wales Bonner · MONTEGO COLOUR BLOCK SHIRT Apparel",
+   "hors marques · AMI Paris · AMI Paris SN503",
+   "hors marques · Stan Ray · Work Shirt (Washed Black)",
+   "hors marques · S.W.C · AMIEL S-STRIKE SUEDE MIX GREY",
+   "hors marques · lemontsaintmichel.fr · ASMOS – BOB EN NYLON",
+   "hors marques · Trunk · Trunk Welbeck Flat Front Cotton Trousers: Moss Green",
+   "hors marques · KEEN · All Gender UNEEK Leather Sneaker  |  Pale Lilac/Plaza Taupe"
   ]
  }
 }
