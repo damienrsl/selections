@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T11:40:05",
- "n_actifs": 1850,
- "n_total": 3096,
+ "maj": "2026-11-27T12:40:05",
+ "n_actifs": 2053,
+ "n_total": 3298,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,9 +11,10 @@
  "sources": {
   "uniqlo": 49,
   "nike": 233,
-  "nike_total_site": 4530,
+  "nike_total_site": 4532,
   "footshop": 0,
-  "4elementos.com": 0,
+  "4elementos.com": 200,
+  "4elementos.com_total": 496,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -25,9 +26,9 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 115,
-  "nuit_citadium.com": 300,
-  "nuit_courir.com": 153,
-  "nuit_footlocker.fr": 96,
+  "nuit_citadium.com": 297,
+  "nuit_courir.com": 152,
+  "nuit_footlocker.fr": 144,
   "nuit_footpatrol.fr": 265,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
@@ -40,10 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
-  "Filtre marques du cœur + homme/unisexe : 5646 → 3096 (1447 hors marques, 1103 femme/enfant)",
-  "Liens SMI créés en fin de passage : 9/9",
-  "Photos locales Citadium/Courir : 231 (manquantes 134)"
+  "Filtre marques du cœur + homme/unisexe : 5890 → 3298 (1478 hors marques, 1114 femme/enfant)",
+  "Liens SMI créés en fin de passage : 22/22",
+  "Photos locales Citadium/Courir : 223 (manquantes 133)"
  ],
  "a_activer": [
   {
@@ -236,6 +236,7 @@
   }
  ],
  "revendeurs_actifs": [
+  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -260,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5646,
-  "hors_marques": 1447,
-  "femme_enfant": 1103,
-  "apres": 3096,
+  "avant": 5890,
+  "hors_marques": 1478,
+  "femme_enfant": 1114,
+  "apres": 3298,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · adidas · adidas Stan Smith - Femme Chaussures",
-   "hors marques · Sergio Tacchini · Scorpione Tracksuit",
-   "femme/enfant · Autry · Wmns Reelwind Low Sneaker Female Pink",
-   "femme/enfant · Studio Nicholson · Messina Skirt in Black",
-   "hors marques · Cav Empt · S.O.M 1994 Denim Pants Multicolor",
-   "femme/enfant · tentree · Kits Dress",
-   "femme/enfant · Nude Project · Amber Baby Tee White",
-   "hors marques · Momoni · Momoni - Pantalon Jacques - Beige",
-   "hors marques · KEEN · Men's Koven Waterproof Hiking Boot  |  Bison/Mars Red"
+   "hors marques · POLO RALPH LAUREN · T-shirt  POLO RALPH LAUREN ",
+   "femme/enfant · adidas · adidas Originals Samba Jane Women's",
+   "femme/enfant · adidas Originals · Wmns Ghost Sprint Sneaker",
+   "hors marques · Han Kjobenhavn · Garden Shirt",
+   "hors marques · FW25 · Smart Bomber - Nero",
+   "hors marques · Deus Ex Machina USA · Tommy Surf Shirt - Black",
+   "hors marques · ARMEDANGELS · FRANKAA MAARLEN STRIPE",
+   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Kaki",
+   "femme/enfant · KEEN · Women's Sparta 2 ESD (Aluminum Toe)  |  Drizzle/Papaya"
   ]
  }
 }
