@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T15:40:03",
- "n_actifs": 1969,
- "n_total": 3246,
+ "maj": "2026-11-27T16:40:04",
+ "n_actifs": 2002,
+ "n_total": 3282,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 48,
-  "nike": 231,
-  "nike_total_site": 4528,
+  "nike": 238,
+  "nike_total_site": 4522,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -26,8 +26,8 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 113,
-  "nuit_citadium.com": 243,
-  "nuit_courir.com": 198,
+  "nuit_citadium.com": 298,
+  "nuit_courir.com": 200,
   "nuit_footlocker.fr": 96,
   "nuit_footpatrol.fr": 266,
   "nuit_sizeofficial.fr": 400,
@@ -41,9 +41,8 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5830 → 3246 (1485 hors marques, 1099 femme/enfant)",
-  "Liens SMI créés en fin de passage : 38/38",
-  "Photos locales Citadium/Courir : 182 (manquantes 167)"
+  "Filtre marques du cœur + homme/unisexe : 5894 → 3282 (1488 hors marques, 1124 femme/enfant)",
+  "Photos locales Citadium/Courir : 224 (manquantes 170)"
  ],
  "a_activer": [
   {
@@ -261,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5830,
-  "hors_marques": 1485,
-  "femme_enfant": 1099,
-  "apres": 3246,
+  "avant": 5894,
+  "hors_marques": 1488,
+  "femme_enfant": 1124,
+  "apres": 3282,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · Under Armour · Under Armour Tee Shirt Side Logo",
-   "hors marques · Rockport · Rockport Umbwe Hiker Boot",
-   "femme/enfant · adidas Originals · Wmns SL 72 OG Sneaker",
-   "hors marques · Han Kjobenhavn · Cropped Sweatpants",
-   "hors marques · Justoverthetop · Doudoune à capuche Grand Froid Bleu délavé Dakhla",
-   "hors marques · Deus Ex Machina · La Magie Short - Dirty Denim",
-   "hors marques · ARMEDANGELS · LARISAANA",
-   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Kaki",
-   "femme/enfant · KEEN · Women's San Jose 6\" Waterproof Boot (Aluminum Toe)  |  Almond/Gum"
+   "femme/enfant · ADIDAS · Baskets ADIDAS GAZELLE ADV",
+   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
+   "femme/enfant · Converse · Wmns Run Star Trainer Ruffle Sneaker",
+   "hors marques · Marni · Marni Flower Swim Shorts",
+   "hors marques · SC25 · Front Pocket Cargo Pant - Tobacco",
+   "hors marques · Organic Basics · Soft Knit Crewneck Sweater",
+   "femme/enfant · Brixton · Odessa Cowboy Hat - Italian Clay",
+   "hors marques · RIER · Rier Denim Trousers Anthracite",
+   "hors marques · NULL · PHILADELPHIA PHILLIES CARTOON '47 FOUNDATION HOOD"
   ]
  }
 }
