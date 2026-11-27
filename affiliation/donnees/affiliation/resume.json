@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T12:40:05",
- "n_actifs": 2053,
- "n_total": 3298,
+ "maj": "2026-11-27T13:40:05",
+ "n_actifs": 2095,
+ "n_total": 3341,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,7 +11,7 @@
  "sources": {
   "uniqlo": 49,
   "nike": 233,
-  "nike_total_site": 4532,
+  "nike_total_site": 4530,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -26,10 +26,10 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 115,
-  "nuit_citadium.com": 297,
-  "nuit_courir.com": 152,
-  "nuit_footlocker.fr": 144,
-  "nuit_footpatrol.fr": 265,
+  "nuit_citadium.com": 349,
+  "nuit_courir.com": 154,
+  "nuit_footlocker.fr": 192,
+  "nuit_footpatrol.fr": 266,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 4389,
@@ -41,9 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5890 → 3298 (1478 hors marques, 1114 femme/enfant)",
-  "Liens SMI créés en fin de passage : 22/22",
-  "Photos locales Citadium/Courir : 223 (manquantes 133)"
+  "Filtre marques du cœur + homme/unisexe : 5993 → 3341 (1484 hors marques, 1168 femme/enfant)",
+  "Liens SMI créés en fin de passage : 1/1",
+  "Photos locales Citadium/Courir : 267 (manquantes 134)"
  ],
  "a_activer": [
   {
@@ -261,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5890,
-  "hors_marques": 1478,
-  "femme_enfant": 1114,
-  "apres": 3298,
+  "avant": 5993,
+  "hors_marques": 1484,
+  "femme_enfant": 1168,
+  "apres": 3341,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · POLO RALPH LAUREN · T-shirt  POLO RALPH LAUREN ",
-   "femme/enfant · adidas · adidas Originals Samba Jane Women's",
-   "femme/enfant · adidas Originals · Wmns Ghost Sprint Sneaker",
-   "hors marques · Han Kjobenhavn · Garden Shirt",
-   "hors marques · FW25 · Smart Bomber - Nero",
-   "hors marques · Deus Ex Machina USA · Tommy Surf Shirt - Black",
-   "hors marques · ARMEDANGELS · FRANKAA MAARLEN STRIPE",
-   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Kaki",
-   "femme/enfant · KEEN · Women's Sparta 2 ESD (Aluminum Toe)  |  Drizzle/Papaya"
+   "femme/enfant · THE NORTH FACE · Polaire THE NORTH FACE ",
+   "femme/enfant · adidas · adidas Originals Dublin '90's City Series' - size? exclusive Womens",
+   "femme/enfant · Jordan · Air Jordan 1 Low (GS)",
+   "femme/enfant · Reebok · Women's Small Logo Cycle Shorts",
+   "femme/enfant · Chaco · Chaco Women's Lowdown Sandals - Teal Rose",
+   "hors marques · Organic Basics · Soft Knit Rib Raglan Sweater",
+   "hors marques · ARMEDANGELS · GEFÜTTERTE ICONIC Å CORDJACKE",
+   "hors marques · JW Anderson · JW Anderson Teacup Charm Off White",
+   "hors marques · NULL · PHILADELPHIA PHILLIES HEATER '47 FOUNDATION TEE"
   ]
  }
 }
