@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T10:40:03",
- "n_actifs": 2047,
- "n_total": 3293,
+ "maj": "2026-11-27T11:40:05",
+ "n_actifs": 1850,
+ "n_total": 3096,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -13,8 +13,7 @@
   "nike": 233,
   "nike_total_site": 4530,
   "footshop": 0,
-  "4elementos.com": 200,
-  "4elementos.com_total": 496,
+  "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -26,7 +25,7 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 115,
-  "nuit_citadium.com": 348,
+  "nuit_citadium.com": 300,
   "nuit_courir.com": 153,
   "nuit_footlocker.fr": 96,
   "nuit_footpatrol.fr": 265,
@@ -41,9 +40,10 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5894 → 3293 (1481 hors marques, 1120 femme/enfant)",
-  "Liens SMI créés en fin de passage : 6/6",
-  "Photos locales Citadium/Courir : 266 (manquantes 134)"
+  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
+  "Filtre marques du cœur + homme/unisexe : 5646 → 3096 (1447 hors marques, 1103 femme/enfant)",
+  "Liens SMI créés en fin de passage : 9/9",
+  "Photos locales Citadium/Courir : 231 (manquantes 134)"
  ],
  "a_activer": [
   {
@@ -236,7 +236,6 @@
   }
  ],
  "revendeurs_actifs": [
-  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -261,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5894,
-  "hors_marques": 1481,
-  "femme_enfant": 1120,
-  "apres": 3293,
+  "avant": 5646,
+  "hors_marques": 1447,
+  "femme_enfant": 1103,
+  "apres": 3096,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · POLO RALPH LAUREN · Jogging POLO RALPH LAUREN ",
-   "femme/enfant · Nike · Nike Air Force 1 Low Women's",
-   "femme/enfant · Converse · Wmns Chuck Taylor All Star Canvas LTD Sneaker",
-   "hors marques · Han Kjobenhavn · Track Top",
-   "hors marques · Exclusives · All Over Print Towel Shirt - Black",
-   "hors marques · Pyrenex · Sweat matelassé Frida Crepuscule",
-   "femme/enfant · Nisolo · Lidia Whipstitch Loafer Pearl",
-   "hors marques · BENSIMON · Bensimon - Baskets Stella B79 - Blanc",
-   "femme/enfant · KEEN · Women's Sparta 2 ESD (Aluminum Toe)  |  Drizzle/Papaya"
+   "femme/enfant · adidas · adidas Stan Smith - Femme Chaussures",
+   "hors marques · Sergio Tacchini · Scorpione Tracksuit",
+   "femme/enfant · Autry · Wmns Reelwind Low Sneaker Female Pink",
+   "femme/enfant · Studio Nicholson · Messina Skirt in Black",
+   "hors marques · Cav Empt · S.O.M 1994 Denim Pants Multicolor",
+   "femme/enfant · tentree · Kits Dress",
+   "femme/enfant · Nude Project · Amber Baby Tee White",
+   "hors marques · Momoni · Momoni - Pantalon Jacques - Beige",
+   "hors marques · KEEN · Men's Koven Waterproof Hiking Boot  |  Bison/Mars Red"
   ]
  }
 }
