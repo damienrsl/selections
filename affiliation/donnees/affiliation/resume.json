@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-27T20:40:05",
- "n_actifs": 2073,
- "n_total": 3352,
+ "maj": "2026-11-27T21:40:04",
+ "n_actifs": 1902,
+ "n_total": 3180,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -11,10 +11,9 @@
  "sources": {
   "uniqlo": 48,
   "nike": 262,
-  "nike_total_site": 4511,
+  "nike_total_site": 4507,
   "footshop": 0,
-  "4elementos.com": 200,
-  "4elementos.com_total": 496,
+  "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -25,11 +24,11 @@
   "smi_shopify_stadiumgoods.com": 14,
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
-  "nuit_carhartt.com": 112,
-  "nuit_citadium.com": 310,
+  "nuit_carhartt.com": 111,
+  "nuit_citadium.com": 304,
   "nuit_courir.com": 200,
   "nuit_footlocker.fr": 96,
-  "nuit_footpatrol.fr": 315,
+  "nuit_footpatrol.fr": 314,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 4219,
@@ -41,9 +40,10 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5978 → 3352 (1523 hors marques, 1103 femme/enfant)",
-  "Liens SMI créés en fin de passage : 5/5",
-  "Photos locales Citadium/Courir : 241 (manquantes 170)"
+  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
+  "Filtre marques du cœur + homme/unisexe : 5770 → 3180 (1492 hors marques, 1098 femme/enfant)",
+  "Liens SMI créés en fin de passage : 3/3",
+  "Photos locales Citadium/Courir : 235 (manquantes 170)"
  ],
  "a_activer": [
   {
@@ -236,7 +236,6 @@
   }
  ],
  "revendeurs_actifs": [
-  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -261,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5978,
-  "hors_marques": 1523,
-  "femme_enfant": 1103,
-  "apres": 3352,
+  "avant": 5770,
+  "hors_marques": 1492,
+  "femme_enfant": 1098,
+  "apres": 3180,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · SALOMON · Baskets SALOMON XT-4 OG",
-   "hors marques · Home Grown · Home Grown x Sergio Tacchini Wright Shell Jacket",
-   "hors marques · Karl Kani · 89 Tailor",
-   "hors marques · Courreges · Courreges Football Jersey Tank Top",
-   "hors marques · Aries · Aries Aged Column Camo Sweatshort  - Pink",
-   "femme/enfant · Organic Basics · Active Leggings",
-   "femme/enfant · Brixton · Post Playa E-Waist Short - Off White/Blue Tile",
-   "femme/enfant · Our Legacy · Our Legacy Robe Overcoat Onyx Black Tech Sateen",
-   "hors marques · NULL · NEW YORK YANKEES UNDER BAR '47 FOUNDATION TEE"
+   "hors marques · Ugg · Ugg Tazz ll",
+   "hors marques · Henri Lloyd · Henri Lloyd Golant Quarter Zip Knit",
+   "femme/enfant · Autry · Wmns Windspin Low Sneaker",
+   "femme/enfant · adidas · W Equipment Shorts",
+   "hors marques · 247 · 247 Arc-1 Runner - Yellow",
+   "hors marques · Deus Ex Machina · La Magie Short - Dirty Denim",
+   "hors marques · Pop Trading Company · Pop Hewitt Suit Jacket Coastal Fjord",
+   "hors marques · SOCQUE · Socque - Mocassin Totem - Crème",
+   "hors marques · KEEN · Men's PNW Hoodie  |  Olivine"
   ]
  }
 }
