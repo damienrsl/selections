@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-28T00:40:07",
- "n_actifs": 2017,
- "n_total": 3299,
+ "maj": "2026-11-28T01:40:05",
+ "n_actifs": 2061,
+ "n_total": 3341,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 48,
-  "nike": 231,
-  "nike_total_site": 4497,
+  "nike": 232,
+  "nike_total_site": 4492,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 496,
@@ -25,11 +25,11 @@
   "smi_shopify_stadiumgoods.com": 14,
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
-  "nuit_carhartt.com": 115,
-  "nuit_citadium.com": 247,
+  "nuit_carhartt.com": 113,
+  "nuit_citadium.com": 304,
   "nuit_courir.com": 200,
-  "nuit_footlocker.fr": 96,
-  "nuit_footpatrol.fr": 310,
+  "nuit_footlocker.fr": 97,
+  "nuit_footpatrol.fr": 311,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
   "snipes.com_total": 4219,
@@ -41,9 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5882 → 3299 (1521 hors marques, 1062 femme/enfant)",
-  "Liens SMI créés en fin de passage : 1/1",
-  "Photos locales Citadium/Courir : 191 (manquantes 170)"
+  "Filtre marques du cœur + homme/unisexe : 5940 → 3341 (1522 hors marques, 1077 femme/enfant)",
+  "Liens SMI créés en fin de passage : 5/5",
+  "Photos locales Citadium/Courir : 235 (manquantes 170)"
  ],
  "a_activer": [
   {
@@ -261,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5882,
-  "hors_marques": 1521,
-  "femme_enfant": 1062,
-  "apres": 3299,
+  "avant": 5940,
+  "hors_marques": 1522,
+  "femme_enfant": 1077,
+  "apres": 3341,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · Ugg · Ugg Heritage Lace Up Slipper",
-   "hors marques · Home Grown · Home Grown Sway Fade Stripe Sweatshirt",
-   "femme/enfant · adidas performance · Wmns Adizero Goukana Sneaker",
-   "femme/enfant · adidas · Cut Out Bra Medium Support",
-   "hors marques · Justoverthetop · Doudoune légère sans manches Rouge Mali",
-   "hors marques · Deus Ex Machina · Stringer Walk Pant - Dirty White",
-   "hors marques · Pop Trading Company · Pop Hewitt Suit Jacket Coastal Fjord",
-   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Marine",
-   "femme/enfant · KEEN · Women's Sparta 2 ESD (Aluminum Toe)  |  Drizzle/Papaya"
+   "femme/enfant · SALOMON · Sac à bandoulière SALOMON ",
+   "femme/enfant · Birkenstock · Birkenstock Naples Wrapped Women's",
+   "femme/enfant · ASICS SportStyle · Wmns Gel-Kenetic Fluent Sneaker",
+   "hors marques · Han Kjobenhavn · Artwork Tee",
+   "hors marques · SS25 Other · Realtree® Camo Cargo Pant - Camo",
+   "femme/enfant · Organic Basics · Soft Knit Rib Mini Skirt",
+   "femme/enfant · Brixton · Odessa Cowboy Hat - Natural",
+   "hors marques · RIER · Rier Fleece Hoodie Orange",
+   "hors marques · NULL · NEW YORK YANKEES UNDER BAR '47 FOUNDATION TEE"
   ]
  }
 }
