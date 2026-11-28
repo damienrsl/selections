@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-28T18:40:06",
- "n_actifs": 2144,
- "n_total": 3423,
+ "maj": "2026-11-28T19:40:06",
+ "n_actifs": 2060,
+ "n_total": 3339,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 47,
-  "nike": 234,
-  "nike_total_site": 4480,
+  "nike": 233,
+  "nike_total_site": 4479,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 494,
@@ -25,10 +25,10 @@
   "smi_shopify_stadiumgoods.com": 14,
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
-  "nuit_carhartt.com": 112,
-  "nuit_citadium.com": 358,
+  "nuit_carhartt.com": 110,
+  "nuit_citadium.com": 306,
   "nuit_courir.com": 200,
-  "nuit_footlocker.fr": 144,
+  "nuit_footlocker.fr": 96,
   "nuit_footpatrol.fr": 308,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
@@ -41,8 +41,9 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 6038 → 3423 (1528 hors marques, 1087 femme/enfant)",
-  "Photos locales Citadium/Courir : 274 (manquantes 170)"
+  "Filtre marques du cœur + homme/unisexe : 5935 → 3339 (1487 hors marques, 1109 femme/enfant)",
+  "Liens SMI créés en fin de passage : 15/15",
+  "Photos locales Citadium/Courir : 234 (manquantes 172)"
  ],
  "a_activer": [
   {
@@ -260,21 +261,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 6038,
-  "hors_marques": 1528,
-  "femme_enfant": 1087,
-  "apres": 3423,
+  "avant": 5935,
+  "hors_marques": 1487,
+  "femme_enfant": 1109,
+  "apres": 3339,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · LEVI'S · Jean LEVI'S 501 JEANS FOR WOMEN",
-   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
-   "femme/enfant · adidas Originals · Wmns F50 Adiframe Sneaker Female Pink",
-   "hors marques · 032c · 032c ''Victor'' Tight Longsleeve",
-   "hors marques · 247 · 247 Mission Pant - Black",
-   "femme/enfant · Organic Basics · Smooth Off-Shoulder Bodysuit",
-   "femme/enfant · Brixton · The Mercer Wide Leg Trouser Pant - Chalk Pink",
-   "hors marques · RIER · Rier Fleece Hoodie Orange",
-   "hors marques · NULL · PHILADELPHIA PHILLIES UNDER BAR '47 FOUNDATION TEE"
+   "femme/enfant · SALOMON · Sac à bandoulière SALOMON ",
+   "hors marques · Fred Perry · Fred Perry Branded Slides",
+   "femme/enfant · Dr. Martens · Wmns Temara Loafer Sneaker",
+   "femme/enfant · Nike · W Air Max Craze",
+   "hors marques · Exclusives · All Over Print Towel Shirt - Black",
+   "hors marques · Pyrenex · Sweat matelassé Frida Milk",
+   "hors marques · Houston · Houston Mesh Cotton (U.S. Army Air Force) Print T-Shirt Navy",
+   "hors marques · RIER · Rier Denim Trousers Anthracite",
+   "hors marques · NULL · SAN DIEGO PADRES UNDER BAR '47 FOUNDATION TEE"
   ]
  }
 }
