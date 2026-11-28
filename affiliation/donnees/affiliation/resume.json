@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-28T22:40:05",
- "n_actifs": 2063,
- "n_total": 3342,
+ "maj": "2026-11-28T23:40:06",
+ "n_actifs": 1899,
+ "n_total": 3178,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,11 +10,10 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 47,
-  "nike": 240,
+  "nike": 239,
   "nike_total_site": 4471,
   "footshop": 0,
-  "4elementos.com": 200,
-  "4elementos.com_total": 494,
+  "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -41,7 +40,8 @@
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5942 → 3342 (1491 hors marques, 1109 femme/enfant)",
+  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
+  "Filtre marques du cœur + homme/unisexe : 5741 → 3178 (1458 hors marques, 1105 femme/enfant)",
   "Photos locales Citadium/Courir : 234 (manquantes 172)"
  ],
  "a_activer": [
@@ -235,7 +235,6 @@
   }
  ],
  "revendeurs_actifs": [
-  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -260,21 +259,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5942,
-  "hors_marques": 1491,
-  "femme_enfant": 1109,
-  "apres": 3342,
+  "avant": 5741,
+  "hors_marques": 1458,
+  "femme_enfant": 1105,
+  "apres": 3178,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · OBEY · Veste OBEY ",
-   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
-   "femme/enfant · Autry · Wmns Sweatshirt Apparel",
-   "femme/enfant · Nike · W Air Max Craze",
-   "hors marques · 247 · 247 Tote Bag - Black",
-   "hors marques · Deus Ex Machina · Hear & Now Stripe Pant - Gravel Grey",
-   "femme/enfant · Nisolo · Lidia Whipstitch Loafer Lilac",
-   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Kaki",
-   "femme/enfant · KEEN · Women's San Jose 6\" Boot (Soft Toe)  |  Gingerbread/Off White"
+   "femme/enfant · Vans · Vans Old Skool - Femme Chaussures",
+   "hors marques · Mitchell & Ness · NBA On the Clock Mesh Button Front Vintage Logo LA Lakers",
+   "femme/enfant · Autry · Wmns Windspin Low Sneaker",
+   "femme/enfant · OFFLINE · Acuna Cotton Pant in Ice",
+   "femme/enfant · Nike · Nike WMNS LD-1000 SP",
+   "hors marques · Deus Womens · Project Mayhem Moto Tank - Cherry",
+   "femme/enfant · NUDE PROJECT · Typa Day Shorts Ash",
+   "hors marques · Warehouse & Co · Warehouse & Co - Chemise The King Of Madras JG16 - Marine",
+   "hors marques · KEEN · Men's PNW Hoodie  |  Olivine"
   ]
  }
 }
