@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-28T17:40:24",
- "n_actifs": 2024,
- "n_total": 3303,
+ "maj": "2026-11-28T18:40:06",
+ "n_actifs": 2144,
+ "n_total": 3423,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,7 +10,8 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 47,
-  "nike": 0,
+  "nike": 234,
+  "nike_total_site": 4480,
   "footshop": 0,
   "4elementos.com": 200,
   "4elementos.com_total": 494,
@@ -39,9 +40,8 @@
   "tout_boutiques": 76
  },
  "notes": [
-  "Nike : Command '['/Users/damienroussel/.local/share/damienprime/cerveau/ssh', 'python3 ~/tokn/outils/nike-wall.py 8']' timed out after 300 seconds",
-  "Filtre marques du cœur + homme/unisexe : 5804 → 3303 (1528 hors marques, 973 femme/enfant)",
-  "Liens SMI créés en fin de passage : 1/1",
+  "Nike : HTTP Error 400: Bad Request",
+  "Filtre marques du cœur + homme/unisexe : 6038 → 3423 (1528 hors marques, 1087 femme/enfant)",
   "Photos locales Citadium/Courir : 274 (manquantes 170)"
  ],
  "a_activer": [
@@ -246,6 +246,7 @@
   "Michele Franzese Moda",
   "Mous",
   "New Era Cap FR",
+  "Nike",
   "Padel Market",
   "Reebok",
   "Reebok FR",
@@ -259,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5804,
+  "avant": 6038,
   "hors_marques": 1528,
-  "femme_enfant": 973,
-  "apres": 3303,
+  "femme_enfant": 1087,
+  "apres": 3423,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · ASICS · ASICS Hypersync Femme",
-   "femme/enfant · Nike · Pointe",
-   "hors marques · Zellerfeld · MarsMellow by CRO Shoe Sneaker",
-   "femme/enfant · Our Legacy · Women's Cami Tank Top Washed",
-   "femme/enfant · GANNI A/S · Stripe Cotton Pleated Mini Skirt",
-   "hors marques · Magic Castles · Crochet Knit Shirt Cacao Gradien",
-   "femme/enfant · lemontsaintmichel.fr · GIGI – CARDIGAN",
-   "hors marques · Trunk · Trunk Duke Cotton 5 Pocket Trousers: Navy",
-   "femme/enfant · KEEN · Women's UNEEK 360 Sneaker  |  Vapor/Star White"
+   "femme/enfant · LEVI'S · Jean LEVI'S 501 JEANS FOR WOMEN",
+   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
+   "femme/enfant · adidas Originals · Wmns F50 Adiframe Sneaker Female Pink",
+   "hors marques · 032c · 032c ''Victor'' Tight Longsleeve",
+   "hors marques · 247 · 247 Mission Pant - Black",
+   "femme/enfant · Organic Basics · Smooth Off-Shoulder Bodysuit",
+   "femme/enfant · Brixton · The Mercer Wide Leg Trouser Pant - Chalk Pink",
+   "hors marques · RIER · Rier Fleece Hoodie Orange",
+   "hors marques · NULL · PHILADELPHIA PHILLIES UNDER BAR '47 FOUNDATION TEE"
   ]
  }
 }
