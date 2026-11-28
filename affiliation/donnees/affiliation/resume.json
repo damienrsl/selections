@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-29T04:40:05",
- "n_actifs": 2005,
- "n_total": 3283,
+ "maj": "2026-11-29T05:40:06",
+ "n_actifs": 1904,
+ "n_total": 3182,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,11 +10,10 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 50,
-  "nike": 232,
-  "nike_total_site": 4463,
+  "nike": 231,
+  "nike_total_site": 4461,
   "footshop": 0,
-  "4elementos.com": 200,
-  "4elementos.com_total": 494,
+  "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -26,24 +25,25 @@
   "smi_shopify_thedoublef.com": 7,
   "smi_shopify_thejacketmaker.com": 6,
   "nuit_carhartt.com": 109,
-  "nuit_citadium.com": 244,
+  "nuit_citadium.com": 301,
   "nuit_courir.com": 200,
-  "nuit_footlocker.fr": 140,
-  "nuit_footpatrol.fr": 256,
+  "nuit_footlocker.fr": 144,
+  "nuit_footpatrol.fr": 253,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
-  "snipes.com_total": 3991,
+  "snipes.com_total": 3827,
   "solebox.com": 400,
-  "solebox.com_total": 2736,
+  "solebox.com_total": 2702,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
   "tout_boutiques": 76
  },
  "notes": [
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5866 → 3283 (1483 hors marques, 1100 femme/enfant)",
-  "Liens SMI créés en fin de passage : 1/1",
-  "Photos locales Citadium/Courir : 180 (manquantes 172)"
+  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
+  "Filtre marques du cœur + homme/unisexe : 5723 → 3182 (1440 hors marques, 1101 femme/enfant)",
+  "Liens SMI créés en fin de passage : 6/6",
+  "Photos locales Citadium/Courir : 232 (manquantes 172)"
  ],
  "a_activer": [
   {
@@ -236,7 +236,6 @@
   }
  ],
  "revendeurs_actifs": [
-  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -261,21 +260,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5866,
-  "hors_marques": 1483,
-  "femme_enfant": 1100,
-  "apres": 3283,
+  "avant": 5723,
+  "hors_marques": 1440,
+  "femme_enfant": 1101,
+  "apres": 3182,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · Under Armour · Under Armour Tee Shirt Side Logo",
-   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
-   "hors marques · Crocs · Trailbreak 2 Tech Boot",
-   "femme/enfant · adidas · Cut Out Bra Medium Support",
-   "hors marques · Justoverthetop · Doudoune légère sans manches Rouge Mali",
-   "hors marques · Deus Ex Machina · Stringer Walk Pant - Dirty White",
-   "hors marques · Pop Trading Company · Pop Hewitt Suit Jacket Coastal Fjord",
-   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Marine",
-   "femme/enfant · KEEN · Women's Sparta 2 ESD (Aluminum Toe)  |  Drizzle/Papaya"
+   "femme/enfant · Converse · Converse Ctas Ox - Femme Chaussures",
+   "hors marques · 125mm x SNIPES · City Trackjacket 125mm x SNIPES",
+   "hors marques · Daily Paper · Twill Shorts Apparel",
+   "femme/enfant · adidas · Women's Superstar Lo Pro",
+   "hors marques · Magliano · Men's Piccolo Paradiso Longsleeve T-Shirt Rose",
+   "hors marques · Rave · 4028 Mule Padmores x Rave Acid Lime",
+   "femme/enfant · Nude Project · Vegas Long-Sleeve Tee",
+   "hors marques · 2100 GAZEX · Merci x Caramel - Housse De Couette En Gaze De Coton - Rose De Bagatelle",
+   "hors marques · KEEN · Men's Koven Waterproof Hiking Boot  |  Bison/Mars Red"
   ]
  }
 }
