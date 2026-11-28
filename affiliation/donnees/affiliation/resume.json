@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-28T15:40:09",
- "n_actifs": 1861,
- "n_total": 3140,
+ "maj": "2026-11-28T17:40:24",
+ "n_actifs": 2024,
+ "n_total": 3303,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -12,7 +12,8 @@
   "uniqlo": 47,
   "nike": 0,
   "footshop": 0,
-  "4elementos.com": 0,
+  "4elementos.com": 200,
+  "4elementos.com_total": 494,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -39,9 +40,8 @@
  },
  "notes": [
   "Nike : Command '['/Users/damienroussel/.local/share/damienprime/cerveau/ssh', 'python3 ~/tokn/outils/nike-wall.py 8']' timed out after 300 seconds",
-  "Footshop/Diggeur : [Errno 54] Connection reset by peer",
-  "4 Elementos : Connection timed out during banner exchange\nConnection to UNKNOWN port 65535 timed out",
-  "Filtre marques du cœur + homme/unisexe : 5604 → 3140 (1495 hors marques, 969 femme/enfant)",
+  "Filtre marques du cœur + homme/unisexe : 5804 → 3303 (1528 hors marques, 973 femme/enfant)",
+  "Liens SMI créés en fin de passage : 1/1",
   "Photos locales Citadium/Courir : 274 (manquantes 170)"
  ],
  "a_activer": [
@@ -235,6 +235,7 @@
   }
  ],
  "revendeurs_actifs": [
+  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -258,21 +259,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5604,
-  "hors_marques": 1495,
-  "femme_enfant": 969,
-  "apres": 3140,
+  "avant": 5804,
+  "hors_marques": 1528,
+  "femme_enfant": 973,
+  "apres": 3303,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · Salomon · Salomon XT-Void Women's",
-   "femme/enfant · Timberland · Stone Street Boat Snake Print Suede",
-   "hors marques · AMI PARIS · Wide Fit Pants Apparel",
-   "hors marques · ALIS ApS · Okie Icon",
-   "femme/enfant · Girls Of Dust · Girls Of Dust Sultan Pants - Wheat",
-   "hors marques · Yume Yume · Yume Yume Tyre Slide Shiny - Black / Lilac",
-   "hors marques · Wax London · Kyle - Light Khaki Organic Cotton Twill Shorts",
-   "hors marques · Merz b. Schwanen · Merz b. Schwanen Relaxed Fit Cotton Pyjama Top: Striped Chambray",
-   "hors marques · KEEN · All Gender UNEEK Leather Sneaker  |  Oak Buff/Plaza Taupe"
+   "femme/enfant · ASICS · ASICS Hypersync Femme",
+   "femme/enfant · Nike · Pointe",
+   "hors marques · Zellerfeld · MarsMellow by CRO Shoe Sneaker",
+   "femme/enfant · Our Legacy · Women's Cami Tank Top Washed",
+   "femme/enfant · GANNI A/S · Stripe Cotton Pleated Mini Skirt",
+   "hors marques · Magic Castles · Crochet Knit Shirt Cacao Gradien",
+   "femme/enfant · lemontsaintmichel.fr · GIGI – CARDIGAN",
+   "hors marques · Trunk · Trunk Duke Cotton 5 Pocket Trousers: Navy",
+   "femme/enfant · KEEN · Women's UNEEK 360 Sneaker  |  Vapor/Star White"
   ]
  }
 }
