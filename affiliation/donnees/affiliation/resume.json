@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-29T02:40:00",
- "n_actifs": 1854,
- "n_total": 3132,
+ "maj": "2026-11-29T03:40:06",
+ "n_actifs": 2060,
+ "n_total": 3338,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -9,11 +9,12 @@
  },
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
-  "uniqlo": 0,
-  "nike": 239,
-  "nike_total_site": 4469,
+  "uniqlo": 50,
+  "nike": 237,
+  "nike_total_site": 4465,
   "footshop": 0,
-  "4elementos.com": 0,
+  "4elementos.com": 200,
+  "4elementos.com_total": 494,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -27,7 +28,7 @@
   "nuit_carhartt.com": 109,
   "nuit_citadium.com": 355,
   "nuit_courir.com": 200,
-  "nuit_footlocker.fr": 141,
+  "nuit_footlocker.fr": 144,
   "nuit_footpatrol.fr": 256,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
@@ -39,11 +40,8 @@
   "tout_boutiques": 76
  },
  "notes": [
-  "Uniqlo : Connection timed out during banner exchange\nConnection to UNKNOWN port 65535 timed out",
   "Nike : HTTP Error 400: Bad Request",
-  "Footshop/Diggeur : The read operation timed out",
-  "4 Elementos : Command '['/Users/damienroussel/.local/share/damienprime/cerveau/ssh', \"curl -s -A 'Mozilla/5.0' -m 40 'https://4element",
-  "Filtre marques du cœur + homme/unisexe : 5735 → 3132 (1457 hors marques, 1146 femme/enfant)",
+  "Filtre marques du cœur + homme/unisexe : 5986 → 3338 (1489 hors marques, 1159 femme/enfant)",
   "Photos locales Citadium/Courir : 273 (manquantes 172)"
  ],
  "a_activer": [
@@ -237,6 +235,7 @@
   }
  ],
  "revendeurs_actifs": [
+  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -257,24 +256,25 @@
   "Stadium Goods FR",
   "The DoubleF",
   "The Jacket Maker",
+  "Uniqlo",
   "solebox"
  ],
  "filtres": {
-  "avant": 5735,
-  "hors_marques": 1457,
-  "femme_enfant": 1146,
-  "apres": 3132,
+  "avant": 5986,
+  "hors_marques": 1489,
+  "femme_enfant": 1159,
+  "apres": 3338,
   "exemples_retires": [
-   "femme/enfant · Nike · Nike Alphafly 3 · Chaussure de course sur route pour femme",
-   "femme/enfant · New Balance · New Balance 204L - Femme Chaussures",
-   "femme/enfant · adidas · adidas Originals Taekwondo F50 Women's",
-   "femme/enfant · Autry · Wmns Windspin Low Sneaker",
-   "hors marques · Han Kjobenhavn · Artwork Tee",
-   "hors marques · SC25 · Front Pocket Cargo Short - Tobacco",
-   "hors marques · Pyrenex · Doudoune d'intérieur Alva Crepuscule",
-   "hors marques · Houston · Houston Mesh Cotton (U.S. Army Air Force) Print T-Shirt Navy",
-   "hors marques · RIER · Rier Losange Mini Plombe",
-   "hors marques · NULL · PHILADELPHIA PHILLIES CARTOON '47 FOUNDATION HOOD"
+   "femme/enfant · Uniqlo · Legging en polaire",
+   "femme/enfant · LEVI'S · Veste LEVI'S ",
+   "femme/enfant · UGG · UGG Classic Ultra Mini Plains Boot Women's",
+   "femme/enfant · Nike · Sportswear Trend Football Crop Top",
+   "femme/enfant · Reebok · Women's Small Logo Cycle Shorts",
+   "hors marques · 1700 COTEX · Merci x Carne Bollente - Housse De Couette En Percale De Coton I Love My Ex",
+   "femme/enfant · Organic Basics · Track Zip Up Jacket",
+   "hors marques · ARMEDANGELS · VAESSAA | deep sea blue",
+   "hors marques · Margaret Howell · Margaret Howell MHL Oversized Knitted Polo Dry Wool Dark Brown",
+   "hors marques · NULL · CHICAGO CUBS HEATER '47 FOUNDATION TEE"
   ]
  }
 }
