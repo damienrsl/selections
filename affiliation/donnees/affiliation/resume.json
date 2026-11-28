@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-28T13:52:56",
- "n_actifs": 1860,
- "n_total": 3139,
+ "maj": "2026-11-28T14:40:01",
+ "n_actifs": 1930,
+ "n_total": 3209,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -9,8 +9,9 @@
  },
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
-  "uniqlo": 48,
-  "nike": 0,
+  "uniqlo": 0,
+  "nike": 228,
+  "nike_total_site": 4488,
   "footshop": 0,
   "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
@@ -38,10 +39,11 @@
   "tout_boutiques": 76
  },
  "notes": [
-  "Nike : Connection timed out during banner exchange\nConnection to UNKNOWN port 65535 timed out",
-  "Footshop/Diggeur : Remote end closed connection without response",
-  "4 Elementos : Connection closed by UNKNOWN port 65535",
-  "Filtre marques du cœur + homme/unisexe : 5605 → 3139 (1495 hors marques, 971 femme/enfant)",
+  "Uniqlo : Connection timed out during banner exchange\nConnection to UNKNOWN port 65535 timed out",
+  "Nike : HTTP Error 400: Bad Request",
+  "Footshop/Diggeur : [Errno 54] Connection reset by peer",
+  "4 Elementos : Command '['/Users/damienroussel/.local/share/damienprime/cerveau/ssh', \"curl -s -A 'Mozilla/5.0' -m 40 'https://4element",
+  "Filtre marques du cœur + homme/unisexe : 5785 → 3209 (1495 hors marques, 1081 femme/enfant)",
   "Photos locales Citadium/Courir : 274 (manquantes 170)"
  ],
  "a_activer": [
@@ -245,6 +247,7 @@
   "Michele Franzese Moda",
   "Mous",
   "New Era Cap FR",
+  "Nike",
   "Padel Market",
   "Reebok",
   "Reebok FR",
@@ -254,25 +257,24 @@
   "Stadium Goods FR",
   "The DoubleF",
   "The Jacket Maker",
-  "Uniqlo",
   "solebox"
  ],
  "filtres": {
-  "avant": 5605,
+  "avant": 5785,
   "hors_marques": 1495,
-  "femme_enfant": 971,
-  "apres": 3139,
+  "femme_enfant": 1081,
+  "apres": 3209,
   "exemples_retires": [
-   "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · Salomon · Salomon XT-Void Women's",
-   "femme/enfant · New Balance · 1906",
-   "hors marques · Crocs · Classic EXP Low Shoe",
-   "hors marques · Soulland · Marion Shorts",
-   "femme/enfant · CLOT · Kids Chinese Shirt (Blue)",
-   "hors marques · The Attico · The Attico Cheope Mule - Degrade Blue",
-   "hors marques · Wax London · Aldred - Natural Linen-Cotton Revere Overshirt",
-   "hors marques · Doppiaa · Doppiaa Aalghero Moleskin Pleated Trousers: Navy",
-   "femme/enfant · KEEN · Women's Koven Waterproof Shoe  |  Magnet/Violet Quartz"
+   "femme/enfant · Nike · Nike Alphafly 3 · Chaussure de course sur route pour femme",
+   "hors marques · Ugg · Ugg Tasman Ii",
+   "hors marques · Home Grown · Home Grown Elwood Jacket",
+   "hors marques · _J.L-A.L_ · Sinh Jacket Apparel",
+   "hors marques · Han Kjobenhavn · Sweat Shorts",
+   "femme/enfant · New Era Cap · New York Yankees Womens MLB Cream Chino Trousers",
+   "hors marques · Deus Ex Machina · MX Pant - Blue",
+   "hors marques · Pop Trading Company · Pop Hewitt Suit Jacket Coastal Fjord",
+   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Kaki",
+   "hors marques · NULL · PHILADELPHIA PHILLIES CARTOON '47 FOUNDATION HOOD"
   ]
  }
 }
