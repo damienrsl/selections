@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-28T20:40:04",
- "n_actifs": 1856,
- "n_total": 3135,
+ "maj": "2026-11-28T22:40:05",
+ "n_actifs": 2063,
+ "n_total": 3342,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -9,11 +9,12 @@
  },
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
-  "uniqlo": 0,
-  "nike": 233,
-  "nike_total_site": 4475,
+  "uniqlo": 47,
+  "nike": 240,
+  "nike_total_site": 4471,
   "footshop": 0,
-  "4elementos.com": 0,
+  "4elementos.com": 200,
+  "4elementos.com_total": 494,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -31,19 +32,16 @@
   "nuit_footpatrol.fr": 308,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
-  "snipes.com_total": 3891,
+  "snipes.com_total": 3991,
   "solebox.com": 400,
-  "solebox.com_total": 2760,
+  "solebox.com_total": 2736,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
   "tout_boutiques": 76
  },
  "notes": [
-  "Uniqlo : Connection timed out during banner exchange\nConnection to UNKNOWN port 65535 timed out",
   "Nike : HTTP Error 400: Bad Request",
-  "Footshop/Diggeur : [Errno 54] Connection reset by peer",
-  "4 Elementos : Command '['/Users/damienroussel/.local/share/damienprime/cerveau/ssh', \"curl -s -A 'Mozilla/5.0' -m 40 'https://4element",
-  "Filtre marques du cœur + homme/unisexe : 5688 → 3135 (1454 hors marques, 1099 femme/enfant)",
+  "Filtre marques du cœur + homme/unisexe : 5942 → 3342 (1491 hors marques, 1109 femme/enfant)",
   "Photos locales Citadium/Courir : 234 (manquantes 172)"
  ],
  "a_activer": [
@@ -237,6 +235,7 @@
   }
  ],
  "revendeurs_actifs": [
+  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -257,24 +256,25 @@
   "Stadium Goods FR",
   "The DoubleF",
   "The Jacket Maker",
+  "Uniqlo",
   "solebox"
  ],
  "filtres": {
-  "avant": 5688,
-  "hors_marques": 1454,
-  "femme_enfant": 1099,
-  "apres": 3135,
+  "avant": 5942,
+  "hors_marques": 1491,
+  "femme_enfant": 1109,
+  "apres": 3342,
   "exemples_retires": [
-   "femme/enfant · Nike · Nike Alphafly 3 · Chaussure de course sur route pour femme",
-   "femme/enfant · New Balance · New Balance 1906W - Femme Chaussures",
-   "hors marques · Pegador · Serenus Low Suede",
-   "femme/enfant · adidas Originals · Wmns Powerphase sand strata/sand strata/gum5 Sneaker",
-   "femme/enfant · Studio Nicholson · Doring Pant in Parchment",
-   "femme/enfant · Undercover · Women's Silk Japanese Paper Camisole Dress Black Stripe",
-   "femme/enfant · tentree · Stoney Dress",
-   "femme/enfant · Nude Project · Husky Long-Sleeve Tee Ivory",
-   "hors marques · Warehouse & Co · Warehouse & Co - Pantalon 1990 - Check",
-   "hors marques · KEEN · Men's PNW Hoodie  |  Black"
+   "femme/enfant · Uniqlo · Legging en polaire",
+   "femme/enfant · OBEY · Veste OBEY ",
+   "femme/enfant · adidas · adidas Originals Handball Spezial Women's",
+   "femme/enfant · Autry · Wmns Sweatshirt Apparel",
+   "femme/enfant · Nike · W Air Max Craze",
+   "hors marques · 247 · 247 Tote Bag - Black",
+   "hors marques · Deus Ex Machina · Hear & Now Stripe Pant - Gravel Grey",
+   "femme/enfant · Nisolo · Lidia Whipstitch Loafer Lilac",
+   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Kaki",
+   "femme/enfant · KEEN · Women's San Jose 6\" Boot (Soft Toe)  |  Gingerbread/Off White"
   ]
  }
 }
