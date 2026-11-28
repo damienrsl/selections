@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-29T01:40:05",
- "n_actifs": 2057,
- "n_total": 3335,
+ "maj": "2026-11-29T02:40:00",
+ "n_actifs": 1854,
+ "n_total": 3132,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -9,12 +9,11 @@
  },
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
-  "uniqlo": 47,
-  "nike": 238,
-  "nike_total_site": 4466,
+  "uniqlo": 0,
+  "nike": 239,
+  "nike_total_site": 4469,
   "footshop": 0,
-  "4elementos.com": 200,
-  "4elementos.com_total": 494,
+  "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
   "smi_shopify_grifo210.com": 9,
   "smi_shopify_kappa.fr": 99,
@@ -40,9 +39,11 @@
   "tout_boutiques": 76
  },
  "notes": [
+  "Uniqlo : Connection timed out during banner exchange\nConnection to UNKNOWN port 65535 timed out",
   "Nike : HTTP Error 400: Bad Request",
-  "Filtre marques du cœur + homme/unisexe : 5981 → 3335 (1490 hors marques, 1156 femme/enfant)",
-  "Liens SMI créés en fin de passage : 7/7",
+  "Footshop/Diggeur : The read operation timed out",
+  "4 Elementos : Command '['/Users/damienroussel/.local/share/damienprime/cerveau/ssh', \"curl -s -A 'Mozilla/5.0' -m 40 'https://4element",
+  "Filtre marques du cœur + homme/unisexe : 5735 → 3132 (1457 hors marques, 1146 femme/enfant)",
   "Photos locales Citadium/Courir : 273 (manquantes 172)"
  ],
  "a_activer": [
@@ -236,7 +237,6 @@
   }
  ],
  "revendeurs_actifs": [
-  "4 Elementos",
   "Billionaire Boys Club",
   "Citadium",
   "Dockers",
@@ -257,25 +257,24 @@
   "Stadium Goods FR",
   "The DoubleF",
   "The Jacket Maker",
-  "Uniqlo",
   "solebox"
  ],
  "filtres": {
-  "avant": 5981,
-  "hors_marques": 1490,
-  "femme_enfant": 1156,
-  "apres": 3335,
+  "avant": 5735,
+  "hors_marques": 1457,
+  "femme_enfant": 1146,
+  "apres": 3132,
   "exemples_retires": [
-   "femme/enfant · Uniqlo · Legging en polaire",
-   "femme/enfant · LEVI'S · Veste LEVI'S ",
-   "femme/enfant · adidas · adidas Originals Samba LT Pony Hair Women's",
-   "hors marques · Burocs · Crochet Striped Shirt",
-   "femme/enfant · Reebok · Women's Leopard Print Baby T-Shirt",
-   "femme/enfant · Chaco · Chaco Women's Lowdown Sandals - Faded Orange Glow",
-   "hors marques · Organic Basics · Soft Knit Rib Raglan Sweater",
-   "hors marques · ARMEDANGELS · GEFÜTTERTE ICONIC Å CORDJACKE | amberwood",
-   "hors marques · Taiga Takahashi · Taiga Takahashi Work Trousers Charcoal",
-   "hors marques · NULL · LOS ANGELES DODGERS UNDER BAR '47 FOUNDATION TEE"
+   "femme/enfant · Nike · Nike Alphafly 3 · Chaussure de course sur route pour femme",
+   "femme/enfant · New Balance · New Balance 204L - Femme Chaussures",
+   "femme/enfant · adidas · adidas Originals Taekwondo F50 Women's",
+   "femme/enfant · Autry · Wmns Windspin Low Sneaker",
+   "hors marques · Han Kjobenhavn · Artwork Tee",
+   "hors marques · SC25 · Front Pocket Cargo Short - Tobacco",
+   "hors marques · Pyrenex · Doudoune d'intérieur Alva Crepuscule",
+   "hors marques · Houston · Houston Mesh Cotton (U.S. Army Air Force) Print T-Shirt Navy",
+   "hors marques · RIER · Rier Losange Mini Plombe",
+   "hors marques · NULL · PHILADELPHIA PHILLIES CARTOON '47 FOUNDATION HOOD"
   ]
  }
 }
