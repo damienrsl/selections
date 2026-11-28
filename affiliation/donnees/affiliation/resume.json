@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-28T14:40:01",
- "n_actifs": 1930,
- "n_total": 3209,
+ "maj": "2026-11-28T15:40:09",
+ "n_actifs": 1861,
+ "n_total": 3140,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -9,9 +9,8 @@
  },
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
-  "uniqlo": 0,
-  "nike": 228,
-  "nike_total_site": 4488,
+  "uniqlo": 47,
+  "nike": 0,
   "footshop": 0,
   "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
@@ -31,19 +30,18 @@
   "nuit_footpatrol.fr": 308,
   "nuit_sizeofficial.fr": 400,
   "snipes.com": 400,
-  "snipes.com_total": 3942,
+  "snipes.com_total": 3891,
   "solebox.com": 400,
-  "solebox.com_total": 2755,
+  "solebox.com_total": 2760,
   "scrap_revendeurs": 10,
   "tout_scrap": 2500,
   "tout_boutiques": 76
  },
  "notes": [
-  "Uniqlo : Connection timed out during banner exchange\nConnection to UNKNOWN port 65535 timed out",
-  "Nike : HTTP Error 400: Bad Request",
+  "Nike : Command '['/Users/damienroussel/.local/share/damienprime/cerveau/ssh', 'python3 ~/tokn/outils/nike-wall.py 8']' timed out after 300 seconds",
   "Footshop/Diggeur : [Errno 54] Connection reset by peer",
-  "4 Elementos : Command '['/Users/damienroussel/.local/share/damienprime/cerveau/ssh', \"curl -s -A 'Mozilla/5.0' -m 40 'https://4element",
-  "Filtre marques du cœur + homme/unisexe : 5785 → 3209 (1495 hors marques, 1081 femme/enfant)",
+  "4 Elementos : Connection timed out during banner exchange\nConnection to UNKNOWN port 65535 timed out",
+  "Filtre marques du cœur + homme/unisexe : 5604 → 3140 (1495 hors marques, 969 femme/enfant)",
   "Photos locales Citadium/Courir : 274 (manquantes 170)"
  ],
  "a_activer": [
@@ -247,7 +245,6 @@
   "Michele Franzese Moda",
   "Mous",
   "New Era Cap FR",
-  "Nike",
   "Padel Market",
   "Reebok",
   "Reebok FR",
@@ -257,24 +254,25 @@
   "Stadium Goods FR",
   "The DoubleF",
   "The Jacket Maker",
+  "Uniqlo",
   "solebox"
  ],
  "filtres": {
-  "avant": 5785,
+  "avant": 5604,
   "hors_marques": 1495,
-  "femme_enfant": 1081,
-  "apres": 3209,
+  "femme_enfant": 969,
+  "apres": 3140,
   "exemples_retires": [
-   "femme/enfant · Nike · Nike Alphafly 3 · Chaussure de course sur route pour femme",
-   "hors marques · Ugg · Ugg Tasman Ii",
-   "hors marques · Home Grown · Home Grown Elwood Jacket",
-   "hors marques · _J.L-A.L_ · Sinh Jacket Apparel",
-   "hors marques · Han Kjobenhavn · Sweat Shorts",
-   "femme/enfant · New Era Cap · New York Yankees Womens MLB Cream Chino Trousers",
-   "hors marques · Deus Ex Machina · MX Pant - Blue",
-   "hors marques · Pop Trading Company · Pop Hewitt Suit Jacket Coastal Fjord",
-   "hors marques · BENSIMON · Bensimon - Baskets Romy B79 - Kaki",
-   "hors marques · NULL · PHILADELPHIA PHILLIES CARTOON '47 FOUNDATION HOOD"
+   "femme/enfant · Uniqlo · Legging en polaire",
+   "femme/enfant · Salomon · Salomon XT-Void Women's",
+   "femme/enfant · Timberland · Stone Street Boat Snake Print Suede",
+   "hors marques · AMI PARIS · Wide Fit Pants Apparel",
+   "hors marques · ALIS ApS · Okie Icon",
+   "femme/enfant · Girls Of Dust · Girls Of Dust Sultan Pants - Wheat",
+   "hors marques · Yume Yume · Yume Yume Tyre Slide Shiny - Black / Lilac",
+   "hors marques · Wax London · Kyle - Light Khaki Organic Cotton Twill Shorts",
+   "hors marques · Merz b. Schwanen · Merz b. Schwanen Relaxed Fit Cotton Pyjama Top: Striped Chambray",
+   "hors marques · KEEN · All Gender UNEEK Leather Sneaker  |  Oak Buff/Plaza Taupe"
   ]
  }
 }
