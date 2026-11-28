@@ -1,7 +1,7 @@
 {
- "maj": "2026-11-28T12:40:05",
- "n_actifs": 1972,
- "n_total": 3251,
+ "maj": "2026-11-28T13:52:56",
+ "n_actifs": 1860,
+ "n_total": 3139,
  "n_tout": 2500,
  "smi": {
   "marques": 1231,
@@ -10,8 +10,7 @@
  "seuils_tout": "−30 % et plus, 20 € min, 40 par boutique, 2 500 max",
  "sources": {
   "uniqlo": 48,
-  "nike": 228,
-  "nike_total_site": 4491,
+  "nike": 0,
   "footshop": 0,
   "4elementos.com": 0,
   "smi_shopify_bbcicecream.eu": 56,
@@ -39,9 +38,10 @@
   "tout_boutiques": 76
  },
  "notes": [
-  "Nike : HTTP Error 400: Bad Request",
-  "4 Elementos : Expecting value: line 1 column 1 (char 0)",
-  "Filtre marques du cœur + homme/unisexe : 5833 → 3251 (1495 hors marques, 1087 femme/enfant)",
+  "Nike : Connection timed out during banner exchange\nConnection to UNKNOWN port 65535 timed out",
+  "Footshop/Diggeur : Remote end closed connection without response",
+  "4 Elementos : Connection closed by UNKNOWN port 65535",
+  "Filtre marques du cœur + homme/unisexe : 5605 → 3139 (1495 hors marques, 971 femme/enfant)",
   "Photos locales Citadium/Courir : 274 (manquantes 170)"
  ],
  "a_activer": [
@@ -245,7 +245,6 @@
   "Michele Franzese Moda",
   "Mous",
   "New Era Cap FR",
-  "Nike",
   "Padel Market",
   "Reebok",
   "Reebok FR",
@@ -259,21 +258,21 @@
   "solebox"
  ],
  "filtres": {
-  "avant": 5833,
+  "avant": 5605,
   "hors_marques": 1495,
-  "femme_enfant": 1087,
-  "apres": 3251,
+  "femme_enfant": 971,
+  "apres": 3139,
   "exemples_retires": [
    "femme/enfant · Uniqlo · Legging en polaire",
-   "hors marques · Puma · Puma Suede Leather",
-   "hors marques · UGG · UGG Classic Micro Boot",
-   "hors marques · Crocs · Trailbreak 2 Tech Boot",
-   "hors marques · Alpha Industries · Seamless T-Shirt",
-   "hors marques · Lems Shoes · Men's Drifter Grip",
-   "hors marques · Deus Ex Machina · MX Pant - Blue",
-   "femme/enfant · Brixton · The Jett Lightweight Cargo Wide Leg Pant - Olive Stone",
-   "hors marques · SOCQUE · Socque - Mocassin Totem - Crème",
-   "femme/enfant · KEEN · Women's San Jose 6\" Boot (Soft Toe)  |  Gingerbread/Off White"
+   "femme/enfant · Salomon · Salomon XT-Void Women's",
+   "femme/enfant · New Balance · 1906",
+   "hors marques · Crocs · Classic EXP Low Shoe",
+   "hors marques · Soulland · Marion Shorts",
+   "femme/enfant · CLOT · Kids Chinese Shirt (Blue)",
+   "hors marques · The Attico · The Attico Cheope Mule - Degrade Blue",
+   "hors marques · Wax London · Aldred - Natural Linen-Cotton Revere Overshirt",
+   "hors marques · Doppiaa · Doppiaa Aalghero Moleskin Pleated Trousers: Navy",
+   "femme/enfant · KEEN · Women's Koven Waterproof Shoe  |  Magnet/Violet Quartz"
   ]
  }
 }
